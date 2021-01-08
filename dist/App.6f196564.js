@@ -33959,10 +33959,6 @@ module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/Baraat.jpg":[function(require,module,exports) {
 module.exports = "/Baraat.4e935b41.jpg";
-},{}],"assets/valima.jpg":[function(require,module,exports) {
-module.exports = "/valima.e240c81a.jpg";
-},{}],"assets/mehndi.jfif":[function(require,module,exports) {
-module.exports = "/mehndi.fb0d0ba5.jfif";
 },{}],"Pages/List/Listing.jsx":[function(require,module,exports) {
 "use strict";
 
@@ -33976,10 +33972,6 @@ var _react = _interopRequireDefault(require("react"));
 require("../List/Listing.css");
 
 var _Baraat = _interopRequireDefault(require("../../assets/Baraat.jpg"));
-
-var _valima = _interopRequireDefault(require("../../assets/valima.jpg"));
-
-var _mehndi = _interopRequireDefault(require("../../assets/mehndi.jfif"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34036,7 +34028,7 @@ var Listing = function Listing() {
 
 var _default = Listing;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../List/Listing.css":"Pages/List/Listing.css","../../assets/Baraat.jpg":"assets/Baraat.jpg","../../assets/valima.jpg":"assets/valima.jpg","../../assets/mehndi.jfif":"assets/mehndi.jfif"}],"Components/Section/Section.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../List/Listing.css":"Pages/List/Listing.css","../../assets/Baraat.jpg":"assets/Baraat.jpg"}],"Components/Section/Section.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);

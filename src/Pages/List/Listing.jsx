@@ -1,8 +1,6 @@
 import React from 'react';
 import '../List/Listing.css'
 import Baraat from '../../assets/Baraat.jpg'
-import Valima from '../../assets/valima.jpg'
-import Mehndi from '../../assets/mehndi.jfif'
 
 const Listing = () => {
     return( 
