@@ -1,6 +1,36 @@
-.App {
-    text-align: center;
+
+.Bg-img {
+    background-image: url("/Bg-img2.d15ff951.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 1500px;
+    opacity: 0.8;
 }
 
+.header {
+    background-color: lightgrey;
+    color: #000;
+    font-size: 30px;
+    font-style: oblique;
+    padding: 15px;
+    font-weight: bold;
+
+}
+.card {
+    margin: 25px;
+    width: 27rem;
+}
+.alert {
+    
+    background-color: lightgrey;
+    color: #000;
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: grey;
+    color: black;
+    margin-left: 15px;
+}
 
 /*# sourceMappingURL=/App.6f196564.css.map */

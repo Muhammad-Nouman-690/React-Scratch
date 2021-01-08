@@ -1,0 +1,12 @@
+.alert {
+    
+    background-color: lightgrey;
+    color: #000;
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: grey;
+    color: black;
+    margin-left: 15px;
+}
