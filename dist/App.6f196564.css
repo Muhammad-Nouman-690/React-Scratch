@@ -1,12 +1,18 @@
-
-.Bg-img {
-    background-image: url("/Bg-img2.d15ff951.jpg");
+/* .Bg-img {
+    background-image: url("./assets/Bg-img2.jpg");
     background-size: cover;
     background-position: center;
     height: 1500px;
+    opacity: 0.9;
+} */
+
+.setImg {
+    background-image: url("/BgImg3.2f88d497.jpg");
+    background-size: cover;
+    background-position: center;
+    
     opacity: 0.8;
 }
-
 .header {
     background-color: lightgrey;
     color: #000;
@@ -20,6 +26,15 @@
     margin: 25px;
     width: 27rem;
 }
+
+/* .list_img {
+    background-image: url('../../assets/listingBg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 9000px;
+    opacity: 0.9;
+} */
 .alert {
     
     background-color: lightgrey;
@@ -32,5 +47,26 @@
     color: black;
     margin-left: 15px;
 }
+.deatil-list {
+    margin: 25px;
+}
+
+.bg_clr {
+    margin: 15px;
+    background-color: lightgrey;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.lead {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+.display-4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
 
 /*# sourceMappingURL=/App.6f196564.css.map */

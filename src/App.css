@@ -1,8 +1,15 @@
-
-.Bg-img {
+/* .Bg-img {
     background-image: url("./assets/Bg-img2.jpg");
     background-size: cover;
     background-position: center;
     height: 1500px;
+    opacity: 0.9;
+} */
+
+.setImg {
+    background-image: url("./assets/BgImg3.jpg");
+    background-size: cover;
+    background-position: center;
+    
     opacity: 0.8;
 }

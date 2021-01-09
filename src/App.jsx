@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import './App.css'
 import  Header  from './Components/Header/Header'
-import AppRouter from './Pages/router'
+import AppRouter from './Pages/Config/router'
 
 const App = () => {
  
@@ -13,7 +13,7 @@ const App = () => {
 
     </header>
     
-    <section>
+    <section className='setImg'>
 
 <AppRouter />
     

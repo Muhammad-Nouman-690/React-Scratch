@@ -1,0 +1,20 @@
+.deatil-list {
+    margin: 25px;
+}
+
+.bg_clr {
+    margin: 15px;
+    background-color: lightgrey;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.lead {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+.display-4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}

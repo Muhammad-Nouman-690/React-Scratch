@@ -29844,7 +29844,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./assets\\Bg-img2.jpg":[["Bg-img2.d15ff951.jpg","assets/Bg-img2.jpg"],"assets/Bg-img2.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Header/Header.css":[function(require,module,exports) {
+},{"./assets\\BgImg3.jpg":[["BgImg3.2f88d497.jpg","assets/BgImg3.jpg"],"assets/BgImg3.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Header/Header.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -33973,11 +33973,13 @@ require("../List/Listing.css");
 
 var _Baraat = _interopRequireDefault(require("../../assets/Baraat.jpg"));
 
+var _reactRouterDom = require("react-router-dom");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Listing = function Listing() {
   return /*#__PURE__*/_react.default.createElement("div", {
-    class: "container"
+    class: "container list_img"
   }, /*#__PURE__*/_react.default.createElement("div", {
     class: "card"
   }, /*#__PURE__*/_react.default.createElement("img", {
@@ -33990,9 +33992,10 @@ var Listing = function Listing() {
     class: "card-title"
   }, "BARAAT EVENT"), /*#__PURE__*/_react.default.createElement("p", {
     class: "card-text"
-  }, "A successful marriage requires falling in love many times, always with the same person."), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    class: "btn "
+  }, "A successful marriage requires falling in love many times, always with the same person."), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    type: "submit",
+    class: "btn",
+    to: "/Baraat"
   }, "More Details"))), /*#__PURE__*/_react.default.createElement("div", {
     class: "card"
   }, /*#__PURE__*/_react.default.createElement("img", {
@@ -34005,9 +34008,10 @@ var Listing = function Listing() {
     class: "card-title"
   }, "VALIMA EVENT"), /*#__PURE__*/_react.default.createElement("p", {
     class: "card-text"
-  }, "A great marriage is not when the ", /*#__PURE__*/_react.default.createElement("i", null, " perfect couple "), " comes together. .."), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    class: "btn "
+  }, "A great marriage is not when the ", /*#__PURE__*/_react.default.createElement("i", null, " perfect couple "), " comes together. .."), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    type: "submit",
+    class: "btn",
+    to: "/Valima"
   }, "More Details"))), /*#__PURE__*/_react.default.createElement("div", {
     class: "card"
   }, /*#__PURE__*/_react.default.createElement("img", {
@@ -34020,15 +34024,16 @@ var Listing = function Listing() {
     class: "card-title"
   }, "MEHNDI EVENT"), /*#__PURE__*/_react.default.createElement("p", {
     class: "card-text"
-  }, "Never marry the one you can live with, marry the one you cannot live without."), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    class: "btn "
+  }, "Never marry the one you can live with, marry the one you cannot live without."), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    type: "submit",
+    class: "btn",
+    to: "/Mehndi"
   }, "More Details"))));
 };
 
 var _default = Listing;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../List/Listing.css":"Pages/List/Listing.css","../../assets/Baraat.jpg":"assets/Baraat.jpg"}],"Components/Section/Section.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../List/Listing.css":"Pages/List/Listing.css","../../assets/Baraat.jpg":"assets/Baraat.jpg","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"Components/Section/Section.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -34110,7 +34115,240 @@ var Section = function Section() {
 
 var _default = Section;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../Section/Section.css":"Components/Section/Section.css","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"Pages/router.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../Section/Section.css":"Components/Section/Section.css","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"Pages/DetailsList/Baraat/Baraat.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Pages/DetailsList/Baraat/Baraat.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("../Baraat/Baraat.css");
+
+var _Baraat2 = _interopRequireDefault(require("../../../assets/Baraat.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Baraat = function Baraat() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: " deatil-list container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    id: "carouselExampleControls",
+    class: "carousel slide",
+    "data-ride": "carousel"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-inner"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item active"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _Baraat2.default,
+    alt: "First slide"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _Baraat2.default,
+    alt: "Second slide"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _Baraat2.default,
+    alt: "Third slide"
+  }))), /*#__PURE__*/_react.default.createElement("a", {
+    class: "carousel-control-prev",
+    href: "#carouselExampleControls",
+    role: "button",
+    "data-slide": "prev"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    class: "carousel-control-prev-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    class: "sr-only"
+  }, "Previous")), /*#__PURE__*/_react.default.createElement("a", {
+    class: "carousel-control-next",
+    href: "#carouselExampleControls",
+    role: "button",
+    "data-slide": "next"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    class: "carousel-control-next-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    class: "sr-only"
+  }, "Next"))), /*#__PURE__*/_react.default.createElement("div", {
+    class: "jumbotron jumbotron-fluid"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "container"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    class: "display-4"
+  }, "Information about BARAAT EVENT"), /*#__PURE__*/_react.default.createElement("p", {
+    class: "lead"
+  }, "It is an ideal venue to host any of your grand celebrations, They can offer you multiple event spaces in terms of their banquet hall and lawns which has the capacity to accommodate from 30 to 150 and 30 to 1000 respectively, that you can choose as per your needs, requirements and the events that you wish to host. Planning your wedding or any of its other related celebrations here will surely make it one of a kind and much more remarkable as you would be provided with best in class services and hospitality experience."))));
+};
+
+var _default = Baraat;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../Baraat/Baraat.css":"Pages/DetailsList/Baraat/Baraat.css","../../../assets/Baraat.jpg":"assets/Baraat.jpg"}],"assets/valima.jpg":[function(require,module,exports) {
+module.exports = "/valima.e240c81a.jpg";
+},{}],"Pages/DetailsList/Valima/Valima.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _valima = _interopRequireDefault(require("../../../assets/valima.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Valima = function Valima() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: " deatil-list container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    id: "carouselExampleControls",
+    class: "carousel slide",
+    "data-ride": "carousel"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-inner"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item active"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _valima.default,
+    alt: "First slide"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _valima.default,
+    alt: "Second slide"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _valima.default,
+    alt: "Third slide"
+  }))), /*#__PURE__*/_react.default.createElement("a", {
+    class: "carousel-control-prev",
+    href: "#carouselExampleControls",
+    role: "button",
+    "data-slide": "prev"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    class: "carousel-control-prev-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    class: "sr-only"
+  }, "Previous")), /*#__PURE__*/_react.default.createElement("a", {
+    class: "carousel-control-next",
+    href: "#carouselExampleControls",
+    role: "button",
+    "data-slide": "next"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    class: "carousel-control-next-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    class: "sr-only"
+  }, "Next"))), /*#__PURE__*/_react.default.createElement("div", {
+    class: "jumbotron jumbotron-fluid"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "container"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    class: "display-4"
+  }, "Information about VALIMA EVENT"), /*#__PURE__*/_react.default.createElement("p", {
+    class: "lead"
+  }, "It is an ideal venue to host any of your grand celebrations, They can offer you multiple event spaces in terms of their banquet hall and lawns which has the capacity to accommodate from 30 to 150 and 30 to 1000 respectively, that you can choose as per your needs, requirements and the events that you wish to host. Planning your wedding or any of its other related celebrations here will surely make it one of a kind and much more remarkable as you would be provided with best in class services and hospitality experience."))));
+};
+
+var _default = Valima;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../../../assets/valima.jpg":"assets/valima.jpg"}],"assets/mehndi.jfif":[function(require,module,exports) {
+module.exports = "/mehndi.fb0d0ba5.jfif";
+},{}],"Pages/DetailsList/Mehndi/Mehndi.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _mehndi = _interopRequireDefault(require("../../../assets/mehndi.jfif"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Mehndi = function Mehndi() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: " deatil-list container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    id: "carouselExampleControls",
+    class: "carousel slide",
+    "data-ride": "carousel"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-inner"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item active"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _mehndi.default,
+    alt: "First slide"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _mehndi.default,
+    alt: "Second slide"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _mehndi.default,
+    alt: "Third slide"
+  }))), /*#__PURE__*/_react.default.createElement("a", {
+    class: "carousel-control-prev",
+    href: "#carouselExampleControls",
+    role: "button",
+    "data-slide": "prev"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    class: "carousel-control-prev-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    class: "sr-only"
+  }, "Previous")), /*#__PURE__*/_react.default.createElement("a", {
+    class: "carousel-control-next",
+    href: "#carouselExampleControls",
+    role: "button",
+    "data-slide": "next"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    class: "carousel-control-next-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    class: "sr-only"
+  }, "Next"))), /*#__PURE__*/_react.default.createElement("div", {
+    class: "jumbotron jumbotron-fluid"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "container"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    class: "display-4"
+  }, "Information about MEHNDI EVENT"), /*#__PURE__*/_react.default.createElement("p", {
+    class: "lead"
+  }, "It is an ideal venue to host any of your grand celebrations, They can offer you multiple event spaces in terms of their banquet hall and lawns which has the capacity to accommodate from 30 to 150 and 30 to 1000 respectively, that you can choose as per your needs, requirements and the events that you wish to host. Planning your wedding or any of its other related celebrations here will surely make it one of a kind and much more remarkable as you would be provided with best in class services and hospitality experience."))));
+};
+
+var _default = Mehndi;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../../../assets/mehndi.jfif":"assets/mehndi.jfif"}],"Pages/Config/router.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34122,14 +34360,26 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
-var _Listing = _interopRequireDefault(require("./List/Listing"));
+var _Listing = _interopRequireDefault(require("../List/Listing"));
 
-var _Section = _interopRequireDefault(require("../Components/Section/Section"));
+var _Section = _interopRequireDefault(require("../../Components/Section/Section"));
+
+var _Baraat = _interopRequireDefault(require("../DetailsList/Baraat/Baraat"));
+
+var _Valima = _interopRequireDefault(require("../DetailsList/Valima/Valima"));
+
+var _Mehndi = _interopRequireDefault(require("../DetailsList/Mehndi/Mehndi"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var AppRouter = function AppRouter() {
   return /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/Mehndi"
+  }, " ", /*#__PURE__*/_react.default.createElement(_Mehndi.default, null), " "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/Valima"
+  }, " ", /*#__PURE__*/_react.default.createElement(_Valima.default, null), " "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/Baraat"
+  }, " ", /*#__PURE__*/_react.default.createElement(_Baraat.default, null), " "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/Listing"
   }, " ", /*#__PURE__*/_react.default.createElement(_Listing.default, null), " "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/"
@@ -34138,7 +34388,7 @@ var AppRouter = function AppRouter() {
 
 var _default = AppRouter;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./List/Listing":"Pages/List/Listing.jsx","../Components/Section/Section":"Components/Section/Section.jsx"}],"App.jsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../List/Listing":"Pages/List/Listing.jsx","../../Components/Section/Section":"Components/Section/Section.jsx","../DetailsList/Baraat/Baraat":"Pages/DetailsList/Baraat/Baraat.jsx","../DetailsList/Valima/Valima":"Pages/DetailsList/Valima/Valima.jsx","../DetailsList/Mehndi/Mehndi":"Pages/DetailsList/Mehndi/Mehndi.jsx"}],"App.jsx":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -34149,18 +34399,20 @@ require("./App.css");
 
 var _Header = _interopRequireDefault(require("./Components/Header/Header"));
 
-var _router = _interopRequireDefault(require("./Pages/router"));
+var _router = _interopRequireDefault(require("./Pages/Config/router"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "Bg-img"
-  }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement(_Header.default, null)), /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement(_router.default, null)), /*#__PURE__*/_react.default.createElement("footer", null));
+  }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement(_Header.default, null)), /*#__PURE__*/_react.default.createElement("section", {
+    className: "setImg"
+  }, /*#__PURE__*/_react.default.createElement(_router.default, null)), /*#__PURE__*/_react.default.createElement("footer", null));
 };
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root"));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App.css":"App.css","./Components/Header/Header":"Components/Header/Header.jsx","./Pages/router":"Pages/router.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App.css":"App.css","./Components/Header/Header":"Components/Header/Header.jsx","./Pages/Config/router":"Pages/Config/router.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -34188,7 +34440,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56431" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51735" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
