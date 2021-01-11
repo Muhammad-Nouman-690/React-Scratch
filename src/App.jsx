@@ -7,25 +7,18 @@ import AppRouter from './Pages/Config/router'
 const App = () => {
  
   return (
-    <div className='Bg-img'>
-    <header >       
-<Header />
+    <div className="Bg-img">
+      <header>
+        <Header />
+      </header>
 
-    </header>
-    
-    <section className='setImg'>
+      <section>
+        <AppRouter />
+      </section>
 
-<AppRouter />
-    
-    </section>
-    
-    <footer>
-
-    </footer>
-    
-    
+      <footer></footer>
     </div>
-        )
+  );
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));

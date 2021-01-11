@@ -1,12 +1,19 @@
 .alert {
     
-    background-color: lightgrey;
+    background-color: whitesmoke;
     color: #000;
     margin-top: 50px;
 }
 
-.btn {
-    background-color: grey;
-    color: black;
+.search {
     margin-left: 15px;
+}
+
+.cu_info {
+    text-align: justify;
+    font-style: italic;
+}
+
+.card_title {
+    font-family: monospace;
 }

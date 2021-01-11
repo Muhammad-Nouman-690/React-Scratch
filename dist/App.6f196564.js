@@ -33981,6 +33981,8 @@ var Listing = function Listing() {
   return /*#__PURE__*/_react.default.createElement("div", {
     class: "container list_img"
   }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
     class: "card"
   }, /*#__PURE__*/_react.default.createElement("img", {
     class: "card-img-top",
@@ -33991,7 +33993,7 @@ var Listing = function Listing() {
   }, /*#__PURE__*/_react.default.createElement("h5", {
     class: "card-title"
   }, "BARAAT EVENT"), /*#__PURE__*/_react.default.createElement("p", {
-    class: "card-text"
+    className: "cu_info"
   }, "A successful marriage requires falling in love many times, always with the same person."), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     type: "submit",
     class: "btn",
@@ -34007,7 +34009,7 @@ var Listing = function Listing() {
   }, /*#__PURE__*/_react.default.createElement("h5", {
     class: "card-title"
   }, "VALIMA EVENT"), /*#__PURE__*/_react.default.createElement("p", {
-    class: "card-text"
+    className: "cu_info"
   }, "A great marriage is not when the ", /*#__PURE__*/_react.default.createElement("i", null, " perfect couple "), " comes together. .."), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     type: "submit",
     class: "btn",
@@ -34023,12 +34025,28 @@ var Listing = function Listing() {
   }, /*#__PURE__*/_react.default.createElement("h5", {
     class: "card-title"
   }, "MEHNDI EVENT"), /*#__PURE__*/_react.default.createElement("p", {
-    class: "card-text"
+    className: "cu_info"
   }, "Never marry the one you can live with, marry the one you cannot live without."), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     type: "submit",
     class: "btn",
     to: "/Mehndi"
-  }, "More Details"))));
+  }, "More Details"))), /*#__PURE__*/_react.default.createElement("div", {
+    class: "card"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "card-img-top",
+    src: _Baraat.default,
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    class: "card-body"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    class: "card-title"
+  }, "MAYOUN EVENT"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "cu_info"
+  }, "Never marry the one you can live with, marry the one you cannot live without."), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    type: "submit",
+    class: "btn",
+    to: "/Mehndi"
+  }, "More Details")))));
 };
 
 var _default = Listing;
@@ -34038,7 +34056,127 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Section/Section.jsx":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/valima.jpg":[function(require,module,exports) {
+module.exports = "/valima.e240c81a.jpg";
+},{}],"Components/VendorMessage/VendorMessage.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var VendorMessage = function VendorMessage(props) {
+  var _useState = (0, _react.useState)(""),
+      _useState2 = _slicedToArray(_useState, 2),
+      name = _useState2[0],
+      setName = _useState2[1];
+
+  var _useState3 = (0, _react.useState)(""),
+      _useState4 = _slicedToArray(_useState3, 2),
+      email = _useState4[0],
+      setEmail = _useState4[1];
+
+  var _useState5 = (0, _react.useState)(""),
+      _useState6 = _slicedToArray(_useState5, 2),
+      number = _useState6[0],
+      setNumber = _useState6[1];
+
+  var _useState7 = (0, _react.useState)(""),
+      _useState8 = _slicedToArray(_useState7, 2),
+      comment = _useState8[0],
+      setComment = _useState8[1];
+
+  var _useState9 = (0, _react.useState)(""),
+      _useState10 = _slicedToArray(_useState9, 2),
+      date = _useState10[0],
+      setDate = _useState10[1];
+
+  console.log(name, email);
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "border container shadow p-4 mb-4 bg-light"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("h4", {
+    className: "text-center"
+  }, "Message Vendor"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-6"
+  }, /*#__PURE__*/_react.default.createElement("label", null, "Full Name", /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    placeholder: "Name",
+    id: "name",
+    onChange: function onChange(e) {
+      return setName(e.target.value);
+    },
+    value: name
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-6"
+  }, /*#__PURE__*/_react.default.createElement("label", null, "Email", /*#__PURE__*/_react.default.createElement("input", {
+    type: "email",
+    placeholder: "Email",
+    id: "email",
+    onChange: function onChange(e) {
+      return setEmail(e.target.value);
+    },
+    value: email
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-6"
+  }, /*#__PURE__*/_react.default.createElement("label", null, "Number", /*#__PURE__*/_react.default.createElement("input", {
+    type: "number",
+    placeholder: "Number",
+    id: "number",
+    onChange: function onChange(e) {
+      return setNumber(e.target.value);
+    },
+    value: number
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-6"
+  }, /*#__PURE__*/_react.default.createElement("label", null, "Wedding Date", /*#__PURE__*/_react.default.createElement("input", {
+    type: "date",
+    id: "date",
+    onChange: function onChange(e) {
+      return setDate(e.target.value);
+    },
+    value: date
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-6"
+  }, /*#__PURE__*/_react.default.createElement("label", null, "Comment", /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    placeholder: "Comment",
+    id: "comment",
+    onChange: function onChange(e) {
+      return setComment(e.target.value);
+    },
+    value: comment
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-12"
+  }, /*#__PURE__*/_react.default.createElement("button", {
+    type: "button",
+    class: "btn btn-secondary "
+  }, "Submit")))));
+};
+
+var _default = VendorMessage;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"Pages/DetailsList/Detail.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34048,18 +34186,26 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-require("../Section/Section.css");
+var _VendorMessage = _interopRequireDefault(require("../../Components/VendorMessage/VendorMessage"));
 
 var _reactRouterDom = require("react-router-dom");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Section = function Section() {
-  return /*#__PURE__*/_react.default.createElement("div", {
+var Detail = function Detail(prop) {
+  return /*#__PURE__*/_react.default.createElement("section", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-9"
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "alert container"
-  }, /*#__PURE__*/_react.default.createElement("h4", {
+  }, /*#__PURE__*/_react.default.createElement("h1", {
     class: "alert-heading"
-  }, "BOOK YOUR WEDDING"), /*#__PURE__*/_react.default.createElement("p", null, "Cupid Wedding Planners & Events, we provide stress free planing."), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("form", {
+  }, "BOOK YOUR WEDDING"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "cu_info"
+  }, "Cupid Wedding Planners & Events, we provide stress free planing."), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("form", {
     action: "submit"
   }, /*#__PURE__*/_react.default.createElement("div", {
     class: "form-row"
@@ -34108,19 +34254,18 @@ var Section = function Section() {
     value: "3"
   }, "VALIMA"))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     type: "submit",
-    class: "btn",
+    class: "btn btn-secondary search",
     to: "/Listing"
-  }, "Search"))));
+  }, "Search"))), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("h1", null, "Information about Cupid- The Wedding Planner"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "cu_info"
+  }, "The Cupid is a wedding planning based in the city of Karachi and offers bespoke wedding plans for all your related events and functions. There is a requirement for a wedding organiser for all your wedding and related occasions and if you are somebody who is getting married and looking for a service that offers you tonnes of services for all your wedding functions. Situated in Karachi, The Cupid is your decision for every one of these requirements."))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3"
+  }, /*#__PURE__*/_react.default.createElement(_VendorMessage.default, null))));
 };
 
-var _default = Section;
+var _default = Detail;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../Section/Section.css":"Components/Section/Section.css","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"Pages/DetailsList/Baraat/Baraat.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Pages/DetailsList/Baraat/Baraat.jsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../../Components/VendorMessage/VendorMessage":"Components/VendorMessage/VendorMessage.jsx","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"Components/Section/Section.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34130,75 +34275,81 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-require("../Baraat/Baraat.css");
+require("../Section/Section.css");
 
-var _Baraat2 = _interopRequireDefault(require("../../../assets/Baraat.jpg"));
+var _reactRouterDom = require("react-router-dom");
+
+var _Baraat = _interopRequireDefault(require("../../assets/Baraat.jpg"));
+
+var _valima = _interopRequireDefault(require("../../assets/valima.jpg"));
+
+var _Detail = _interopRequireDefault(require("../../Pages/DetailsList/Detail"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Baraat = function Baraat() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: " deatil-list container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    id: "carouselExampleControls",
-    class: "carousel slide",
-    "data-ride": "carousel"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    class: "carousel-inner"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    class: "carousel-item active"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    class: "d-block w-100",
-    src: _Baraat2.default,
-    alt: "First slide"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    class: "carousel-item"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    class: "d-block w-100",
-    src: _Baraat2.default,
-    alt: "Second slide"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    class: "carousel-item"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    class: "d-block w-100",
-    src: _Baraat2.default,
-    alt: "Third slide"
-  }))), /*#__PURE__*/_react.default.createElement("a", {
-    class: "carousel-control-prev",
-    href: "#carouselExampleControls",
-    role: "button",
-    "data-slide": "prev"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    class: "carousel-control-prev-icon",
-    "aria-hidden": "true"
-  }), /*#__PURE__*/_react.default.createElement("span", {
-    class: "sr-only"
-  }, "Previous")), /*#__PURE__*/_react.default.createElement("a", {
-    class: "carousel-control-next",
-    href: "#carouselExampleControls",
-    role: "button",
-    "data-slide": "next"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    class: "carousel-control-next-icon",
-    "aria-hidden": "true"
-  }), /*#__PURE__*/_react.default.createElement("span", {
-    class: "sr-only"
-  }, "Next"))), /*#__PURE__*/_react.default.createElement("div", {
-    class: "jumbotron jumbotron-fluid"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    class: "container"
+var Section = function Section() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+    class: "alert container"
   }, /*#__PURE__*/_react.default.createElement("h1", {
     class: "display-4"
-  }, "Information about BARAAT EVENT"), /*#__PURE__*/_react.default.createElement("p", {
+  }, "The Cupid"), /*#__PURE__*/_react.default.createElement("p", {
     class: "lead"
-  }, "It is an ideal venue to host any of your grand celebrations, They can offer you multiple event spaces in terms of their banquet hall and lawns which has the capacity to accommodate from 30 to 150 and 30 to 1000 respectively, that you can choose as per your needs, requirements and the events that you wish to host. Planning your wedding or any of its other related celebrations here will surely make it one of a kind and much more remarkable as you would be provided with best in class services and hospitality experience."))));
+  }, "Mohid Heights, RTO Lane, 4 Bunglows, Andheri West 400053 7 Bungalows, Andheri West (Karachi)"), /*#__PURE__*/_react.default.createElement("p", {
+    class: "lead"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    class: "btn btn-secondary btn-lg",
+    href: "#",
+    role: "button"
+  }, "Request Pricing"))), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", {
+    className: "alert container "
+  }, /*#__PURE__*/_react.default.createElement(_Detail.default, null)), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", {
+    className: "alert  container"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "card_title"
+  }, "Other couples have also viewed"), /*#__PURE__*/_react.default.createElement("div", {
+    class: "card-group "
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "card"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    className: "card-img-top",
+    src: _Baraat.default,
+    alt: "Card image cap"
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    class: "card-body"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    class: "card-title"
+  }, "Roosa Event"), /*#__PURE__*/_react.default.createElement("p", {
+    class: "card-text"
+  }, "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."))), /*#__PURE__*/_react.default.createElement("div", {
+    class: "card"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "card-img-top",
+    src: _Baraat.default,
+    alt: "Card image cap"
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    class: "card-body"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    class: "card-title"
+  }, "Humsafar Wedding"), /*#__PURE__*/_react.default.createElement("p", {
+    class: "card-text"
+  }, "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."))), /*#__PURE__*/_react.default.createElement("div", {
+    class: "card"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "card-img-top",
+    src: _Baraat.default,
+    alt: "Card image cap"
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    class: "card-body"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    class: "card-title"
+  }, "The Wedding Times"), /*#__PURE__*/_react.default.createElement("p", {
+    class: "card-text"
+  }, "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."))))));
 };
 
-var _default = Baraat;
+var _default = Section;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../Baraat/Baraat.css":"Pages/DetailsList/Baraat/Baraat.css","../../../assets/Baraat.jpg":"assets/Baraat.jpg"}],"assets/valima.jpg":[function(require,module,exports) {
-module.exports = "/valima.e240c81a.jpg";
-},{}],"Pages/DetailsList/Valima/Valima.jsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../Section/Section.css":"Components/Section/Section.css","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../../assets/Baraat.jpg":"assets/Baraat.jpg","../../assets/valima.jpg":"assets/valima.jpg","../../Pages/DetailsList/Detail":"Pages/DetailsList/Detail.jsx"}],"Pages/DetailsList/Valima/Valima.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34348,7 +34499,88 @@ var Mehndi = function Mehndi() {
 
 var _default = Mehndi;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../../../assets/mehndi.jfif":"assets/mehndi.jfif"}],"Pages/Config/router.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../../../assets/mehndi.jfif":"assets/mehndi.jfif"}],"Pages/DetailsList/Baraat/Baraat.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Pages/DetailsList/Baraat/Baraat.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("../Baraat/Baraat.css");
+
+var _Baraat2 = _interopRequireDefault(require("../../../assets/Baraat.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Baraat = function Baraat() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "deatil-list container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    id: "carouselExampleControls",
+    class: "carousel slide",
+    "data-ride": "carousel"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-inner"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item active"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _Baraat2.default,
+    alt: "First slide"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _Baraat2.default,
+    alt: "Second slide"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _Baraat2.default,
+    alt: "Third slide"
+  }))), /*#__PURE__*/_react.default.createElement("a", {
+    class: "carousel-control-prev",
+    href: "#carouselExampleControls",
+    role: "button",
+    "data-slide": "prev"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    class: "carousel-control-prev-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    class: "sr-only"
+  }, "Previous")), /*#__PURE__*/_react.default.createElement("a", {
+    class: "carousel-control-next",
+    href: "#carouselExampleControls",
+    role: "button",
+    "data-slide": "next"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    class: "carousel-control-next-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    class: "sr-only"
+  }, "Next"))), /*#__PURE__*/_react.default.createElement("div", {
+    class: "jumbotron jumbotron-fluid"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "container"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    class: "display-4"
+  }, "Information about BARAAT EVENT"), /*#__PURE__*/_react.default.createElement("p", {
+    class: "lead"
+  }, "It is an ideal venue to host any of your grand celebrations, They can offer you multiple event spaces in terms of their banquet hall and lawns which has the capacity to accommodate from 30 to 150 and 30 to 1000 respectively, that you can choose as per your needs, requirements and the events that you wish to host. Planning your wedding or any of its other related celebrations here will surely make it one of a kind and much more remarkable as you would be provided with best in class services and hospitality experience."))));
+};
+
+var _default = Baraat;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../Baraat/Baraat.css":"Pages/DetailsList/Baraat/Baraat.css","../../../assets/Baraat.jpg":"assets/Baraat.jpg"}],"Pages/Config/router.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34364,16 +34596,20 @@ var _Listing = _interopRequireDefault(require("../List/Listing"));
 
 var _Section = _interopRequireDefault(require("../../Components/Section/Section"));
 
-var _Baraat = _interopRequireDefault(require("../DetailsList/Baraat/Baraat"));
+var _Detail = _interopRequireDefault(require("../DetailsList/Detail"));
 
 var _Valima = _interopRequireDefault(require("../DetailsList/Valima/Valima"));
 
 var _Mehndi = _interopRequireDefault(require("../DetailsList/Mehndi/Mehndi"));
 
+var _Baraat = _interopRequireDefault(require("../../Pages/DetailsList/Baraat/Baraat"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var AppRouter = function AppRouter() {
   return /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/Detail"
+  }, " ", /*#__PURE__*/_react.default.createElement(_Detail.default, null), " "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/Mehndi"
   }, " ", /*#__PURE__*/_react.default.createElement(_Mehndi.default, null), " "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/Valima"
@@ -34388,7 +34624,7 @@ var AppRouter = function AppRouter() {
 
 var _default = AppRouter;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../List/Listing":"Pages/List/Listing.jsx","../../Components/Section/Section":"Components/Section/Section.jsx","../DetailsList/Baraat/Baraat":"Pages/DetailsList/Baraat/Baraat.jsx","../DetailsList/Valima/Valima":"Pages/DetailsList/Valima/Valima.jsx","../DetailsList/Mehndi/Mehndi":"Pages/DetailsList/Mehndi/Mehndi.jsx"}],"App.jsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../List/Listing":"Pages/List/Listing.jsx","../../Components/Section/Section":"Components/Section/Section.jsx","../DetailsList/Detail":"Pages/DetailsList/Detail.jsx","../DetailsList/Valima/Valima":"Pages/DetailsList/Valima/Valima.jsx","../DetailsList/Mehndi/Mehndi":"Pages/DetailsList/Mehndi/Mehndi.jsx","../../Pages/DetailsList/Baraat/Baraat":"Pages/DetailsList/Baraat/Baraat.jsx"}],"App.jsx":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -34406,9 +34642,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var App = function App() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "Bg-img"
-  }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement(_Header.default, null)), /*#__PURE__*/_react.default.createElement("section", {
-    className: "setImg"
-  }, /*#__PURE__*/_react.default.createElement(_router.default, null)), /*#__PURE__*/_react.default.createElement("footer", null));
+  }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement(_Header.default, null)), /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement(_router.default, null)), /*#__PURE__*/_react.default.createElement("footer", null));
 };
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root"));
@@ -34440,7 +34674,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51735" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49936" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -34616,5 +34850,90 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","App.jsx"], null)
+},{}],"../node_modules/parcel-bundler/src/builtins/bundle-loader.js":[function(require,module,exports) {
+var getBundleURL = require('./bundle-url').getBundleURL;
+
+function loadBundlesLazy(bundles) {
+  if (!Array.isArray(bundles)) {
+    bundles = [bundles];
+  }
+
+  var id = bundles[bundles.length - 1];
+
+  try {
+    return Promise.resolve(require(id));
+  } catch (err) {
+    if (err.code === 'MODULE_NOT_FOUND') {
+      return new LazyPromise(function (resolve, reject) {
+        loadBundles(bundles.slice(0, -1)).then(function () {
+          return require(id);
+        }).then(resolve, reject);
+      });
+    }
+
+    throw err;
+  }
+}
+
+function loadBundles(bundles) {
+  return Promise.all(bundles.map(loadBundle));
+}
+
+var bundleLoaders = {};
+
+function registerBundleLoader(type, loader) {
+  bundleLoaders[type] = loader;
+}
+
+module.exports = exports = loadBundlesLazy;
+exports.load = loadBundles;
+exports.register = registerBundleLoader;
+var bundles = {};
+
+function loadBundle(bundle) {
+  var id;
+
+  if (Array.isArray(bundle)) {
+    id = bundle[1];
+    bundle = bundle[0];
+  }
+
+  if (bundles[bundle]) {
+    return bundles[bundle];
+  }
+
+  var type = (bundle.substring(bundle.lastIndexOf('.') + 1, bundle.length) || bundle).toLowerCase();
+  var bundleLoader = bundleLoaders[type];
+
+  if (bundleLoader) {
+    return bundles[bundle] = bundleLoader(getBundleURL() + bundle).then(function (resolved) {
+      if (resolved) {
+        module.bundle.register(id, resolved);
+      }
+
+      return resolved;
+    }).catch(function (e) {
+      delete bundles[bundle];
+      throw e;
+    });
+  }
+}
+
+function LazyPromise(executor) {
+  this.executor = executor;
+  this.promise = null;
+}
+
+LazyPromise.prototype.then = function (onSuccess, onError) {
+  if (this.promise === null) this.promise = new Promise(this.executor);
+  return this.promise.then(onSuccess, onError);
+};
+
+LazyPromise.prototype.catch = function (onError) {
+  if (this.promise === null) this.promise = new Promise(this.executor);
+  return this.promise.catch(onError);
+};
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],0:[function(require,module,exports) {
+var b=require("../node_modules/parcel-bundler/src/builtins/bundle-loader.js");
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0,"App.jsx"], null)
 //# sourceMappingURL=/App.6f196564.js.map
