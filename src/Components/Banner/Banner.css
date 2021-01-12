@@ -1,0 +1,38 @@
+.banner-img {
+    background-image: url("../../assets/BannerImg.jpg");
+    background-size: cover;
+    height: 500px;
+    opacity: 0.9;
+       
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.banner-para {
+    padding-top: 45px;
+    font-weight: 400;
+}
+
+.no-border {
+    border:none !important; 
+    border-radius: 0px !important;
+    padding: 15px 15px !important;
+}
+
+.no-border:last-child {
+    margin-left:-1px !important;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none !important;
+    box-shadow:none !important; 
+    
+}

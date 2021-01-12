@@ -1,77 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import VendorMessage from "../../Components/VendorMessage/VendorMessage";
-import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+
+import Search from "../../Components/Search/Search";
 
 const Detail = (prop) => {
+  const { id } = useParams();
+
   return (
     <section className="container">
       <div className="row">
         <div className="col-md-9">
+          <h1>{id}</h1>
           <div className="alert container">
             <h1 class="alert-heading">BOOK YOUR WEDDING</h1>
             <p className="cu_info">
               Cupid Wedding Planners & Events, we provide stress free planing.
             </p>
             <hr />
-            <form action="submit">
-              <div class="form-row">
-                <div class="col-md-4 mb-3">
-                  <label>VENUE</label>
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="validationDefaultUsername"
-                      placeholder="Enter Location"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <label>CITY</label>
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="validationDefaultUsername"
-                      placeholder="Enter Your City"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <label>No. of Guests</label>
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="validationDefaultUsername"
-                      placeholder="Enter No. of Guests"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <select class="custom-select" id="inputGroupSelect01">
-                    <option selected>Select Wedding Function</option>
-                    <option value="1">MEHNDI</option>
-                    <option value="2">BARAAT</option>
-                    <option value="3">VALIMA</option>
-                  </select>
-                </div>
-                <Link
-                  type="submit"
-                  class="btn btn-secondary search"
-                  to="/Listing"
-                >
-                  Search
-                </Link>
-              </div>
-            </form>
-
+            <Search />
             <hr />
 
-            <h1>Information about Cupid- The Wedding Planner</h1>
+            <h1>Information about Cupid- The Wedding Planner </h1>
             <p className="cu_info">
               The Cupid is a wedding planning based in the city of Karachi and
               offers bespoke wedding plans for all your related events and

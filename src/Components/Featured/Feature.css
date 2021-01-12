@@ -1,0 +1,31 @@
+.feat-head {
+    text-align: center;
+}
+
+.feat-box {
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.upper-text {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #8c8c8c;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+.feat-desc {
+    font-size: 14px;
+    background: #fff;
+    padding: 15px 10px;
+    list-style-type: none;
+    
+}
+
+.list-group-item {
+    color: #8c8c8c;
+    font-weight: bold;
+}

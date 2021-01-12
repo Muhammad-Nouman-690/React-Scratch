@@ -7,8 +7,6 @@ const VendorMessage = (props) => {
   const [comment, setComment] = useState("");
   const [date, setDate] = useState("");
 
-
-  console.log(name,email)
   return (
     <div className="border container shadow p-4 mb-4 bg-light">
       <div className="row">
@@ -74,7 +72,7 @@ const VendorMessage = (props) => {
             </label>
           </div>
           <div className="col-md-12">
-            <button type="button" class="btn btn-secondary ">
+            <button type="button" className="btn btn-secondary ">
               Submit
             </button>
           </div>

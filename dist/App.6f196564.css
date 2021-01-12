@@ -6,21 +6,132 @@
     opacity: 0.9;
 } */
 
-.setImg {
-    background-image: url("/BgImg3.2f88d497.jpg");
+/* .setImg {
+    background-image: url("./assets/BgImg3.jpg");
     background-size: cover;
     background-position: center;
     
     opacity: 0.8;
+} */
+.Logo {
+    width: 100px;
+    margin-left: 70px;    
 }
-.header {
-    background-color: lightgrey;
-    color: #000;
-    font-size: 30px;
-    font-style: oblique;
-    padding: 15px;
-    font-weight: bold;
 
+.navbar-nav {
+    margin-left: 350px;
+}
+
+.sign_login {
+    margin-left: 40px;
+    color: red;
+}
+
+.top-bar {
+    background-color: #19b5bc;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    padding: 10px 10px;
+}
+.banner-img {
+    background-image: url("/BannerImg.7a22791a.jpg");
+    background-size: cover;
+    height: 500px;
+    opacity: 0.9;
+       
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.banner-para {
+    padding-top: 45px;
+    font-weight: 400;
+}
+
+.no-border {
+    border:none !important; 
+    border-radius: 0px !important;
+    padding: 15px 15px !important;
+}
+
+.no-border:last-child {
+    margin-left:-1px !important;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none !important;
+    box-shadow:none !important; 
+    
+}
+.icon-logo {
+    width: 50px;
+    height: 50px;
+    
+    
+}
+
+.icon-btn {
+    margin-top: 45px;
+    margin-left: 370px;
+    
+}
+.feat-head {
+    text-align: center;
+}
+
+.feat-box {
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.upper-text {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #8c8c8c;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+.feat-desc {
+    font-size: 14px;
+    background: #fff;
+    padding: 15px 10px;
+    list-style-type: none;
+    
+}
+
+.list-group-item {
+    color: #8c8c8c;
+    font-weight: bold;
+}
+.Real-wedd {
+    text-align: center;
+}
+
+.Sec-Real {
+    font-size: 18px;
+    line-height: 26px;
+    color: #8c8c8c;
+}
+
+.text-seap {
+    content: '';
+    border-bottom: 2px solid #dcdcdc;
+    width: 100px;
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-left: 900px;
 }
 .card {
     margin: 25px;
@@ -53,27 +164,6 @@
 
 .card_title {
     font-family: monospace;
-}
-
-.deatil-list {
-    margin: 25px;
-}
-
-.bg_clr {
-    margin: 15px;
-    background-color: lightgrey;
-    display: flex;
-    justify-content:flex-end;
-}
-
-.lead {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: oblique;
-}
-
-.display-4 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style: italic;
 }
 
 
