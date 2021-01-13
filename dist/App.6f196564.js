@@ -75688,7 +75688,27 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Ideas/Ideas.jsx":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/roundOne.jpg":[function(require,module,exports) {
+module.exports = "/roundOne.ae70e4d1.jpg";
+},{}],"assets/roundTwo.jpg":[function(require,module,exports) {
+module.exports = "/roundTwo.d1f42a64.jpg";
+},{}],"assets/roundThree.jpg":[function(require,module,exports) {
+module.exports = "/roundThree.1a243ecc.jpg";
+},{}],"assets/roundFour.jpg":[function(require,module,exports) {
+module.exports = "/roundFour.86bbf434.jpg";
+},{}],"assets/roundFive.jpg":[function(require,module,exports) {
+module.exports = "/roundFive.2505ebab.jpg";
+},{}],"assets/roundSix.jpg":[function(require,module,exports) {
+module.exports = "/roundSix.1e579b5a.jpg";
+},{}],"assets/rNone.jpg":[function(require,module,exports) {
+module.exports = "/rNone.d636fffa.jpg";
+},{}],"assets/rNtwo.jpg":[function(require,module,exports) {
+module.exports = "/rNtwo.8a92929e.jpg";
+},{}],"assets/rNthree.jpg":[function(require,module,exports) {
+module.exports = "/rNthree.ef89fb88.jpg";
+},{}],"assets/rNfour.jpg":[function(require,module,exports) {
+module.exports = "/rNfour.e68aaf52.jpg";
+},{}],"Components/Ideas/Ideas.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -75699,6 +75719,28 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 require("../Ideas/Ideas.css");
+
+var _roundOne = _interopRequireDefault(require("../../assets/roundOne.jpg"));
+
+var _roundTwo = _interopRequireDefault(require("../../assets/roundTwo.jpg"));
+
+var _roundThree = _interopRequireDefault(require("../../assets/roundThree.jpg"));
+
+var _roundFour = _interopRequireDefault(require("../../assets/roundFour.jpg"));
+
+var _roundFive = _interopRequireDefault(require("../../assets/roundFive.jpg"));
+
+var _roundSix = _interopRequireDefault(require("../../assets/roundSix.jpg"));
+
+var _rNone = _interopRequireDefault(require("../../assets/rNone.jpg"));
+
+var _rNtwo = _interopRequireDefault(require("../../assets/rNtwo.jpg"));
+
+var _rNthree = _interopRequireDefault(require("../../assets/rNthree.jpg"));
+
+var _rNfour = _interopRequireDefault(require("../../assets/rNfour.jpg"));
+
+var _bs = require("react-icons/bs");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -75715,12 +75757,121 @@ var Ideas = function Ideas() {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "row"
-  })));
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col round-main"
+  }, " ", /*#__PURE__*/_react.default.createElement("img", {
+    src: _roundOne.default,
+    className: "round-photo",
+    alt: ""
+  }), " ", /*#__PURE__*/_react.default.createElement("p", {
+    className: "round-text"
+  }, "Before the wedding"), " "), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col round-main"
+  }, " ", /*#__PURE__*/_react.default.createElement("img", {
+    src: _roundTwo.default,
+    className: "round-photo",
+    alt: ""
+  }), " ", /*#__PURE__*/_react.default.createElement("p", {
+    className: "round-text"
+  }, "The wedding ceremony"), " "), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col round-main"
+  }, " ", /*#__PURE__*/_react.default.createElement("img", {
+    src: _roundThree.default,
+    className: "round-photo",
+    alt: ""
+  }), " ", /*#__PURE__*/_react.default.createElement("p", {
+    className: "round-text"
+  }, "The wedding banquet"), " "), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col round-main"
+  }, " ", /*#__PURE__*/_react.default.createElement("img", {
+    src: _roundFour.default,
+    className: "round-photo",
+    alt: ""
+  }), " ", /*#__PURE__*/_react.default.createElement("p", {
+    className: "round-text"
+  }, "Service for your wedding"), " "), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col round-main"
+  }, " ", /*#__PURE__*/_react.default.createElement("img", {
+    src: _roundFive.default,
+    className: "round-photo",
+    alt: ""
+  }), " ", /*#__PURE__*/_react.default.createElement("p", {
+    className: "round-text"
+  }, "Wedding fashion"), " "), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col round-main"
+  }, " ", /*#__PURE__*/_react.default.createElement("img", {
+    src: _roundSix.default,
+    className: "round-photo",
+    alt: ""
+  }), " ", /*#__PURE__*/_react.default.createElement("p", {
+    className: "round-text"
+  }, "Health and beauty"), " "))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "Next-main row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3"
+  }, " ", /*#__PURE__*/_react.default.createElement("img", {
+    src: _rNone.default,
+    className: "round-Next",
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "text-next"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "text-next-category"
+  }, "planning your wedding"), /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "next-link"
+  }, "The Experts' Guide to Planning an Intimate 50 people Wedding"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3"
+  }, " ", /*#__PURE__*/_react.default.createElement("img", {
+    src: _rNtwo.default,
+    className: "round-Next",
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "text-next"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "text-next-category"
+  }, "the services for your wedding"), /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "next-link"
+  }, "Top Catering Trends and Tips for Intimate Weddings"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3"
+  }, " ", /*#__PURE__*/_react.default.createElement("img", {
+    src: _rNthree.default,
+    className: "round-Next",
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "text-next"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "text-next-category"
+  }, "wedding decoration"), /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "next-link"
+  }, "The Wedding Decoration Trends You Need to Know for an Intimate Wedding"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3"
+  }, " ", /*#__PURE__*/_react.default.createElement("img", {
+    src: _rNfour.default,
+    className: "round-Next",
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "text-next"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "text-next-category"
+  }, "before the wedding"), /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "next-link"
+  }, "COVID-19 Weddings Advice Guide")))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "text-center"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "next-link-art"
+  }, "ALL ARTICLES ", /*#__PURE__*/_react.default.createElement(_bs.BsChevronRight, {
+    className: "icon-articles"
+  }))));
 };
 
 var _default = Ideas;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../Ideas/Ideas.css":"Components/Ideas/Ideas.css"}],"Components/Header/Header.jsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../Ideas/Ideas.css":"Components/Ideas/Ideas.css","../../assets/roundOne.jpg":"assets/roundOne.jpg","../../assets/roundTwo.jpg":"assets/roundTwo.jpg","../../assets/roundThree.jpg":"assets/roundThree.jpg","../../assets/roundFour.jpg":"assets/roundFour.jpg","../../assets/roundFive.jpg":"assets/roundFive.jpg","../../assets/roundSix.jpg":"assets/roundSix.jpg","../../assets/rNone.jpg":"assets/rNone.jpg","../../assets/rNtwo.jpg":"assets/rNtwo.jpg","../../assets/rNthree.jpg":"assets/rNthree.jpg","../../assets/rNfour.jpg":"assets/rNfour.jpg","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js"}],"Components/Header/Header.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -80475,7 +80626,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53756" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58300" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -80651,90 +80802,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}],"../node_modules/parcel-bundler/src/builtins/bundle-loader.js":[function(require,module,exports) {
-var getBundleURL = require('./bundle-url').getBundleURL;
-
-function loadBundlesLazy(bundles) {
-  if (!Array.isArray(bundles)) {
-    bundles = [bundles];
-  }
-
-  var id = bundles[bundles.length - 1];
-
-  try {
-    return Promise.resolve(require(id));
-  } catch (err) {
-    if (err.code === 'MODULE_NOT_FOUND') {
-      return new LazyPromise(function (resolve, reject) {
-        loadBundles(bundles.slice(0, -1)).then(function () {
-          return require(id);
-        }).then(resolve, reject);
-      });
-    }
-
-    throw err;
-  }
-}
-
-function loadBundles(bundles) {
-  return Promise.all(bundles.map(loadBundle));
-}
-
-var bundleLoaders = {};
-
-function registerBundleLoader(type, loader) {
-  bundleLoaders[type] = loader;
-}
-
-module.exports = exports = loadBundlesLazy;
-exports.load = loadBundles;
-exports.register = registerBundleLoader;
-var bundles = {};
-
-function loadBundle(bundle) {
-  var id;
-
-  if (Array.isArray(bundle)) {
-    id = bundle[1];
-    bundle = bundle[0];
-  }
-
-  if (bundles[bundle]) {
-    return bundles[bundle];
-  }
-
-  var type = (bundle.substring(bundle.lastIndexOf('.') + 1, bundle.length) || bundle).toLowerCase();
-  var bundleLoader = bundleLoaders[type];
-
-  if (bundleLoader) {
-    return bundles[bundle] = bundleLoader(getBundleURL() + bundle).then(function (resolved) {
-      if (resolved) {
-        module.bundle.register(id, resolved);
-      }
-
-      return resolved;
-    }).catch(function (e) {
-      delete bundles[bundle];
-      throw e;
-    });
-  }
-}
-
-function LazyPromise(executor) {
-  this.executor = executor;
-  this.promise = null;
-}
-
-LazyPromise.prototype.then = function (onSuccess, onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.then(onSuccess, onError);
-};
-
-LazyPromise.prototype.catch = function (onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.catch(onError);
-};
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],0:[function(require,module,exports) {
-var b=require("../node_modules/parcel-bundler/src/builtins/bundle-loader.js");
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0,"App.jsx"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","App.jsx"], null)
 //# sourceMappingURL=/App.6f196564.js.map
