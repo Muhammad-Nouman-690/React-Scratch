@@ -72,7 +72,7 @@ const Section = () => {
       <hr />
 
       <div className="alert container ">
-        <Detail />
+        {/* <Detail /> */}
       </div>
 
       <hr />

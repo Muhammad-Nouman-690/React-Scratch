@@ -1,0 +1,23 @@
+.Des-img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.des-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    text-align: center;
+    line-height: 20px;
+}
+
+.des-content {
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+}

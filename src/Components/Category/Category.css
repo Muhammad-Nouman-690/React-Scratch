@@ -1,0 +1,79 @@
+
+.cat-title {
+    background-image: url('../../assets/catOne.jpg'); 
+    background-repeat: no-repeat;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    padding: 50px 40px;
+    margin: 0 -1px;
+    color: #fff;
+    display: block;
+    text-align: center;
+
+}
+
+.cat-title-second {
+    background-image: url('../../assets/catTwo.jpg'); 
+    background-repeat: no-repeat;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    padding: 50px 40px;
+    margin: 0 -3px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.cat-list {
+    margin: 0 -40px 0;    
+}
+
+.cat-list-item{
+    width: 50%;
+    display: inline-block;
+    color: #6c6c6c;
+    font-size: 13px;
+}
+
+.cat-list-item:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.Brides-cat {
+    width: 50%;
+display: -webkit-box;
+
+}
+
+.cat-bride {
+    background-image: url('../../assets/catThree.jpg');
+    background-repeat: no-repeat;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    padding: 50px 40px;
+    margin: 0 25px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.cat-grooms {
+    background-image: url('../../assets/catFour.jpg');
+    background-repeat: no-repeat;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    padding: 50px 20px;
+    margin: 0px -40px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+

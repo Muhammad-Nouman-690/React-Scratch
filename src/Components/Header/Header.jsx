@@ -7,6 +7,10 @@ import IconBar from '../IconBar/IconBar'
 import Feature from '../Featured/Feature'
 import Realwedd from '../Real/Realwedd' 
 import Ideas from '../Ideas/Ideas'
+import Community from '../Community/Community'
+import Destination from '../Destination/Destination'
+import Category from '../Category/Category';
+import Expert from '../Expert/Expert';
 
 const Header = () => {
     return (
@@ -57,6 +61,10 @@ const Header = () => {
 <Feature />
 <Realwedd />
 <Ideas />
+<Community />
+<Destination />
+<Category />      
+<Expert />
       </div>
     );
 }

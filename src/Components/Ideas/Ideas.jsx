@@ -59,6 +59,7 @@ const Ideas = () => {
     </div>
      </div>
 </div>
+
 <div className='text-center'>
 <a href="#" className='next-link-art'>ALL ARTICLES <BsChevronRight className='icon-articles' /></a>
 </div>

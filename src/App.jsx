@@ -13,7 +13,7 @@ const App = () => {
       </header>
 
       <section>
-        <AppRouter />
+        {/* <AppRouter /> */}
       </section>
 
       <footer></footer>

@@ -117,6 +117,9 @@ input:focus, textarea:focus, select:focus{
 }
 .Real-wedd {
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 40px;
+    
 }
 
 .Sec-Real {
@@ -192,14 +195,226 @@ a:hover {
 
 .next-link-art {
     color: red;
-    font-weight: 500;
-    font-size: 19px;    
+    font-weight: 600;
+    font-size: 15px;    
 }  
 
 .icon-articles {
     position: relative;
     vertical-align: middle;
     top: -2px;
+}
+.head-comm {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+.text-comm {
+    font-size: 18px;
+    line-height: 16px;
+    color: #8c8c8c;
+    margin-bottom: 15px;
+}
+
+.box-comm {
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
+    margin-bottom: 15px;
+    background-color: #fff;
+    margin: 7px 5px;
+    padding: 10px 20px;
+    
+    
+}
+
+
+.comm-title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #202428;
+}
+
+.comm-desc {
+    
+    margin: 0;
+    color: #6c6c6c;
+}
+
+.comm-image {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.comm-avatar {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.com-avat {
+    flex: 0 0 auto;
+    margin-right: 15px;
+}
+
+.comm-avt {
+    display: block;
+    color: #222;
+    position: relative;
+}
+
+.avatar-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: -2px;
+    display: block;
+    object-fit: cover;
+}
+.Des-img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.des-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    text-align: center;
+    line-height: 20px;
+}
+
+.des-content {
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cat-title {
+    background-image: url('/catOne.5841b243.jpg'); 
+    background-repeat: no-repeat;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    padding: 50px 40px;
+    margin: 0 -1px;
+    color: #fff;
+    display: block;
+    text-align: center;
+
+}
+
+.cat-title-second {
+    background-image: url('/catTwo.d168cbc6.jpg'); 
+    background-repeat: no-repeat;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    padding: 50px 40px;
+    margin: 0 -3px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.cat-list {
+    margin: 0 -40px 0;    
+}
+
+.cat-list-item{
+    width: 50%;
+    display: inline-block;
+    color: #6c6c6c;
+    font-size: 13px;
+}
+
+.cat-list-item:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.Brides-cat {
+    width: 50%;
+display: -webkit-box;
+
+}
+
+.cat-bride {
+    background-image: url('/catThree.ca30ab81.jpg');
+    background-repeat: no-repeat;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    padding: 50px 40px;
+    margin: 0 25px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.cat-grooms {
+    background-image: url('/catFour.9971ef37.jpg');
+    background-repeat: no-repeat;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    padding: 50px 20px;
+    margin: 0px -40px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+
+.main-expert {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.text-expert {
+    color: #8c8c8c;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.link-expert {
+    margin-right: 0;
+    display: inline-block;
+    color: #fb1b26;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 880px;
+   
+}
+
+.icon-expert {
+    position: relative;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    line-height: 0;
+    
+   
 }
 .card {
     margin: 25px;

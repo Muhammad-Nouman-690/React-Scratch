@@ -75871,7 +75871,339 @@ var Ideas = function Ideas() {
 
 var _default = Ideas;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../Ideas/Ideas.css":"Components/Ideas/Ideas.css","../../assets/roundOne.jpg":"assets/roundOne.jpg","../../assets/roundTwo.jpg":"assets/roundTwo.jpg","../../assets/roundThree.jpg":"assets/roundThree.jpg","../../assets/roundFour.jpg":"assets/roundFour.jpg","../../assets/roundFive.jpg":"assets/roundFive.jpg","../../assets/roundSix.jpg":"assets/roundSix.jpg","../../assets/rNone.jpg":"assets/rNone.jpg","../../assets/rNtwo.jpg":"assets/rNtwo.jpg","../../assets/rNthree.jpg":"assets/rNthree.jpg","../../assets/rNfour.jpg":"assets/rNfour.jpg","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js"}],"Components/Header/Header.jsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../Ideas/Ideas.css":"Components/Ideas/Ideas.css","../../assets/roundOne.jpg":"assets/roundOne.jpg","../../assets/roundTwo.jpg":"assets/roundTwo.jpg","../../assets/roundThree.jpg":"assets/roundThree.jpg","../../assets/roundFour.jpg":"assets/roundFour.jpg","../../assets/roundFive.jpg":"assets/roundFive.jpg","../../assets/roundSix.jpg":"assets/roundSix.jpg","../../assets/rNone.jpg":"assets/rNone.jpg","../../assets/rNtwo.jpg":"assets/rNtwo.jpg","../../assets/rNthree.jpg":"assets/rNthree.jpg","../../assets/rNfour.jpg":"assets/rNfour.jpg","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js"}],"Components/Community/Community.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/commOne.jpg":[function(require,module,exports) {
+module.exports = "/commOne.2ac4b678.jpg";
+},{}],"Components/Community/Community.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("../Community/Community.css");
+
+var _bs = require("react-icons/bs");
+
+var _commOne = _interopRequireDefault(require("../../assets/commOne.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Community = function Community() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "alert"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "main-comm row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/_react.default.createElement("h3", {
+    className: "head-comm"
+  }, "Community"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "text-comm"
+  }, "Today we're talking about..."), /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "next-link-art"
+  }, "VIEW ALL DISCUSSIONS ", /*#__PURE__*/_react.default.createElement(_bs.BsChevronRight, {
+    className: "icon-articles"
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col box-comm"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "comm-title"
+  }, "Wedding Hashtags"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "comm-desc"
+  }, "Hey folks, Can you please suggest a hashtag for my wedding.Bride: Roja EnguGroom: Harshit More")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col box-comm"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "comm-title"
+  }, "Custom Nath"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "comm-desc"
+  }, "Can someone help me with the vendor for custom nath with groom's name on it")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col box-comm"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "comm-title"
+  }, "Hashtag Help!"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "comm-desc"
+  }, "Hey guys! Plz suggest some hashtags for our wedding! Girl\u2019s name is Vijaya and guy\u2019s name is Nikhil. We are...")))));
+};
+
+var _default = Community;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../Community/Community.css":"Components/Community/Community.css","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js","../../assets/commOne.jpg":"assets/commOne.jpg"}],"assets/desOne.jpg":[function(require,module,exports) {
+module.exports = "/desOne.719ee773.jpg";
+},{}],"assets/desTwo.jpg":[function(require,module,exports) {
+module.exports = "/desTwo.45944498.jpg";
+},{}],"assets/desThree.jpg":[function(require,module,exports) {
+module.exports = "/desThree.3636bbe9.jpg";
+},{}],"assets/desFour.jpg":[function(require,module,exports) {
+module.exports = "/desFour.55c0b0b5.jpg";
+},{}],"assets/desFive.jpg":[function(require,module,exports) {
+module.exports = "/desFive.1fedd8a2.jpg";
+},{}],"assets/destSix.jpg":[function(require,module,exports) {
+module.exports = "/destSix.917d8816.jpg";
+},{}],"Components/Destination/Destination.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Destination/Destination.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _desOne = _interopRequireDefault(require("../../assets/desOne.jpg"));
+
+var _desTwo = _interopRequireDefault(require("../../assets/desTwo.jpg"));
+
+var _desThree = _interopRequireDefault(require("../../assets/desThree.jpg"));
+
+var _desFour = _interopRequireDefault(require("../../assets/desFour.jpg"));
+
+var _desFive = _interopRequireDefault(require("../../assets/desFive.jpg"));
+
+var _destSix = _interopRequireDefault(require("../../assets/destSix.jpg"));
+
+require("../Destination/Destination.css");
+
+var _bs = require("react-icons/bs");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Destination = function Destination() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "Real-wedd p-4"
+  }, "Plan your destination wedding"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "Sec-Real text-center"
+  }, "No matter where in the world you want to get married, WeddingWire's ", /*#__PURE__*/_react.default.createElement("br", null), " directory of international wedding professionals can help you celebrate."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _desOne.default,
+    className: "Des-img",
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "des-title"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "des-content"
+  }, "Argentina"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _desTwo.default,
+    className: "Des-img",
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "des-title"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "des-content"
+  }, "Brazil"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _desThree.default,
+    className: "Des-img",
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "des-title"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "des-content"
+  }, "Chile"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _desFour.default,
+    className: "Des-img",
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "des-title"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "des-content"
+  }, "Colombia"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _desFive.default,
+    className: "Des-img",
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "des-title"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "des-content"
+  }, "France"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _destSix.default,
+    className: "Des-img",
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "des-title"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "des-content"
+  }, "Italy"))))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "text-center p-4"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "next-link-art"
+  }, "SEE ALL DESTINATIONS ", /*#__PURE__*/_react.default.createElement(_bs.BsChevronRight, {
+    className: "icon-articles"
+  }))));
+};
+
+var _default = Destination;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../../assets/desOne.jpg":"assets/desOne.jpg","../../assets/desTwo.jpg":"assets/desTwo.jpg","../../assets/desThree.jpg":"assets/desThree.jpg","../../assets/desFour.jpg":"assets/desFour.jpg","../../assets/desFive.jpg":"assets/desFive.jpg","../../assets/destSix.jpg":"assets/destSix.jpg","../Destination/Destination.css":"Components/Destination/Destination.css","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js"}],"assets/catOne.jpg":[function(require,module,exports) {
+module.exports = "/catOne.5841b243.jpg";
+},{}],"assets/catTwo.jpg":[function(require,module,exports) {
+module.exports = "/catTwo.d168cbc6.jpg";
+},{}],"assets/catThree.jpg":[function(require,module,exports) {
+module.exports = "/catThree.ca30ab81.jpg";
+},{}],"assets/catFour.jpg":[function(require,module,exports) {
+module.exports = "/catFour.9971ef37.jpg";
+},{}],"Components/Category/Category.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\..\\assets\\catOne.jpg":[["catOne.5841b243.jpg","assets/catOne.jpg"],"assets/catOne.jpg"],"./..\\..\\assets\\catTwo.jpg":[["catTwo.d168cbc6.jpg","assets/catTwo.jpg"],"assets/catTwo.jpg"],"./..\\..\\assets\\catThree.jpg":[["catThree.ca30ab81.jpg","assets/catThree.jpg"],"assets/catThree.jpg"],"./..\\..\\assets\\catFour.jpg":[["catFour.9971ef37.jpg","assets/catFour.jpg"],"assets/catFour.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Category/Category.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("../Category/Category.css");
+
+var _catOne = _interopRequireDefault(require("../../assets/catOne.jpg"));
+
+var _catTwo = _interopRequireDefault(require("../../assets/catTwo.jpg"));
+
+var _catThree = _interopRequireDefault(require("../../assets/catThree.jpg"));
+
+var _catFour = _interopRequireDefault(require("../../assets/catFour.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Category = function Category() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "Real-wedd p-4"
+  }, "Wedding vendors by category"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col cat-main"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "cat-title"
+  }, "WEDDING VENUES"), /*#__PURE__*/_react.default.createElement("ul", {
+    className: "cat-list"
+  }, /*#__PURE__*/_react.default.createElement("li", {
+    className: "cat-list-item"
+  }, "Banquet Halls"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "cat-list-item"
+  }, "Hotels"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "cat-list-item"
+  }, "Marriage Garden"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "cat-list-item"
+  }, "Kalyana Mandapams"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "cat-list-item"
+  }, "Resort & Destination Weddin"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "cat-list-item"
+  }, "Wedding Lawns & Farmhouses"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col cat-main"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "cat-title-second"
+  }, "WEDDING VENDORS"), /*#__PURE__*/_react.default.createElement("ul", {
+    className: "cat-list"
+  }, /*#__PURE__*/_react.default.createElement("li", {
+    className: "cat-list-item"
+  }, "Catering"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "cat-list-item"
+  }, "Wedding Invitations"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "cat-list-item"
+  }, "Wedding Gifts"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "cat-list-item"
+  }, "Wedding Photography"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "cat-list-item"
+  }, "Wedding Music"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "cat-list-item"
+  }, "Wedding Transportation"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col cat-main"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "Brides-cat"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "cat-bride"
+  }, "BRIDES"), /*#__PURE__*/_react.default.createElement("ul", null), /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "cat-grooms"
+  }, "GROOMS"), /*#__PURE__*/_react.default.createElement("ul", null))))), /*#__PURE__*/_react.default.createElement("hr", null));
+};
+
+var _default = Category;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../Category/Category.css":"Components/Category/Category.css","../../assets/catOne.jpg":"assets/catOne.jpg","../../assets/catTwo.jpg":"assets/catTwo.jpg","../../assets/catThree.jpg":"assets/catThree.jpg","../../assets/catFour.jpg":"assets/catFour.jpg"}],"Components/Expert/Expert.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Expert/Expert.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("../Expert/Expert.css");
+
+var _fa = require("react-icons/fa");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Expert = function Expert() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", {
+    className: "main-expert"
+  }, "Talk to a Wedding Expert for Free"), /*#__PURE__*/_react.default.createElement("span", {
+    className: "text-expert"
+  }, "We're here to help! All 7 days - 9am to 8pm"), /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "link-expert"
+  }, /*#__PURE__*/_react.default.createElement(_fa.FaPhoneAlt, {
+    className: "icon-expert"
+  }), "Call 346-311-2269"));
+};
+
+var _default = Expert;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../Expert/Expert.css":"Components/Expert/Expert.css","react-icons/fa":"../node_modules/react-icons/fa/index.esm.js"}],"Components/Header/Header.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -75896,6 +76228,14 @@ var _Feature = _interopRequireDefault(require("../Featured/Feature"));
 var _Realwedd = _interopRequireDefault(require("../Real/Realwedd"));
 
 var _Ideas = _interopRequireDefault(require("../Ideas/Ideas"));
+
+var _Community = _interopRequireDefault(require("../Community/Community"));
+
+var _Destination = _interopRequireDefault(require("../Destination/Destination"));
+
+var _Category = _interopRequireDefault(require("../Category/Category"));
+
+var _Expert = _interopRequireDefault(require("../Expert/Expert"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -75966,12 +76306,12 @@ var Header = function Header() {
   }, "Login"), /*#__PURE__*/_react.default.createElement("a", {
     href: "#",
     className: "sign_login"
-  }, "Free Sign Up"))), /*#__PURE__*/_react.default.createElement(_Banner.default, null), /*#__PURE__*/_react.default.createElement(_IconBar.default, null), /*#__PURE__*/_react.default.createElement(_Feature.default, null), /*#__PURE__*/_react.default.createElement(_Realwedd.default, null), /*#__PURE__*/_react.default.createElement(_Ideas.default, null));
+  }, "Free Sign Up"))), /*#__PURE__*/_react.default.createElement(_Banner.default, null), /*#__PURE__*/_react.default.createElement(_IconBar.default, null), /*#__PURE__*/_react.default.createElement(_Feature.default, null), /*#__PURE__*/_react.default.createElement(_Realwedd.default, null), /*#__PURE__*/_react.default.createElement(_Ideas.default, null), /*#__PURE__*/_react.default.createElement(_Community.default, null), /*#__PURE__*/_react.default.createElement(_Destination.default, null), /*#__PURE__*/_react.default.createElement(_Category.default, null), /*#__PURE__*/_react.default.createElement(_Expert.default, null));
 };
 
 var _default = Header;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../Header/Header.css":"Components/Header/Header.css","../../assets/Logo-01.png":"assets/Logo-01.png","../Banner/Banner":"Components/Banner/Banner.jsx","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js","../IconBar/IconBar":"Components/IconBar/IconBar.jsx","../Featured/Feature":"Components/Featured/Feature.jsx","../Real/Realwedd":"Components/Real/Realwedd.jsx","../Ideas/Ideas":"Components/Ideas/Ideas.jsx"}],"../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../Header/Header.css":"Components/Header/Header.css","../../assets/Logo-01.png":"assets/Logo-01.png","../Banner/Banner":"Components/Banner/Banner.jsx","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js","../IconBar/IconBar":"Components/IconBar/IconBar.jsx","../Featured/Feature":"Components/Featured/Feature.jsx","../Real/Realwedd":"Components/Real/Realwedd.jsx","../Ideas/Ideas":"Components/Ideas/Ideas.jsx","../Community/Community":"Components/Community/Community.jsx","../Destination/Destination":"Components/Destination/Destination.jsx","../Category/Category":"Components/Category/Category.jsx","../Expert/Expert":"Components/Expert/Expert.jsx"}],"../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -80494,7 +80834,7 @@ var Section = function Section() {
     className: "btn btn-primary"
   }, "Save changes"))))), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", {
     className: "alert container "
-  }, /*#__PURE__*/_react.default.createElement(_Detail.default, null)), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", {
+  }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", {
     className: "alert  container"
   }, /*#__PURE__*/_react.default.createElement("h1", {
     className: "card_title"
@@ -80594,7 +80934,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var App = function App() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "Bg-img"
-  }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement(_Header.default, null)), /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement(_router.default, null)), /*#__PURE__*/_react.default.createElement("footer", null));
+  }, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement(_Header.default, null)), /*#__PURE__*/_react.default.createElement("section", null), /*#__PURE__*/_react.default.createElement("footer", null));
 };
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root"));
