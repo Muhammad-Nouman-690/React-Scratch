@@ -13,6 +13,13 @@
     
     opacity: 0.8;
 } */
+.top-bar {
+    background-color: #19b5bc;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    padding: 10px 10px;
+}
 .Logo {
     width: 100px;
     margin-left: 70px;    
@@ -27,13 +34,7 @@
     color: red;
 }
 
-.top-bar {
-    background-color: #19b5bc;
-    text-align: center;
-    color: white;
-    font-weight: 400;
-    padding: 10px 10px;
-}
+
 .banner-img {
     background-image: url("/BannerImg.7a22791a.jpg");
     background-size: cover;
@@ -416,38 +417,5 @@ display: -webkit-box;
     
    
 }
-.card {
-    margin: 25px;
-    width: 27rem;
-}
-
-/* .list_img {
-    background-image: url('../../assets/listingBg.jpg');
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    width: 9000px;
-    opacity: 0.9;
-} */
-.alert {
-    
-    background-color: whitesmoke;
-    color: #000;
-    margin-top: 50px;
-}
-
-.search {
-    margin-left: 15px;
-}
-
-.cu_info {
-    text-align: justify;
-    font-style: italic;
-}
-
-.card_title {
-    font-family: monospace;
-}
-
 
 /*# sourceMappingURL=/App.6f196564.css.map */

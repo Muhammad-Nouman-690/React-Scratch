@@ -1,22 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import './App.css'
-import  Header  from './Components/Header/Header'
-import AppRouter from './Config/router'
+import  HomePage  from './Pages/HomePage/Home'
+//import AppRouter from './Config/router'
 
 const App = () => {
  
   return (
-    <div className="Bg-img">
-      <header>
-        <Header />
-      </header>
-
-      <section>
-        {/* <AppRouter /> */}
-      </section>
-
-      <footer></footer>
+    <div >
+     <HomePage />
     </div>
   );
 };
