@@ -11,16 +11,13 @@ import rNtwo from '../../assets/rNtwo.jpg'
 import rNthree from '../../assets/rNthree.jpg'
 import rNfour from '../../assets/rNfour.jpg'
 import { BsChevronRight } from "react-icons/bs";
+import Heading from "../Heading/Heading";
 
 
 const Ideas = () => {
   return (
     <div className='p-4'>
-      <h1 className="Real-wedd p-4">Ideas and tips</h1>
-      <p className='Sec-Real text-center'>
-      Get inspired with the latest trends and advice from our wedding experts
-      </p>
-<span className='text-seap '></span>
+    <Heading title='Ideas and tips' description='Get inspired with the latest trends and advice from our wedding experts' />
     <div className="container">
       <div className="row">
 <div className="col round-main"> <img src={roundOne} className='round-photo' alt=""/> <p className='round-text'>Before the wedding</p> </div>        

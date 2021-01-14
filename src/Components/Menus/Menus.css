@@ -1,14 +1,30 @@
 .Logo {
     width: 100px;
-    margin-left: 70px;    
-}
-
-.navbar-nav {
-    margin-left: 350px;
 }
 
 .sign_login {
-    margin-left: 40px;
-    color: red;
+    color: #fb1b26;
+    
 }
 
+.menu-top-access {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #404040;
+}
+
+.top-icon {
+    width: 18px;
+}
+
+.nav-link {
+    color: #202428;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+}

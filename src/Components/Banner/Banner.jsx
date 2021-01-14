@@ -25,7 +25,7 @@ const Banner = () => {
                 placeholder="Where"
               />
             </div>
-            <button type="button" className="btn btn-danger btn-lg m-0">
+            <button type="button" className="btn icon-btn btn-lg m-0">
               Find
             </button>
           </div>

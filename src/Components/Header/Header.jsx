@@ -1,13 +1,15 @@
 import React from "react";
 import "../Header/Header.css";
+import TopBar from "../TopBar/TopBar";
+import Menus from "../Menus/Menus";
+
 
 const Header = () => {
   return (
-   <div>
-     <h1>
-       Header Component
-     </h1>
-   </div>
+    <div>
+      <TopBar />
+      <Menus />
+    </div>
   );
 };
 

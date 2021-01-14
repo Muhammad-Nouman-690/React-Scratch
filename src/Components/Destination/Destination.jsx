@@ -7,11 +7,12 @@ import desFive from '../../assets/desFive.jpg'
 import destSix from '../../assets/destSix.jpg'
 import '../Destination/Destination.css'
 import { BsChevronRight } from "react-icons/bs";
+import Heading from '../Heading/Heading';
 
 const Destination = () => {
     return(
 <div>
-<h1 className="Real-wedd p-4">Plan your destination wedding</h1>
+<Heading title='Plan your destination wedding' line={false} />
       <p className='Sec-Real text-center'>
       No matter where in the world you want to get married, WeddingWire's <br/> directory of international wedding professionals can help you celebrate.
       </p>

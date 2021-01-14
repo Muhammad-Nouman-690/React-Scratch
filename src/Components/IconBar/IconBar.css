@@ -6,7 +6,9 @@
 }
 
 .icon-btn {
-    margin-top: 45px;
+    margin-top: 30px;
     margin-left: 370px;
-    
+    background-color: #fb1b26;
+    color: #fff;
+    font-weight: 600;
 }
