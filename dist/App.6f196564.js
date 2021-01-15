@@ -47487,7 +47487,13 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\assets\\BannerImg.jpg":[["BannerImg.7a22791a.jpg","assets/BannerImg.jpg"],"assets/BannerImg.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Banner/Banner.jsx":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/BannerImg.jpg":[function(require,module,exports) {
+module.exports = "/BannerImg.7a22791a.jpg";
+},{}],"assets/BannerImg1.jpg":[function(require,module,exports) {
+module.exports = "/BannerImg1.b4376974.jpg";
+},{}],"assets/BannerImg2.jpg":[function(require,module,exports) {
+module.exports = "/BannerImg2.0bb7aafe.jpg";
+},{}],"Components/Banner/Banner.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47499,14 +47505,59 @@ var _react = _interopRequireDefault(require("react"));
 
 require("../Banner/Banner.css");
 
+var _BannerImg = _interopRequireDefault(require("../../assets/BannerImg.jpg"));
+
+var _BannerImg2 = _interopRequireDefault(require("../../assets/BannerImg1.jpg"));
+
+var _BannerImg3 = _interopRequireDefault(require("../../assets/BannerImg2.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Banner = function Banner() {
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "banner-img"
+    className: "banner-img",
+    id: "carouselExampleIndicators",
+    class: "carousel slide",
+    "data-ride": "carousel"
+  }, /*#__PURE__*/_react.default.createElement("ol", {
+    class: "carousel-indicators"
+  }, /*#__PURE__*/_react.default.createElement("li", {
+    "data-target": "#carouselExampleIndicators",
+    "data-slide-to": "0",
+    class: "active"
+  }), /*#__PURE__*/_react.default.createElement("li", {
+    "data-target": "#carouselExampleIndicators",
+    "data-slide-to": "1"
+  }), /*#__PURE__*/_react.default.createElement("li", {
+    "data-target": "#carouselExampleIndicators",
+    "data-slide-to": "2"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-inner"
   }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item active"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _BannerImg.default,
+    alt: "First slide"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _BannerImg2.default,
+    alt: "Second slide"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    class: "carousel-item"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "d-block w-100",
+    src: _BannerImg3.default,
+    alt: "Third slide"
+  }))), /*#__PURE__*/_react.default.createElement("div", {
     className: "banner-text"
-  }, /*#__PURE__*/_react.default.createElement("h1", null, "Discover everything you need to plan your big day"), /*#__PURE__*/_react.default.createElement("h5", null, "Search over 59000 local professionals with reviews, pricing, and more"), /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "slider-title"
+  }, "Discover everything you need to plan your big day"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "slider-text"
+  }, "Search over 59000 local professionals with reviews, pricing, and more"), /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("div", {
     className: "form-row"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "col m-0 p-0"
@@ -47525,12 +47576,12 @@ var Banner = function Banner() {
     className: "btn icon-btn btn-lg m-0"
   }, "Find"))), /*#__PURE__*/_react.default.createElement("p", {
     className: "banner-para"
-  }, "Wedding Venues, Wedding Photography, Wedding Music, Bridal Jewellery, Wedding Invitations, Bridal Lehenga, Florists, Honeymoon")), /*#__PURE__*/_react.default.createElement("hr", null));
+  }, "Wedding Venues, Wedding Photography, Wedding Music, Bridal Jewellery, Wedding Invitations, Bridal Lehenga, Florists, Honeymoon")));
 };
 
 var _default = Banner;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../Banner/Banner.css":"Components/Banner/Banner.css"}],"Components/IconBar/IconBar.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../Banner/Banner.css":"Components/Banner/Banner.css","../../assets/BannerImg.jpg":"assets/BannerImg.jpg","../../assets/BannerImg1.jpg":"assets/BannerImg1.jpg","../../assets/BannerImg2.jpg":"assets/BannerImg2.jpg"}],"Components/IconBar/IconBar.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -75626,7 +75677,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var IconBar = function IconBar() {
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container p-4"
+    className: "container p-4 text-center"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "row p-4"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -75666,13 +75717,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/card1.jpg":[function(require,module,exports) {
-module.exports = "/card1.386ca74d.jpg";
-},{}],"assets/card2.jpg":[function(require,module,exports) {
-module.exports = "/card2.7633e150.jpg";
-},{}],"assets/card3.jpg":[function(require,module,exports) {
-module.exports = "/card3.1bf674b0.jpg";
-},{}],"Components/Heading/Heading.css":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Heading/Heading.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -75729,35 +75774,51 @@ var _react = _interopRequireDefault(require("react"));
 
 require("../Card/Card.css");
 
-var _card = _interopRequireDefault(require("../../assets/card1.jpg"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import { Carousel } from 'react-responsive-carousel';
+// import 'react-responsive-carousel/lib/styles/carousel.min.css';
 var Card = function Card(props) {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    class: "card "
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    class: "card-img-top",
-    src: props.media[0].image_url,
-    alt: "Card image cap"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    class: "card-body shadow  "
-  }, /*#__PURE__*/_react.default.createElement("span", null), /*#__PURE__*/_react.default.createElement("h5", {
-    class: "card-title"
-  }, props.vendor_name), /*#__PURE__*/_react.default.createElement("p", {
-    class: "card-text"
-  }, "Some quick example text to build on the card title and make up the bulk of the card's content.")), /*#__PURE__*/_react.default.createElement("ul", {
-    class: "list-group list-group-flush shadow"
-  }, /*#__PURE__*/_react.default.createElement("li", {
-    class: "list-group-item"
-  }, "Cras justo odio"), /*#__PURE__*/_react.default.createElement("li", {
-    class: "list-group-item"
-  }, "Dapibus ac facilisis in")));
+  return (
+    /*#__PURE__*/
+
+    /* <Carousel> */
+    _react.default.createElement("div", {
+      class: "card "
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      class: "card-img-top ",
+      src: props.media[0].image_url,
+      alt: "Card image cap"
+    }), /*#__PURE__*/_react.default.createElement("div", {
+      class: "card-body shadow text-center "
+    }, /*#__PURE__*/_react.default.createElement("span", {
+      className: "card-category"
+    }, props.vendor_category), /*#__PURE__*/_react.default.createElement("h5", {
+      class: "card-title"
+    }, props.vendor_name), /*#__PURE__*/_react.default.createElement("span", {
+      className: "card-category"
+    }, props.vendor_second_category)), /*#__PURE__*/_react.default.createElement("div", {
+      className: "list-group list-group-flush shadow"
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: "list-group-item"
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: "price-cat"
+    }, "Price per plate ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", {
+      className: "price-rate"
+    }, props.price_per_plate)), /*#__PURE__*/_react.default.createElement("div", {
+      className: "capc-cat"
+    }, "Capicity ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", {
+      className: "price-rate"
+    }, props.number_of_guest))), /*#__PURE__*/_react.default.createElement("div", {
+      className: "list-group-item"
+    }, "The Ritz by FNP Gardens is a wedding banquet hall located in DLF Phase 3, which is situated in the city of Gurgaon. It is one of the most luxurious wedding."))) // </Carousel>
+
+  );
 };
 
 var _default = Card;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../Card/Card.css":"Components/Card/Card.css","../../assets/card1.jpg":"assets/card1.jpg"}],"Server/JSON/featured.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../Card/Card.css":"Components/Card/Card.css"}],"Server/JSON/featured.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -75766,101 +75827,52 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = [{
   "id": "shahpura-house--e225545",
-  "vendor_name": "Shahpura House",
-  "vendor_category": "Premium",
+  "vendor_name": "The Banya Farm",
+  "vendor_category": "Hotels",
+  "vendor_second_category": "Jim Corbet, Nainital",
   "phone_number": "0343423434234",
-  "price_per_plate": 1000,
+  "price_per_plate": '$1000',
   "number_of_guest": "250 to 700",
   "address": "D-257, Devi Marg 302016 ",
   "city": "Jaipur",
   "location": "Bani Park",
   "media": [{
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc03778_15_225545-1560690470.jpg",
-    "image_title": "Shahpura House"
-  }, {
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc04200_15_225545-1560690481.jpg",
-    "image_title": "Shahpura House"
-  }, {
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc03778_15_225545-1560690470.jpg",
-    "image_title": "Shahpura House"
-  }, {
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc03778_15_225545-1560690470.jpg",
-    "image_title": "Shahpura House"
+    "image_url": "https://cdn0.weddingwire.in/emp/fotos/1/2/2/1/t10_271221-wood-castle-spa_15_271221-159340509138131.jpg",
+    "image_title": "Hotels"
   }],
   "description": "Shahpura House is a glorious and breathtaking venue located in the city of Jaipur that where you can host all of your special occasions and be assured that they surely be one of a kind and the most mesmerising events of your life that not only you but all of your wedding guests would not be able to forget for life. The venue has alluring interiors which have royal hand-carved latticework and cenotaphs which make this hotel a unique in itself. With the scenic backdrop, this House is a perfect place for having your nuptial functions and a destination wedding.",
   "facilities": ["Basic lighting", "electricity & backup", "Valet parking", "Bridal room", "Service staff", "Alcohol license", "Multiple event spaces", "Guest accommodation", "In-house catering'", "In-house decor"]
 }, {
   "id": "shahpura-house--e2255423123125",
-  "vendor_name": "Lucknow",
-  "vendor_category": "Premium",
+  "vendor_name": "Studio 146",
+  "vendor_category": "Wedding Photography",
+  "vendor_second_category": "Ashram Road, Ahmedabad",
   "phone_number": "0343423434234",
-  "price_per_plate": 1000,
-  "number_of_guest": "250 to 700",
+  "price_per_plate": '$3000',
+  "number_of_guest": "350 to 900",
   "address": "D-257, Devi Marg 302016 ",
   "city": "Jaipur",
   "location": "Bani Park",
   "media": [{
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc04200_15_225545-1560690481.jpg",
-    "image_title": "Shahpura House"
-  }, {
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc04200_15_225545-1560690481.jpg",
-    "image_title": "Shahpura House"
-  }, {
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc03778_15_225545-1560690470.jpg",
-    "image_title": "Shahpura House"
-  }, {
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc03778_15_225545-1560690470.jpg",
-    "image_title": "Shahpura House"
+    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/9/3/9/t10_wedding-photography-studio-146-couple-shot-4_15_65939-160275936370551.jpg",
+    "image_title": "Wedding Photography"
   }],
   "description": "Shahpura House is a glorious and breathtaking venue located in the city of Jaipur that where you can host all of your special occasions and be assured that they surely be one of a kind and the most mesmerising events of your life that not only you but all of your wedding guests would not be able to forget for life. The venue has alluring interiors which have royal hand-carved latticework and cenotaphs which make this hotel a unique in itself. With the scenic backdrop, this House is a perfect place for having your nuptial functions and a destination wedding.",
   "facilities": ["Basic lighting", "electricity & backup", "Valet parking", "Bridal room", "Service staff", "Alcohol license", "Multiple event spaces", "Guest accommodation", "In-house catering'", "In-house decor"]
 }, {
   "id": "shahpura-house--e2255423123125",
-  "vendor_name": "Dhoraji",
-  "vendor_category": "Premium",
+  "vendor_name": "IIDM Eco Centre",
+  "vendor_category": "Banquet Halls",
+  "vendor_second_category": "Gomti Nagar, Lucknow",
   "phone_number": "0343423434234",
-  "price_per_plate": 1000,
-  "number_of_guest": "250 to 700",
+  "price_per_plate": '$6000',
+  "number_of_guest": "650 to 1200",
   "address": "D-257, Devi Marg 302016 ",
   "city": "Jaipur",
   "location": "Bani Park",
   "media": [{
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc04200_15_225545-1560690481.jpg",
-    "image_title": "Shahpura House"
-  }, {
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc04200_15_225545-1560690481.jpg",
-    "image_title": "Shahpura House"
-  }, {
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc03778_15_225545-1560690470.jpg",
-    "image_title": "Shahpura House"
-  }, {
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc03778_15_225545-1560690470.jpg",
-    "image_title": "Shahpura House"
-  }],
-  "description": "Shahpura House is a glorious and breathtaking venue located in the city of Jaipur that where you can host all of your special occasions and be assured that they surely be one of a kind and the most mesmerising events of your life that not only you but all of your wedding guests would not be able to forget for life. The venue has alluring interiors which have royal hand-carved latticework and cenotaphs which make this hotel a unique in itself. With the scenic backdrop, this House is a perfect place for having your nuptial functions and a destination wedding.",
-  "facilities": ["Basic lighting", "electricity & backup", "Valet parking", "Bridal room", "Service staff", "Alcohol license", "Multiple event spaces", "Guest accommodation", "In-house catering'", "In-house decor"]
-}, {
-  "id": "shahpura-house--e2255423123125",
-  "vendor_name": "Dhoraji",
-  "vendor_category": "Premium",
-  "phone_number": "0343423434234",
-  "price_per_plate": 1000,
-  "number_of_guest": "250 to 700",
-  "address": "D-257, Devi Marg 302016 ",
-  "city": "Jaipur",
-  "location": "Bani Park",
-  "media": [{
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc04200_15_225545-1560690481.jpg",
-    "image_title": "Shahpura House"
-  }, {
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc04200_15_225545-1560690481.jpg",
-    "image_title": "Shahpura House"
-  }, {
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc03778_15_225545-1560690470.jpg",
-    "image_title": "Shahpura House"
-  }, {
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/5/4/5/dsc03778_15_225545-1560690470.jpg",
-    "image_title": "Shahpura House"
+    "image_url": "https://cdn0.weddingwire.in/emp/fotos/6/3/4/8/t10_1-iidm_15_136348-161027240169577.jpg",
+    "image_title": "Banquet Halls"
   }],
   "description": "Shahpura House is a glorious and breathtaking venue located in the city of Jaipur that where you can host all of your special occasions and be assured that they surely be one of a kind and the most mesmerising events of your life that not only you but all of your wedding guests would not be able to forget for life. The venue has alluring interiors which have royal hand-carved latticework and cenotaphs which make this hotel a unique in itself. With the scenic backdrop, this House is a perfect place for having your nuptial functions and a destination wedding.",
   "facilities": ["Basic lighting", "electricity & backup", "Valet parking", "Bridal room", "Service staff", "Alcohol license", "Multiple event spaces", "Guest accommodation", "In-house catering'", "In-house decor"]
@@ -75892,15 +75904,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireWildcard(require("react"));
+var _react = _interopRequireDefault(require("react"));
 
 require("./Feature.css");
-
-var _card = _interopRequireDefault(require("../../assets/card1.jpg"));
-
-var _card2 = _interopRequireDefault(require("../../assets/card2.jpg"));
-
-var _card3 = _interopRequireDefault(require("../../assets/card3.jpg"));
 
 var _Heading = _interopRequireDefault(require("../Heading/Heading"));
 
@@ -75909,10 +75915,6 @@ var _Card = _interopRequireDefault(require("../Card/Card"));
 var _Server = require("../../Server/Server");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -75934,12 +75936,18 @@ var Feature = function Feature() {
 
 var _default = Feature;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Feature.css":"Components/Featured/Feature.css","../../assets/card1.jpg":"assets/card1.jpg","../../assets/card2.jpg":"assets/card2.jpg","../../assets/card3.jpg":"assets/card3.jpg","../Heading/Heading":"Components/Heading/Heading.jsx","../Card/Card":"Components/Card/Card.jsx","../../Server/Server":"Server/Server.js"}],"Components/Real/Realwedd.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Feature.css":"Components/Featured/Feature.css","../Heading/Heading":"Components/Heading/Heading.jsx","../Card/Card":"Components/Card/Card.jsx","../../Server/Server":"Server/Server.js"}],"Components/Real/Realwedd.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Real/Realwedd.jsx":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/card1.jpg":[function(require,module,exports) {
+module.exports = "/card1.386ca74d.jpg";
+},{}],"assets/card2.jpg":[function(require,module,exports) {
+module.exports = "/card2.7633e150.jpg";
+},{}],"assets/card3.jpg":[function(require,module,exports) {
+module.exports = "/card3.1bf674b0.jpg";
+},{}],"Components/Real/Realwedd.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -76561,7 +76569,69 @@ var Home = function Home() {
 
 var _default = Home;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Home.css":"Pages/Home/Home.css","../../Components/Banner/Banner":"Components/Banner/Banner.jsx","../../Components/IconBar/IconBar":"Components/IconBar/IconBar.jsx","../../Components/Featured/Feature":"Components/Featured/Feature.jsx","../../Components/Real/Realwedd":"Components/Real/Realwedd.jsx","../../Components/Ideas/Ideas":"Components/Ideas/Ideas.jsx","../../Components/Community/Community":"Components/Community/Community.jsx","../../Components/Destination/Destination":"Components/Destination/Destination.jsx","../../Components/Category/Category":"Components/Category/Category.jsx","../../Components/Expert/Expert":"Components/Expert/Expert.jsx"}],"App.jsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Home.css":"Pages/Home/Home.css","../../Components/Banner/Banner":"Components/Banner/Banner.jsx","../../Components/IconBar/IconBar":"Components/IconBar/IconBar.jsx","../../Components/Featured/Feature":"Components/Featured/Feature.jsx","../../Components/Real/Realwedd":"Components/Real/Realwedd.jsx","../../Components/Ideas/Ideas":"Components/Ideas/Ideas.jsx","../../Components/Community/Community":"Components/Community/Community.jsx","../../Components/Destination/Destination":"Components/Destination/Destination.jsx","../../Components/Category/Category":"Components/Category/Category.jsx","../../Components/Expert/Expert":"Components/Expert/Expert.jsx"}],"assets/footer.png":[function(require,module,exports) {
+module.exports = "/footer.4554c39f.png";
+},{}],"Components/Footer/Footer.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Footer/Footer.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _footer = _interopRequireDefault(require("../../assets/footer.png"));
+
+require("../Footer/Footer.css");
+
+var _bs = require("react-icons/bs");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Footer = function Footer() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "footer-nav"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "wrapper"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "flert"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "footer-flags"
+  }, "PAKISTAN", /*#__PURE__*/_react.default.createElement(_bs.BsChevronDown, {
+    className: "foo-icon"
+  })), /*#__PURE__*/_react.default.createElement("img", {
+    src: _footer.default,
+    alt: ""
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "over-flow"
+  }, /*#__PURE__*/_react.default.createElement("ul", {
+    className: "footer-menu"
+  }, /*#__PURE__*/_react.default.createElement("li", {
+    className: "footer-menu"
+  }, "Planning Tools"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "footer-menu"
+  }, "Wedding Venues"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "footer-menu"
+  }, "Wedding Vendors"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "footer-menu"
+  }, "Brides"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "footer-menu"
+  }, "Grooms"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "footer-menu"
+  }, "Ideas"), /*#__PURE__*/_react.default.createElement("li", {
+    className: "footer-menu"
+  }, "Community")))));
+};
+
+var _default = Footer;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../../assets/footer.png":"assets/footer.png","../Footer/Footer.css":"Components/Footer/Footer.css","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js"}],"App.jsx":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -76574,15 +76644,17 @@ var _Header = _interopRequireDefault(require("./Components/Header/Header"));
 
 var _Home = _interopRequireDefault(require("./Pages/Home/Home"));
 
+var _Footer = _interopRequireDefault(require("./Components/Footer/Footer"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //import AppRouter from './Config/router'
 var App = function App() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement(_Header.default, null)), /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement(_Home.default, null)), /*#__PURE__*/_react.default.createElement("footer", null));
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement(_Header.default, null)), /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement(_Home.default, null)), /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement(_Footer.default, null)));
 };
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root"));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App.css":"App.css","./Components/Header/Header":"Components/Header/Header.jsx","./Pages/Home/Home":"Pages/Home/Home.jsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App.css":"App.css","./Components/Header/Header":"Components/Header/Header.jsx","./Pages/Home/Home":"Pages/Home/Home.jsx","./Components/Footer/Footer":"Components/Footer/Footer.jsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -76610,7 +76682,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51045" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57572" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

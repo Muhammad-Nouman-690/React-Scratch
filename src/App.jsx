@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Home from "./Pages/Home/Home";
+import Footer from './Components/Footer/Footer'
 
 //import AppRouter from './Config/router'
 
@@ -16,7 +17,9 @@ const App = () => {
       <section>
         <Home />
       </section>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

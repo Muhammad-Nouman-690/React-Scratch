@@ -1,30 +1,42 @@
 import React from "react";
 import "../Card/Card.css";
-import FeatCard1 from "../../assets/card1.jpg";
+// import { Carousel } from 'react-responsive-carousel';
+// import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 const Card = (props) => {
   return (
-            <div class="card ">
-              <img
-                class="card-img-top"
-                src={props.media[0].image_url}
-                alt="Card image cap"
-              />
-              <div class="card-body shadow  ">
-                <span></span>
-                <h5 class="card-title">{props.vendor_name}</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-              <ul class="list-group list-group-flush shadow">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-              </ul>
-            </div>     
-      
-    
+/* <Carousel> */
+<div class="card ">
+      <img
+        class="card-img-top "
+        src={props.media[0].image_url}
+        alt="Card image cap"
+      />
+      <div class="card-body shadow text-center ">
+        <span className="card-category">{props.vendor_category}</span>
+        <h5 class="card-title">{props.vendor_name}</h5>
+        <span className="card-category">{props.vendor_second_category}</span>
+      </div>
+      <div className="list-group list-group-flush shadow">
+        <div className="list-group-item">
+          <div className="price-cat">
+            Price per plate <br />
+            <span className="price-rate">{props.price_per_plate}</span>
+          </div>
+          <div className="capc-cat">
+            Capicity <br />
+            <span className="price-rate">{props.number_of_guest}</span>
+          </div>
+        </div>
+        <div className="list-group-item">
+          The Ritz by FNP Gardens is a wedding banquet hall located in DLF Phase
+          3, which is situated in the city of Gurgaon. It is one of the most
+          luxurious wedding.
+        </div>
+      </div>
+    </div>
+    // </Carousel>
   );
 };
 

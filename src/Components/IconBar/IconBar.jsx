@@ -10,7 +10,7 @@ import { FaCalculator, FaComments, FaMoneyCheck } from "react-icons/fa";
 
 const IconBar = () => {
   return (
-    <div className="container p-4">
+    <div className="container p-4 text-center">
       <div className="row p-4">
         <div className="col ">
           <BsSearch className="icon-logo" />

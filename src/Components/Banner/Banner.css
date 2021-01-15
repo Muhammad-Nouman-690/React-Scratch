@@ -1,9 +1,7 @@
-.banner-img {
-    background-image: url("../../assets/BannerImg.jpg");
+.banner-img {    
     background-size: cover;
-    height: 500px;
-    opacity: 0.9;
-       
+    height: 200px;
+    opacity: 0.9;       
 }
 
 .banner-text {
@@ -17,14 +15,18 @@
 }
 
 .banner-para {
-    padding-top: 45px;
-    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    margin: 15px 0 0;
+    color: #fff;
+    display: block;
 }
 
 .no-border {
     border:none !important; 
     border-radius: 0px !important;
     padding: 15px 15px !important;
+    border-right: 1px solid #e1e1e1 !important;
 }
 
 .no-border:last-child {
@@ -33,6 +35,21 @@
 
 input:focus, textarea:focus, select:focus{
     outline: none !important;
-    box-shadow:none !important; 
-    
+    box-shadow:none !important;     
+}
+
+.slider-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.slider-text {
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 0;
 }

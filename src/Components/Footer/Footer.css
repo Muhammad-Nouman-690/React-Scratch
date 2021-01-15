@@ -1,0 +1,52 @@
+.footer-nav {
+    background-color: #f8f8f8;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1200px;
+    min-width: 950px;
+    margin: 0 auto;
+    display: block;
+}
+
+.flert {
+    float: left;
+    display: block;
+}
+
+.over-flow {
+    overflow: hidden;
+}
+
+.footer-flags {
+    font-size: 14px;
+    line-height: 21px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #8c8c8c;
+    font-weight: 600;
+    background-color: #f8f8f8;
+    padding: 7px 15px;
+    border-radius: 3px;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+ 
+}
+
+.footer-menu {
+    float: right;
+    color: #8c8c8c;
+    margin: 3px 3px;
+    padding: 3px 3px ;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foo-icon {
+    width: 30px;
+    height: 20px;
+    
+}

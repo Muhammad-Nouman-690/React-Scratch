@@ -1,4 +1,61 @@
 .card {
-    width: 18rem;
-    margin: 2px  ;
+    width: 20rem;
+    margin: 5px 5px;
+}
+
+.card-img-top:hover {
+    transform: scale(1.02);
+    transition:all 0.3s ease-in-out;
+}
+
+.card-category {
+    font-size: 13px;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8c8c8c;
+    white-space: nowrap;
+    display: block;
+
+}
+
+.list-group-item {
+    font-size: 12px;
+    line-height: 21px;
+    border-top: 1px solid #e1e1e1;
+    background: #fff;
+    padding: 15px 10px;
+    color: #6c6c6c;    
+    text-align: center;
+}
+
+.price-cat {
+    float: left;
+    font-size: 13px;
+    line-height: 19px;
+    color: #8c8c8c;
+    font-weight: 400;
+    margin: 0;
+}
+
+.capc-cat {
+    float: right;
+    font-size: 13px;
+    line-height: 19px;
+    color: #8c8c8c;
+    font-weight: 400;
+    margin: 0;
+}
+
+.price-rate {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    display: block;
+    color: #000;
+}
+
+.card-title:hover {
+    color: #fb1b26;
+    cursor: pointer;
 }
