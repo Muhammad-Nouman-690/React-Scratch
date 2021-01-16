@@ -7,7 +7,7 @@ import BannerImgTwo from "../../assets/BannerImg2.jpg";
 const Banner = () => {
   return (
     <div
-      className="banner-img"
+      
       id="carouselExampleIndicators"
       class="carousel slide"
       data-ride="carousel"
@@ -24,13 +24,13 @@ const Banner = () => {
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src={BannerImg} alt="First slide" />
+          <img class="d-block w-100" src={BannerImg} className="banner-img" alt="First slide" />
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src={BannerImgOne} alt="Second slide" />
+          <img class="d-block w-100" src={BannerImgOne} className="banner-img" alt="Second slide" />
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src={BannerImgTwo} alt="Third slide" />
+          <img class="d-block w-100" src={BannerImgTwo} className="banner-img" alt="Third slide" />
         </div>
       </div>
 

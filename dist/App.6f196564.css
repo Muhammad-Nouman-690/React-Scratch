@@ -51,9 +51,8 @@
     text-decoration: none;
 }
 .banner-img {    
-    background-size: cover;
-    height: 200px;
-    opacity: 0.9;       
+    width: 100%;
+    z-index: 1;
 }
 
 .banner-text {
@@ -67,11 +66,10 @@
 }
 
 .banner-para {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 19px;
     margin: 15px 0 0;
     color: #fff;
-    display: block;
 }
 
 .no-border {
@@ -107,9 +105,13 @@ input:focus, textarea:focus, select:focus{
 }
 .icon-logo {
     width: 50px;
-    height: 50px;
-    
-    
+    height: 50px;    
+}
+
+.icon-logo:hover {
+    animation: bounce 1s ease;
+    animation-iteration-count: 1;
+    cursor: pointer;
 }
 
 .icon-btn {
@@ -117,6 +119,11 @@ input:focus, textarea:focus, select:focus{
     background-color: #fb1b26;
     color: #fff;
     font-weight: 600;
+}
+
+.icon-text:hover {
+    cursor: pointer;
+    color: #fb1b26;
 }
 .feat-head {
     text-align: center;
@@ -322,11 +329,8 @@ a:hover {
     margin-bottom: 15px;
     background-color: #fff;
     margin: 7px 5px;
-    padding: 10px 20px;
-    
-    
+    padding: 10px 20px;    
 }
-
 
 .comm-title {
     font-size: 18px;
@@ -336,8 +340,7 @@ a:hover {
     color: #202428;
 }
 
-.comm-desc {
-    
+.comm-desc {    
     margin: 0;
     color: #6c6c6c;
 }
@@ -372,6 +375,10 @@ a:hover {
     margin: -2px;
     display: block;
     object-fit: cover;
+}
+
+.alert {
+    background: #f8f8f8;
 }
 .Des-img {
     width: 100%;
@@ -564,6 +571,32 @@ display: -webkit-box;
     width: 30px;
     height: 20px;
     
+}
+
+.footer-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: #202428;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.line-footer {
+    width: 30px;
+    border: 1px solid #d9d9d9;
+    margin: 10px 0;
+}
+
+.country-list {
+    margin-top: 5px;
+    margin-right: -35px;
+    flex-flow: row wrap;
+    display: flex;
+}
+
+.country-order {
+  
 }
 
 /*# sourceMappingURL=/App.6f196564.css.map */

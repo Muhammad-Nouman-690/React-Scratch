@@ -47515,7 +47515,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Banner = function Banner() {
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "banner-img",
     id: "carouselExampleIndicators",
     class: "carousel slide",
     "data-ride": "carousel"
@@ -47538,18 +47537,21 @@ var Banner = function Banner() {
   }, /*#__PURE__*/_react.default.createElement("img", {
     class: "d-block w-100",
     src: _BannerImg.default,
+    className: "banner-img",
     alt: "First slide"
   })), /*#__PURE__*/_react.default.createElement("div", {
     class: "carousel-item"
   }, /*#__PURE__*/_react.default.createElement("img", {
     class: "d-block w-100",
     src: _BannerImg2.default,
+    className: "banner-img",
     alt: "Second slide"
   })), /*#__PURE__*/_react.default.createElement("div", {
     class: "carousel-item"
   }, /*#__PURE__*/_react.default.createElement("img", {
     class: "d-block w-100",
     src: _BannerImg3.default,
+    className: "banner-img",
     alt: "Third slide"
   }))), /*#__PURE__*/_react.default.createElement("div", {
     className: "banner-text"
@@ -75683,28 +75685,40 @@ var IconBar = function IconBar() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "col "
   }, /*#__PURE__*/_react.default.createElement(_bs.BsSearch, {
-    className: "icon-logo"
-  }), /*#__PURE__*/_react.default.createElement("p", null, "Manage your", /*#__PURE__*/_react.default.createElement("br", null), "wedding vendors")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "icon-logo "
+  }), /*#__PURE__*/_react.default.createElement("p", {
+    className: "icon-text"
+  }, "Manage your", /*#__PURE__*/_react.default.createElement("br", null), "wedding vendors")), /*#__PURE__*/_react.default.createElement("div", {
     className: "col "
   }, /*#__PURE__*/_react.default.createElement(_bs.BsFillPeopleFill, {
     className: "icon-logo"
-  }), /*#__PURE__*/_react.default.createElement("p", null, " Organize Your", /*#__PURE__*/_react.default.createElement("br", null), "Guest List")), /*#__PURE__*/_react.default.createElement("div", {
+  }), /*#__PURE__*/_react.default.createElement("p", {
+    className: "icon-text"
+  }, "Organize Your", /*#__PURE__*/_react.default.createElement("br", null), "Guest List")), /*#__PURE__*/_react.default.createElement("div", {
     className: "col "
   }, /*#__PURE__*/_react.default.createElement(_fa.FaMoneyCheck, {
     className: "icon-logo"
-  }), /*#__PURE__*/_react.default.createElement("p", null, "Stay on track with", /*#__PURE__*/_react.default.createElement("br", null), "your Checklist")), /*#__PURE__*/_react.default.createElement("div", {
+  }), /*#__PURE__*/_react.default.createElement("p", {
+    className: "icon-text"
+  }, "Stay on track with", /*#__PURE__*/_react.default.createElement("br", null), "your Checklist")), /*#__PURE__*/_react.default.createElement("div", {
     className: "col "
   }, /*#__PURE__*/_react.default.createElement(_fa.FaCalculator, {
     className: "icon-logo"
-  }), /*#__PURE__*/_react.default.createElement("p", null, "Manage Your", /*#__PURE__*/_react.default.createElement("br", null), "Budget")), /*#__PURE__*/_react.default.createElement("div", {
+  }), /*#__PURE__*/_react.default.createElement("p", {
+    className: "icon-text"
+  }, "Manage Your", /*#__PURE__*/_react.default.createElement("br", null), "Budget")), /*#__PURE__*/_react.default.createElement("div", {
     className: "col "
   }, /*#__PURE__*/_react.default.createElement(_fa.FaComments, {
     className: "icon-logo"
-  }), /*#__PURE__*/_react.default.createElement("p", null, "Community of", /*#__PURE__*/_react.default.createElement("br", null), "couples")), /*#__PURE__*/_react.default.createElement("div", {
+  }), /*#__PURE__*/_react.default.createElement("p", {
+    className: "icon-text"
+  }, "Community of", /*#__PURE__*/_react.default.createElement("br", null), "couples")), /*#__PURE__*/_react.default.createElement("div", {
     className: "col  "
   }, /*#__PURE__*/_react.default.createElement(_bs.BsCodeSlash, {
     className: "icon-logo"
-  }), /*#__PURE__*/_react.default.createElement("p", null, " Create your free", /*#__PURE__*/_react.default.createElement("br", null), "Wedding Website"))), /*#__PURE__*/_react.default.createElement("button", {
+  }), /*#__PURE__*/_react.default.createElement("p", {
+    className: "icon-text"
+  }, "Create your free", /*#__PURE__*/_react.default.createElement("br", null), "Wedding Website"))), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     class: "btn btn-lg icon-btn"
   }, "Start planning your wedding"), /*#__PURE__*/_react.default.createElement("hr", null));
@@ -75830,8 +75844,9 @@ var _default = [{
   "vendor_name": "The Banya Farm",
   "vendor_category": "Hotels",
   "vendor_second_category": "Jim Corbet, Nainital",
+  "community_title": "Wedding Hashtags",
   "phone_number": "0343423434234",
-  "price_per_plate": '$1000',
+  "price_per_plate": 'From $1000',
   "number_of_guest": "250 to 700",
   "address": "D-257, Devi Marg 302016 ",
   "city": "Jaipur",
@@ -75847,8 +75862,9 @@ var _default = [{
   "vendor_name": "Studio 146",
   "vendor_category": "Wedding Photography",
   "vendor_second_category": "Ashram Road, Ahmedabad",
+  "community_title": "Custom Nath",
   "phone_number": "0343423434234",
-  "price_per_plate": '$3000',
+  "price_per_plate": 'From $3000',
   "number_of_guest": "350 to 900",
   "address": "D-257, Devi Marg 302016 ",
   "city": "Jaipur",
@@ -75864,8 +75880,9 @@ var _default = [{
   "vendor_name": "IIDM Eco Centre",
   "vendor_category": "Banquet Halls",
   "vendor_second_category": "Gomti Nagar, Lucknow",
+  "community_title": "Hashtag Help!",
   "phone_number": "0343423434234",
-  "price_per_plate": '$6000',
+  "price_per_plate": 'From $6000',
   "number_of_guest": "650 to 1200",
   "address": "D-257, Devi Marg 302016 ",
   "city": "Jaipur",
@@ -75967,6 +75984,8 @@ var _card3 = _interopRequireDefault(require("../../assets/card3.jpg"));
 
 var _Heading = _interopRequireDefault(require("../Heading/Heading"));
 
+var _bs = require("react-icons/bs");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Realwedd = function Realwedd() {
@@ -76001,12 +76020,19 @@ var Realwedd = function Realwedd() {
     src: _card.default,
     alt: "...",
     class: "img-thumbnail"
-  })))));
+  })))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "text-center p-4"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "next-link-art"
+  }, "VIEW MORE WEDDINGS ", /*#__PURE__*/_react.default.createElement(_bs.BsChevronRight, {
+    className: "icon-articles"
+  }))));
 };
 
 var _default = Realwedd;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Realwedd.css":"Components/Real/Realwedd.css","../../assets/card1.jpg":"assets/card1.jpg","../../assets/card2.jpg":"assets/card2.jpg","../../assets/card3.jpg":"assets/card3.jpg","../Heading/Heading":"Components/Heading/Heading.jsx"}],"Components/Ideas/Ideas.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Realwedd.css":"Components/Real/Realwedd.css","../../assets/card1.jpg":"assets/card1.jpg","../../assets/card2.jpg":"assets/card2.jpg","../../assets/card3.jpg":"assets/card3.jpg","../Heading/Heading":"Components/Heading/Heading.jsx","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js"}],"Components/Ideas/Ideas.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -76218,9 +76244,9 @@ var _commOne = _interopRequireDefault(require("../../assets/commOne.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Community = function Community() {
+var Community = function Community(props) {
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "alert"
+    className: "alert "
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -76598,6 +76624,38 @@ var Footer = function Footer() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "footer-nav"
   }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "footer-title"
+  }, "Choose a country"), /*#__PURE__*/_react.default.createElement("hr", {
+    className: "line-footer"
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "country-list"
+  }, /*#__PURE__*/_react.default.createElement("ul", {
+    className: "country-order"
+  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("strong", null, "America")), /*#__PURE__*/_react.default.createElement("li", null, "Mexico"), /*#__PURE__*/_react.default.createElement("li", null, "Chile"), /*#__PURE__*/_react.default.createElement("li", null, "Argentia"), /*#__PURE__*/_react.default.createElement("li", null, "Brrazil"), /*#__PURE__*/_react.default.createElement("li", null, "Colombia"), /*#__PURE__*/_react.default.createElement("li", null, "Peru"), /*#__PURE__*/_react.default.createElement("li", null, "Uruguay"), /*#__PURE__*/_react.default.createElement("li", null, "Canada")), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null), /*#__PURE__*/_react.default.createElement("li", null), /*#__PURE__*/_react.default.createElement("li", null), /*#__PURE__*/_react.default.createElement("li", null), /*#__PURE__*/_react.default.createElement("li", null), /*#__PURE__*/_react.default.createElement("li", null)))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "footer-title"
+  }, "Information"), /*#__PURE__*/_react.default.createElement("hr", {
+    className: "line-footer"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "footer-title"
+  }, "Get the WeddingWire app"), /*#__PURE__*/_react.default.createElement("hr", {
+    className: "line-footer"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "footer-title"
+  }, "Follow us on"), /*#__PURE__*/_react.default.createElement("hr", {
+    className: "line-footer"
+  })))), /*#__PURE__*/_react.default.createElement("div", {
     className: "wrapper"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "flert"
@@ -76682,7 +76740,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57572" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62328" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

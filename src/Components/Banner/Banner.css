@@ -1,7 +1,6 @@
 .banner-img {    
-    background-size: cover;
-    height: 200px;
-    opacity: 0.9;       
+    width: 100%;
+    z-index: 1;
 }
 
 .banner-text {
@@ -15,11 +14,10 @@
 }
 
 .banner-para {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 19px;
     margin: 15px 0 0;
     color: #fff;
-    display: block;
 }
 
 .no-border {

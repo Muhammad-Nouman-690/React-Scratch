@@ -1,11 +1,6 @@
 import React from "react";
 import "../IconBar/IconBar.css";
-import {
-  BsSearch,
-
-  BsFillPeopleFill,
-  BsCodeSlash,
-} from "react-icons/bs";
+import { BsSearch, BsFillPeopleFill, BsCodeSlash } from "react-icons/bs";
 import { FaCalculator, FaComments, FaMoneyCheck } from "react-icons/fa";
 
 const IconBar = () => {
@@ -13,8 +8,8 @@ const IconBar = () => {
     <div className="container p-4 text-center">
       <div className="row p-4">
         <div className="col ">
-          <BsSearch className="icon-logo" />
-          <p >
+          <BsSearch className="icon-logo " />
+          <p className="icon-text">
             Manage your
             <br />
             wedding vendors
@@ -22,34 +17,50 @@ const IconBar = () => {
         </div>
         <div className="col ">
           <BsFillPeopleFill className="icon-logo" />
-        <p> Organize Your
-            <br/>
+          <p className="icon-text">
+            Organize Your
+            <br />
             Guest List
-        </p>
+          </p>
         </div>
         <div className="col ">
           <FaMoneyCheck className="icon-logo" />
-        <p>Stay on track with<br/>your Checklist</p>
+          <p className="icon-text">
+            Stay on track with
+            <br />
+            your Checklist
+          </p>
         </div>
         <div className="col ">
           <FaCalculator className="icon-logo" />
-        <p>Manage Your<br/>Budget</p>
+          <p className="icon-text">
+            Manage Your
+            <br />
+            Budget
+          </p>
         </div>
         <div className="col ">
           <FaComments className="icon-logo" />
-        <p>Community of<br/>couples</p>
+          <p className="icon-text">
+            Community of
+            <br />
+            couples
+          </p>
         </div>
         <div className="col  ">
           <BsCodeSlash className="icon-logo" />
-        <p> Create your free<br/>Wedding Website</p>
+          <p className="icon-text">
+            Create your free
+            <br />
+            Wedding Website
+          </p>
         </div>
-        
-        
       </div>
-      <button type="button" class="btn btn-lg icon-btn">Start planning your wedding</button>
-      <hr/>
+      <button type="button" class="btn btn-lg icon-btn">
+        Start planning your wedding
+      </button>
+      <hr />
     </div>
-    
   );
 };
 

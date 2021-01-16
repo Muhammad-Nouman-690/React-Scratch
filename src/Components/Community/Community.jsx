@@ -3,9 +3,9 @@ import '../Community/Community.css'
 import { BsChevronRight } from "react-icons/bs";
 import commOne from '../../assets/commOne.jpg'
 
-const Community = () => {
+const Community = (props) => {
     return(
-<div className='alert'>
+<div className='alert '>
 <div className="container">
     <div className="main-comm row">
         <div className="col">
