@@ -1,7 +1,7 @@
 export default [
     {
 
-"id": "shahpura-house--e225545",
+"id": "shahpura-house--e2255412125",
 "vendor_name": "The Banya Farm",
 "vendor_category": "Hotels",
 "vendor_second_category": "Jim Corbet, Nainital", 
@@ -61,7 +61,7 @@ export default [
         "In-house decor"]    
     },
     {
-        "id": "shahpura-house--e2255423123125",
+        "id": "shahpura-house--e2255423121221123125",
         "vendor_name": "IIDM Eco Centre",
         "vendor_category": "Banquet Halls",
         "vendor_second_category": "Gomti Nagar, Lucknow",

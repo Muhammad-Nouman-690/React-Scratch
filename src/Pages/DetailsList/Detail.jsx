@@ -13,7 +13,7 @@ const Detail = (prop) => {
         <div className="col-md-9">
           <h1>{id}</h1>
           <div className="alert container">
-            <h1 class="alert-heading">BOOK YOUR WEDDING</h1>
+            <h1 className="alert-heading">BOOK YOUR WEDDING</h1>
             <p className="cu_info">
               Cupid Wedding Planners & Events, we provide stress free planing.
             </p>

@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Feature.css";
 import Heading from "../Heading/Heading";
 import Card from "../Card/Card";
-import { getFeaturedVendors } from "../../Server/Server";
+import { getVendors } from "../../Server/Server";
 
 const Feature = () => {
-  const features = getFeaturedVendors();
+  const [features, setFeatures] = useState([]);
+
+  function getFeaturedVendors(num) {
+    const features = getVendors();
+
+    
+    return features.filter((item, index) => {
+      if (num > index) {
+        return item;
+      }
+    });
+  }
+
+  useEffect(() => {
+    setFeatures(getFeaturedVendors(3));
+  }, []);
 
   return (
     <div>
@@ -13,11 +28,9 @@ const Feature = () => {
 
       <div className="container">
         <div className="row">
-        
           {features.map((item) => (
             <Card key={item.id} {...item} />
           ))}
-        
         </div>
       </div>
     </div>

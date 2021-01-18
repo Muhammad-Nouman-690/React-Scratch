@@ -7,15 +7,15 @@ import "../Card/Card.css";
 const Card = (props) => {
   return (
 /* <Carousel> */
-<div class="card ">
+<div className="card ">
       <img
-        class="card-img-top "
+        className="card-img-top "
         src={props.media[0].image_url}
         alt="Card image cap"
       />
-      <div class="card-body shadow text-center ">
+      <div className="card-body shadow text-center ">
         <span className="card-category">{props.vendor_category}</span>
-        <h5 class="card-title">{props.vendor_name}</h5>
+        <h5 className="card-title">{props.vendor_name}</h5>
         <span className="card-category">{props.vendor_second_category}</span>
       </div>
       <div className="list-group list-group-flush shadow">

@@ -18,7 +18,7 @@ const Listing = () => {
               with the same person.
             </p>
 
-            <Link type="submit" class="btn" to="/Detail/Baraat">
+            <Link type="submit" className="btn" to="/Detail/Baraat">
               More Details
             </Link>
           </div>

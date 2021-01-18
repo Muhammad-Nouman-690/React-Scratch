@@ -56,7 +56,7 @@ const IconBar = () => {
           </p>
         </div>
       </div>
-      <button type="button" class="btn btn-lg icon-btn">
+      <button type="button" className="btn btn-lg icon-btn">
         Start planning your wedding
       </button>
       <hr />

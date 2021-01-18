@@ -1,25 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
-import Header from "./Components/Header/Header";
-import Home from "./Pages/Home/Home";
-import Footer from './Components/Footer/Footer'
-
+import Main from "./Pages/Main/Main";
+import { BrowserRouter as Router } from "react-router-dom";
 //import AppRouter from './Config/router'
 
-const App = () => {
+const App = ({ pageName = "default" }) => {
   return (
-    <div>
-      <header>
-        <Header />
-      </header>
-
-      <section>
-        <Home />
-      </section>
-      <footer>
-        <Footer />
-      </footer>
+    <div className={pageName}>
+      <Router>
+        <Main />
+      </Router>
     </div>
   );
 };

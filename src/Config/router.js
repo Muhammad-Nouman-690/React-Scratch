@@ -1,21 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Listing from  "../Pages/List/Listing"; 
 import Section from '../Components/Section/Section';
 import Detail from '../Pages/DetailsList/Detail';
+import Planning from '../Pages/Planning/Planning';
+import Home from  "../Pages/Home/Home";
 
 
 const AppRouter = () => {
     return (
-    <Router>
-      <div>      
+  
+    
         <Switch>
-          <Route path='/Detail/:id' exact  > <Detail/> </Route>
-          <Route path='/Listing/:id/' exact> <Listing /> </Route>
-          <Route path='/' exact> <Section /> </Route>               
+          <Route path='/planning' exact> <Planning/> </Route>               
+          <Route path='/' exact> <Home/> </Route>    
         </Switch>
-      </div>
-    </Router>
+    
+   
   );
 }
 

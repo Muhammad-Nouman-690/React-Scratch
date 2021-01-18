@@ -1,6 +1,7 @@
 .footer-nav {
     background-color: #f8f8f8;
     display: block;
+    padding-top: 17px;
 }
 
 .wrapper {
@@ -43,12 +44,16 @@
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 .foo-icon {
     width: 30px;
     height: 20px;
-    
+    padding-top: 6px;
+    font-weight: bold;
+    color: #000;    
 }
 
 .footer-title {
@@ -74,5 +79,33 @@
 }
 
 .country-order {
-  
+ list-style-type: none;
+ margin-left: -40px; 
+ font-size: 14px;
+ line-height: 21px;
+ color: #6c6c6c;
+ cursor: pointer;
+ font-weight: 400;
+}
+
+.country-order:hover {
+    color: #000;
+}
+
+.country-order-second {
+    list-style-type: none;
+    margin-left: 27px;
+    font-size: 14px;
+ line-height: 21px;
+ color: #6c6c6c;
+ cursor: pointer;
+ font-weight: 400;
+}
+
+.country-order-second:hover {
+    color: #000;
+}
+
+.app-icon {
+    padding-top: 21px;
 }

@@ -17,16 +17,16 @@ const Realwedd = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-3">
-            <img src={Fimg} alt="..." class="img-thumbnail" />
+            <img src={Fimg} alt="..." className="img-thumbnail" />
           </div>
           <div className="col-md-3">
-            <img src={Simg} alt="..." class="img-thumbnail" />
+            <img src={Simg} alt="..." className="img-thumbnail" />
           </div>
           <div className="col-md-3">
-            <img src={Timg} alt="..." class="img-thumbnail" />
+            <img src={Timg} alt="..." className="img-thumbnail" />
           </div>
           <div className="col-md-3">
-            <img src={Fimg} alt="..." class="img-thumbnail" />
+            <img src={Fimg} alt="..." className="img-thumbnail" />
           </div>
         </div>
       </div>
