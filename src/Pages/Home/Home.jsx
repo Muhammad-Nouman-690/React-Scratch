@@ -8,7 +8,6 @@ import Ideas from "../../Components/Ideas/Ideas";
 import Community from "../../Components/Community/Community";
 import Destination from "../../Components/Destination/Destination";
 import Category from "../../Components/Category/Category";
-import Expert from "../../Components/Expert/Expert";
 
 const Home = () => {
   return (
@@ -22,7 +21,6 @@ const Home = () => {
         <Community />
         <Destination />
         <Category />
-        <Expert />
       </div>
     </div>
   );

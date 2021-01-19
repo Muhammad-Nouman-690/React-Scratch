@@ -2,6 +2,7 @@ import React from "react";
 import "../Menus/Menus.css";
 import { BsBriefcase } from "react-icons/bs";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+
 const Menus = () => {
   return (
     <div className="menu-top">
@@ -25,29 +26,29 @@ const Menus = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+              <Link className="nav-link" to="/venues">
                   WEDDING VENUES
-                </a>
+                  </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+              <Link className="nav-link" to="/vendors">
                   WEDDING VENDORS
-                </a>
+                  </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+              <Link className="nav-link" to="/brides">
                   BRIDES
-                </a>
+                  </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+              <Link className="nav-link" to="/grooms">
                   GROOMS
-                </a>
+                  </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+              <Link className="nav-link" to="/ideas">
                   IDEAS
-                </a>
+                  </Link>
               </li>
             </ul>
           </div>

@@ -7,8 +7,7 @@ const Planning = () => {
     return(
         <div>
             <Banner />
-            <hr/>
-            <Expert />
+           
         </div>
     );
 }

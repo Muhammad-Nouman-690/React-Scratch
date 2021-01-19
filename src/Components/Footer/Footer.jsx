@@ -10,9 +10,14 @@ import {
 } from "react-icons/fa";
 import IOS from "../../assets/ios.png";
 import ANDROID from "../../assets/android.png";
+import Expert from "../Expert/Expert";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
+<div>
+  <Expert />
 
     <div className="footer-nav ">
       <div className="container ">
@@ -94,16 +99,28 @@ const Footer = () => {
         </div>
         <div className="over-flow">
           <ul className="footer-menu">
-            <li className="footer-menu">Planning Tools</li>
-            <li className="footer-menu">Wedding Venues</li>
-            <li className="footer-menu">Wedding Vendors</li>
-            <li className="footer-menu">Brides</li>
-            <li className="footer-menu">Grooms</li>
-            <li className="footer-menu">Ideas</li>
-            <li className="footer-menu">Community</li>
+            <li> <Link  className="footer-menu" to="/planning">
+                  planning tools
+                </Link></li>
+            <li ><Link  className="footer-menu" to="/venues">
+                  wedding venues
+                </Link></li>
+            <li ><Link  className="footer-menu" to="/vendors">
+                  wedding vendors
+                </Link></li>
+            <li ><Link  className="footer-menu" to="/brides">
+                  brides
+                </Link></li>
+            <li ><Link  className="footer-menu" to="/grooms">
+                  grooms
+                </Link></li>
+            <li ><Link  className="footer-menu" to="/ideas">
+                  ideas
+                </Link></li>            
           </ul>
         </div>
       </div>
+    </div>
     </div>
   );
 };
