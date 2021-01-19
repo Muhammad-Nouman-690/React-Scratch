@@ -1,0 +1,12 @@
+.bg-banner {
+    background-image: url('../../assets/PlanBanner.jpg');
+    background-size: cover;
+    padding: 80px 0; 
+       
+}
+
+.bann-para {
+    text-align: center;
+    font-weight: 600;
+}
+

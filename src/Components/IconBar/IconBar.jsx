@@ -2,6 +2,7 @@ import React from "react";
 import "../IconBar/IconBar.css";
 import { BsSearch, BsFillPeopleFill, BsCodeSlash } from "react-icons/bs";
 import { FaCalculator, FaComments, FaMoneyCheck } from "react-icons/fa";
+import Button from '../Button/Button'
 
 const IconBar = () => {
   return (
@@ -56,9 +57,7 @@ const IconBar = () => {
           </p>
         </div>
       </div>
-      <button type="button" className="btn btn-lg icon-btn">
-        Start planning your wedding
-      </button>
+     <Button />
       <hr />
     </div>
   );
