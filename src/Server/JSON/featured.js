@@ -14,7 +14,7 @@ export default [
 "location": "Bani Park", 
 "media": [
     {
-        "image_url" : "https://cdn0.weddingwire.in/emp/fotos/1/2/2/1/t10_271221-wood-castle-spa_15_271221-159340509138131.jpg",
+        "image_url" : require('../../assets/card1.jpg'),
         "image_title": "Hotels"
     }    
 ],
@@ -44,7 +44,7 @@ export default [
     "location": "Bani Park", 
     "media": [
         {
-            "image_url" : "https://cdn0.weddingwire.in/emp/fotos/5/9/3/9/t10_wedding-photography-studio-146-couple-shot-4_15_65939-160275936370551.jpg",
+            "image_url" : require('../../assets/card2.jpg'),
             "image_title": "Wedding Photography"
         }
     ],
@@ -74,7 +74,7 @@ export default [
         "location": "Bani Park", 
         "media": [
             {
-                "image_url" : "https://cdn0.weddingwire.in/emp/fotos/6/3/4/8/t10_1-iidm_15_136348-161027240169577.jpg",
+                "image_url" : require('../../assets/card3.jpg'),
                 "image_title": "Banquet Halls"
             }
         ],

@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Realwedd.css";
-import Fimg from "../../assets/card1.jpg";
-import Simg from "../../assets/card2.jpg";
-import Timg from "../../assets/card3.jpg";
 import Heading from "../Heading/Heading";
 import { BsChevronRight } from "react-icons/bs";
-
+import { getReal } from "../../Server/Server";
 
 const Realwedd = () => {
+  const [real, setReal] = useState([]);
+
+  function getWeddReal(num) {
+    const real = getReal();
+
+    return real.filter((item, index) => {
+      if (num > index) {
+        return item;
+      }
+    });
+  }
+
+  useEffect(() => {
+    setReal(getWeddReal(4));
+  }, []);
+
   return (
     <div>
       <Heading
@@ -16,18 +29,11 @@ const Realwedd = () => {
       />
       <div className="container">
         <div className="row">
-          <div className="col-md-3">
-            <img src={Fimg} alt="..." className="img-thumbnail" />
-          </div>
-          <div className="col-md-3">
-            <img src={Simg} alt="..." className="img-thumbnail" />
-          </div>
-          <div className="col-md-3">
-            <img src={Timg} alt="..." className="img-thumbnail" />
-          </div>
-          <div className="col-md-3">
-            <img src={Fimg} alt="..." className="img-thumbnail" />
-          </div>
+          {real.map((item) => (
+            <div key={item.id} className="col-md-3">
+              <img src={item.image} alt="..." className="img-thumbnail" />
+            </div>
+          ))}
         </div>
       </div>
 

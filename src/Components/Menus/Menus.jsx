@@ -16,7 +16,9 @@ const Menus = () => {
 
         <div className="row p-1">
           <div className="col-md-1">
-            <img src="{Logo}" className="Logo" alt="" />
+           <h1><Link className="nav-link" to="/">
+                  CUPID
+                </Link></h1>
           </div>
           <div className="col-md-9">
             <ul className="nav justify-content-center">

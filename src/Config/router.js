@@ -13,13 +13,13 @@ const AppRouter = () => {
   
     
         <Switch>
-          <Route path='/ideas' exact> <Ideas/> </Route>
-          <Route path='/grooms' exact> <Grooms/> </Route>
-          <Route path='/brides' exact> <Brides/> </Route>
-          <Route path='/vendors' exact> <Vendors/> </Route>
-          <Route path='/venues' exact> <Venues/> </Route>
-          <Route path='/planning' exact> <Planning/> </Route>               
-          <Route path='/' exact> <Home/> </Route>    
+          <Route path='/ideas' > <Ideas/> </Route>
+          <Route path='/grooms' > <Grooms/> </Route>
+          <Route path='/brides' > <Brides/> </Route>
+          <Route path='/vendors' > <Vendors/> </Route>
+          <Route path='/venues' > <Venues/> </Route>
+          <Route path='/planning' > <Planning/> </Route>               
+          <Route path='/' > <Home/> </Route>    
         </Switch>
     
    

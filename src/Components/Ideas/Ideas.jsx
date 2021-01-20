@@ -1,70 +1,81 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../Ideas/Ideas.css";
-import roundOne from '../../assets/roundOne.jpg'
-import roundTwo from '../../assets/roundTwo.jpg'
-import roundThree from '../../assets/roundThree.jpg'
-import roundFour from '../../assets/roundFour.jpg'
-import roundFive from '../../assets/roundFive.jpg'
-import roundSix from '../../assets/roundSix.jpg'
-import rNone from '../../assets/rNone.jpg'
-import rNtwo from '../../assets/rNtwo.jpg'
-import rNthree from '../../assets/rNthree.jpg'
-import rNfour from '../../assets/rNfour.jpg'
 import { BsChevronRight } from "react-icons/bs";
 import Heading from "../Heading/Heading";
-
+import { getIdea } from "../../Server/Server";
+import { getTip } from "../../Server/Server";
 
 const Ideas = () => {
+  // Idea API
+  const [idea, setIdea] = useState([]);
+
+  function setTipIdea(num) {
+    const idea = getIdea();
+
+    return idea.filter((item, index) => {
+      if (num > index) {
+        return item;
+      }
+    });
+  }
+  useEffect(() => {
+    setIdea(setTipIdea(6));
+  }, []);
+
+  // Tip API
+  const [tip, setTip] = useState([]);
+
+  function setIdeaTip(num) {
+    const tip = getTip();
+
+    return tip.filter((item, index) => {
+      if (num > index) {
+        return item;
+      }
+    });
+  }
+  useEffect(() => {
+    setTip(setIdeaTip(4));
+  }, []);
+
   return (
-    <div className='p-4'>
-    <Heading title='Ideas and tips' description='Get inspired with the latest trends and advice from our wedding experts' />
-    <div className="container">
-      <div className="row">
-<div className="col round-main"> <img src={roundOne} className='round-photo' alt=""/> <p className='round-text'>Before the wedding</p> </div>        
-<div className="col round-main"> <img src={roundTwo} className='round-photo' alt=""/> <p className='round-text'>The wedding ceremony</p> </div>        
-<div className="col round-main"> <img src={roundThree} className='round-photo' alt=""/> <p className='round-text'>The wedding banquet</p> </div>        
-<div className="col round-main"> <img src={roundFour} className='round-photo' alt=""/> <p className='round-text'>Service for your wedding</p> </div>        
-<div className="col round-main"> <img src={roundFive} className='round-photo' alt=""/> <p className='round-text'>Wedding fashion</p> </div>        
-<div className="col round-main"> <img src={roundSix} className='round-photo' alt=""/> <p className='round-text'>Health and beauty</p> </div>        
+    <div className="p-4">
+      <Heading
+        title="Ideas and tips"
+        description="Get inspired with the latest trends and advice from our wedding experts"
+      />
+      <div className="container">
+        <div className="row">
+          {idea.map((item) => (
+            <div key={item.id} className="col round-main">
+              {" "}
+              <img src={item.img_round} className="round-photo" alt="" />{" "}
+              <p className="round-text">{item.text_round}</p>{" "}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="Next-main row">
+        {tip.map((item) => (
+          <div key={item.id} className="col-md-3">
+            <img src={item.tip_img} className="round-Next" alt="" />
+            <div className="text-next">
+              <span className="text-next-category">{item.tip_text}</span>
+              <a href="#" className="next-link">
+                {item.tip_title}
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="text-center">
+        <a href="#" className="next-link-art">
+          ALL ARTICLES <BsChevronRight className="icon-articles" />
+        </a>
       </div>
     </div>
-
-     
-<div className="Next-main row">
-    <div className="col-md-3"> <img src={rNone} className='round-Next' alt=""/> 
-    <div className='text-next'>
-  <span className='text-next-category'>planning your wedding</span>
-    <a href="#" className='next-link'>The Experts' Guide to Planning an Intimate 50 people Wedding</a>
-    </div>
-    </div>
-    <div className="col-md-3"> <img src={rNtwo} className='round-Next' alt=""/> 
-    <div className='text-next'>
-  <span className='text-next-category'>the services for your wedding</span>
-  <a href="#" className='next-link'>Top Catering Trends and Tips for Intimate Weddings</a>
-    </div>
-     </div>
-    <div className="col-md-3"> <img src={rNthree} className='round-Next' alt=""/> 
-    <div className='text-next'>
-  <span className='text-next-category'>wedding decoration</span>
-  <a href="#" className='next-link'>The Wedding Decoration Trends You Need to Know for an Intimate Wedding</a>
-    </div>
-     </div>
-    <div className="col-md-3"> <img src={rNfour} className='round-Next' alt=""/> 
-    <div className='text-next'>
-  <span className='text-next-category'>before the wedding</span>
-  <a href="#" className='next-link'>COVID-19 Weddings Advice Guide</a>
-    </div>
-     </div>
-</div>
-
-<div className='text-center'>
-<a href="#" className='next-link-art'>ALL ARTICLES <BsChevronRight className='icon-articles' /></a>
-</div>
-
-    </div>
-
-
-
   );
 };
 

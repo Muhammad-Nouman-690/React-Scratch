@@ -51475,11 +51475,10 @@ var Menus = function Menus() {
     className: "row p-1"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "col-md-1"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: "{Logo}",
-    className: "Logo",
-    alt: ""
-  })), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("h1", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "nav-link",
+    to: "/"
+  }, "CUPID"))), /*#__PURE__*/_react.default.createElement("div", {
     className: "col-md-9"
   }, /*#__PURE__*/_react.default.createElement("ul", {
     className: "nav justify-content-center"
@@ -79804,6 +79803,12 @@ module.exports = "/BannerImg.7a22791a.jpg";
 module.exports = "/BannerImg1.b4376974.jpg";
 },{}],"assets/BannerImg2.jpg":[function(require,module,exports) {
 module.exports = "/BannerImg2.0bb7aafe.jpg";
+},{}],"assets/card1.jpg":[function(require,module,exports) {
+module.exports = "/card1.386ca74d.jpg";
+},{}],"assets/card2.jpg":[function(require,module,exports) {
+module.exports = "/card2.7633e150.jpg";
+},{}],"assets/card3.jpg":[function(require,module,exports) {
+module.exports = "/card3.1bf674b0.jpg";
 },{}],"Server/JSON/featured.js":[function(require,module,exports) {
 "use strict";
 
@@ -79824,7 +79829,7 @@ var _default = [{
   "city": "Jaipur",
   "location": "Bani Park",
   "media": [{
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/1/2/2/1/t10_271221-wood-castle-spa_15_271221-159340509138131.jpg",
+    "image_url": require('../../assets/card1.jpg'),
     "image_title": "Hotels"
   }],
   "description": "Shahpura House is a glorious and breathtaking venue located in the city of Jaipur that where you can host all of your special occasions and be assured that they surely be one of a kind and the most mesmerising events of your life that not only you but all of your wedding guests would not be able to forget for life. The venue has alluring interiors which have royal hand-carved latticework and cenotaphs which make this hotel a unique in itself. With the scenic backdrop, this House is a perfect place for having your nuptial functions and a destination wedding.",
@@ -79842,7 +79847,7 @@ var _default = [{
   "city": "Jaipur",
   "location": "Bani Park",
   "media": [{
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/5/9/3/9/t10_wedding-photography-studio-146-couple-shot-4_15_65939-160275936370551.jpg",
+    "image_url": require('../../assets/card2.jpg'),
     "image_title": "Wedding Photography"
   }],
   "description": "Shahpura House is a glorious and breathtaking venue located in the city of Jaipur that where you can host all of your special occasions and be assured that they surely be one of a kind and the most mesmerising events of your life that not only you but all of your wedding guests would not be able to forget for life. The venue has alluring interiors which have royal hand-carved latticework and cenotaphs which make this hotel a unique in itself. With the scenic backdrop, this House is a perfect place for having your nuptial functions and a destination wedding.",
@@ -79860,14 +79865,14 @@ var _default = [{
   "city": "Jaipur",
   "location": "Bani Park",
   "media": [{
-    "image_url": "https://cdn0.weddingwire.in/emp/fotos/6/3/4/8/t10_1-iidm_15_136348-161027240169577.jpg",
+    "image_url": require('../../assets/card3.jpg'),
     "image_title": "Banquet Halls"
   }],
   "description": "Shahpura House is a glorious and breathtaking venue located in the city of Jaipur that where you can host all of your special occasions and be assured that they surely be one of a kind and the most mesmerising events of your life that not only you but all of your wedding guests would not be able to forget for life. The venue has alluring interiors which have royal hand-carved latticework and cenotaphs which make this hotel a unique in itself. With the scenic backdrop, this House is a perfect place for having your nuptial functions and a destination wedding.",
   "facilities": ["Basic lighting", "electricity & backup", "Valet parking", "Bridal room", "Service staff", "Alcohol license", "Multiple event spaces", "Guest accommodation", "In-house catering'", "In-house decor"]
 }];
 exports.default = _default;
-},{}],"Server/JSON/banner.js":[function(require,module,exports) {
+},{"../../assets/card1.jpg":"assets/card1.jpg","../../assets/card2.jpg":"assets/card2.jpg","../../assets/card3.jpg":"assets/card3.jpg"}],"Server/JSON/banner.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -79926,13 +79931,116 @@ var _default = [{
   'comm_desc': 'Hey guys! Plz suggest some hashtags for our wedding! Girl’s name is Vijaya and guy’s name is Nikhil. We are...'
 }];
 exports.default = _default;
-},{}],"Server/Server.js":[function(require,module,exports) {
+},{}],"Server/JSON/real.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getCommunity = exports.getPlanning = exports.getBanner = exports.getVendors = void 0;
+exports.default = void 0;
+var _default = [{
+  'id': '1',
+  "image": require("../../assets/card1.jpg")
+}, {
+  'id': '2',
+  "image": require("../../assets/card2.jpg")
+}, {
+  'id': '3',
+  "image": require("../../assets/card3.jpg")
+}, {
+  'id': '4',
+  "image": require("../../assets/card1.jpg")
+}];
+exports.default = _default;
+},{"../../assets/card1.jpg":"assets/card1.jpg","../../assets/card2.jpg":"assets/card2.jpg","../../assets/card3.jpg":"assets/card3.jpg"}],"assets/roundOne.jpg":[function(require,module,exports) {
+module.exports = "/roundOne.ae70e4d1.jpg";
+},{}],"assets/roundTwo.jpg":[function(require,module,exports) {
+module.exports = "/roundTwo.d1f42a64.jpg";
+},{}],"assets/roundThree.jpg":[function(require,module,exports) {
+module.exports = "/roundThree.1a243ecc.jpg";
+},{}],"assets/roundFour.jpg":[function(require,module,exports) {
+module.exports = "/roundFour.86bbf434.jpg";
+},{}],"assets/roundFive.jpg":[function(require,module,exports) {
+module.exports = "/roundFive.2505ebab.jpg";
+},{}],"assets/roundSix.jpg":[function(require,module,exports) {
+module.exports = "/roundSix.1e579b5a.jpg";
+},{}],"Server/JSON/idea.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = [{
+  'id': '1',
+  'img_round': require('../../assets/roundOne.jpg'),
+  'text_round': 'Before the wedding'
+}, {
+  'id': '2',
+  'img_round': require('../../assets/roundTwo.jpg'),
+  'text_round': 'The wedding ceremony'
+}, {
+  'id': '3',
+  'img_round': require('../../assets/roundThree.jpg'),
+  'text_round': 'The wedding banquet'
+}, {
+  'id': '4',
+  'img_round': require('../../assets/roundFour.jpg'),
+  'text_round': 'Service for your wedding'
+}, {
+  'id': '5',
+  'img_round': require('../../assets/roundFive.jpg'),
+  'text_round': 'Wedding fashion'
+}, {
+  'id': '6',
+  'img_round': require('../../assets/roundSix.jpg'),
+  'text_round': 'Health and beauty'
+}];
+exports.default = _default;
+},{"../../assets/roundOne.jpg":"assets/roundOne.jpg","../../assets/roundTwo.jpg":"assets/roundTwo.jpg","../../assets/roundThree.jpg":"assets/roundThree.jpg","../../assets/roundFour.jpg":"assets/roundFour.jpg","../../assets/roundFive.jpg":"assets/roundFive.jpg","../../assets/roundSix.jpg":"assets/roundSix.jpg"}],"assets/rNone.jpg":[function(require,module,exports) {
+module.exports = "/rNone.d636fffa.jpg";
+},{}],"assets/rNtwo.jpg":[function(require,module,exports) {
+module.exports = "/rNtwo.8a92929e.jpg";
+},{}],"assets/rNthree.jpg":[function(require,module,exports) {
+module.exports = "/rNthree.ef89fb88.jpg";
+},{}],"assets/rNfour.jpg":[function(require,module,exports) {
+module.exports = "/rNfour.e68aaf52.jpg";
+},{}],"Server/JSON/tip.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = [{
+  'id': '1',
+  'tip_img': require('../../assets/rNone.jpg'),
+  'tip_text': 'PLANNING YOUR WEDDING',
+  'tip_title': 'The Experts Guide to Planning an Intimate 50 people Wedding'
+}, {
+  'id': '2',
+  'tip_img': require('../../assets/rNtwo.jpg'),
+  'tip_text': 'THE SERVICES FOR YOUR WEDDING',
+  'tip_title': 'Top Catering Trends and Tips for Intimate Weddings'
+}, {
+  'id': '3',
+  'tip_img': require('../../assets/rNthree.jpg'),
+  'tip_text': 'WEDDING DECORATION',
+  'tip_title': 'The Wedding Decoration Trends You Need to Know for an Intimate Wedding'
+}, {
+  'id': '4',
+  'tip_img': require('../../assets/rNfour.jpg'),
+  'tip_text': 'BEFORE THE WEDDING',
+  'tip_title': 'COVID-19 Weddings Advice Guide'
+}];
+exports.default = _default;
+},{"../../assets/rNone.jpg":"assets/rNone.jpg","../../assets/rNtwo.jpg":"assets/rNtwo.jpg","../../assets/rNthree.jpg":"assets/rNthree.jpg","../../assets/rNfour.jpg":"assets/rNfour.jpg"}],"Server/Server.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getTip = exports.getIdea = exports.getReal = exports.getCommunity = exports.getPlanning = exports.getBanner = exports.getVendors = void 0;
 
 var _featured = _interopRequireDefault(require("./JSON/featured"));
 
@@ -79941,6 +80049,12 @@ var _banner = _interopRequireDefault(require("./JSON/banner"));
 var _planning = _interopRequireDefault(require("./JSON/planning"));
 
 var _community = _interopRequireDefault(require("./JSON/community"));
+
+var _real = _interopRequireDefault(require("./JSON/real"));
+
+var _idea = _interopRequireDefault(require("./JSON/idea"));
+
+var _tip = _interopRequireDefault(require("./JSON/tip"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -79971,7 +80085,28 @@ var getCommunity = function getCommunity() {
 };
 
 exports.getCommunity = getCommunity;
-},{"./JSON/featured":"Server/JSON/featured.js","./JSON/banner":"Server/JSON/banner.js","./JSON/planning":"Server/JSON/planning.js","./JSON/community":"Server/JSON/community.js"}],"Components/FindInput/FindInput.css":[function(require,module,exports) {
+
+var getReal = function getReal() {
+  console.log('==> Real Data', _real.default);
+  return _real.default;
+};
+
+exports.getReal = getReal;
+
+var getIdea = function getIdea() {
+  console.log('==> Idea Data', _idea.default);
+  return _idea.default;
+};
+
+exports.getIdea = getIdea;
+
+var getTip = function getTip() {
+  console.log('==> Tip Data', _tip.default);
+  return _tip.default;
+};
+
+exports.getTip = getTip;
+},{"./JSON/featured":"Server/JSON/featured.js","./JSON/banner":"Server/JSON/banner.js","./JSON/planning":"Server/JSON/planning.js","./JSON/community":"Server/JSON/community.js","./JSON/real":"Server/JSON/real.js","./JSON/idea":"Server/JSON/idea.js","./JSON/tip":"Server/JSON/tip.js"}],"Components/FindInput/FindInput.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -80387,13 +80522,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/card1.jpg":[function(require,module,exports) {
-module.exports = "/card1.386ca74d.jpg";
-},{}],"assets/card2.jpg":[function(require,module,exports) {
-module.exports = "/card2.7633e150.jpg";
-},{}],"assets/card3.jpg":[function(require,module,exports) {
-module.exports = "/card3.1bf674b0.jpg";
-},{}],"Components/Real/Realwedd.jsx":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Real/Realwedd.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -80401,23 +80530,52 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 
 require("./Realwedd.css");
-
-var _card = _interopRequireDefault(require("../../assets/card1.jpg"));
-
-var _card2 = _interopRequireDefault(require("../../assets/card2.jpg"));
-
-var _card3 = _interopRequireDefault(require("../../assets/card3.jpg"));
 
 var _Heading = _interopRequireDefault(require("../Heading/Heading"));
 
 var _bs = require("react-icons/bs");
 
+var _Server = require("../../Server/Server");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 var Realwedd = function Realwedd() {
+  var _useState = (0, _react.useState)([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      real = _useState2[0],
+      setReal = _useState2[1];
+
+  function getWeddReal(num) {
+    var real = (0, _Server.getReal)();
+    return real.filter(function (item, index) {
+      if (num > index) {
+        return item;
+      }
+    });
+  }
+
+  (0, _react.useEffect)(function () {
+    setReal(getWeddReal(4));
+  }, []);
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Heading.default, {
     title: "Real Wedding",
     description: "Browse by location to find wedding professionals in your area and view photos of their work"
@@ -80425,31 +80583,16 @@ var Realwedd = function Realwedd() {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-md-3"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _card.default,
-    alt: "...",
-    className: "img-thumbnail"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-md-3"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _card2.default,
-    alt: "...",
-    className: "img-thumbnail"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-md-3"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _card3.default,
-    alt: "...",
-    className: "img-thumbnail"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-md-3"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _card.default,
-    alt: "...",
-    className: "img-thumbnail"
-  })))), /*#__PURE__*/_react.default.createElement("div", {
+  }, real.map(function (item) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      key: item.id,
+      className: "col-md-3"
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: item.image,
+      alt: "...",
+      className: "img-thumbnail"
+    }));
+  }))), /*#__PURE__*/_react.default.createElement("div", {
     className: "text-center p-4"
   }, /*#__PURE__*/_react.default.createElement("a", {
     href: "#",
@@ -80461,32 +80604,12 @@ var Realwedd = function Realwedd() {
 
 var _default = Realwedd;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Realwedd.css":"Components/Real/Realwedd.css","../../assets/card1.jpg":"assets/card1.jpg","../../assets/card2.jpg":"assets/card2.jpg","../../assets/card3.jpg":"assets/card3.jpg","../Heading/Heading":"Components/Heading/Heading.jsx","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js"}],"Components/Ideas/Ideas.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Realwedd.css":"Components/Real/Realwedd.css","../Heading/Heading":"Components/Heading/Heading.jsx","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js","../../Server/Server":"Server/Server.js"}],"Components/Ideas/Ideas.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/roundOne.jpg":[function(require,module,exports) {
-module.exports = "/roundOne.ae70e4d1.jpg";
-},{}],"assets/roundTwo.jpg":[function(require,module,exports) {
-module.exports = "/roundTwo.d1f42a64.jpg";
-},{}],"assets/roundThree.jpg":[function(require,module,exports) {
-module.exports = "/roundThree.1a243ecc.jpg";
-},{}],"assets/roundFour.jpg":[function(require,module,exports) {
-module.exports = "/roundFour.86bbf434.jpg";
-},{}],"assets/roundFive.jpg":[function(require,module,exports) {
-module.exports = "/roundFive.2505ebab.jpg";
-},{}],"assets/roundSix.jpg":[function(require,module,exports) {
-module.exports = "/roundSix.1e579b5a.jpg";
-},{}],"assets/rNone.jpg":[function(require,module,exports) {
-module.exports = "/rNone.d636fffa.jpg";
-},{}],"assets/rNtwo.jpg":[function(require,module,exports) {
-module.exports = "/rNtwo.8a92929e.jpg";
-},{}],"assets/rNthree.jpg":[function(require,module,exports) {
-module.exports = "/rNthree.ef89fb88.jpg";
-},{}],"assets/rNfour.jpg":[function(require,module,exports) {
-module.exports = "/rNfour.e68aaf52.jpg";
-},{}],"Components/Ideas/Ideas.jsx":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Components/Ideas/Ideas.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -80494,37 +80617,71 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 
 require("../Ideas/Ideas.css");
-
-var _roundOne = _interopRequireDefault(require("../../assets/roundOne.jpg"));
-
-var _roundTwo = _interopRequireDefault(require("../../assets/roundTwo.jpg"));
-
-var _roundThree = _interopRequireDefault(require("../../assets/roundThree.jpg"));
-
-var _roundFour = _interopRequireDefault(require("../../assets/roundFour.jpg"));
-
-var _roundFive = _interopRequireDefault(require("../../assets/roundFive.jpg"));
-
-var _roundSix = _interopRequireDefault(require("../../assets/roundSix.jpg"));
-
-var _rNone = _interopRequireDefault(require("../../assets/rNone.jpg"));
-
-var _rNtwo = _interopRequireDefault(require("../../assets/rNtwo.jpg"));
-
-var _rNthree = _interopRequireDefault(require("../../assets/rNthree.jpg"));
-
-var _rNfour = _interopRequireDefault(require("../../assets/rNfour.jpg"));
 
 var _bs = require("react-icons/bs");
 
 var _Heading = _interopRequireDefault(require("../Heading/Heading"));
 
+var _Server = require("../../Server/Server");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 var Ideas = function Ideas() {
+  // Idea API
+  var _useState = (0, _react.useState)([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      idea = _useState2[0],
+      setIdea = _useState2[1];
+
+  function setTipIdea(num) {
+    var idea = (0, _Server.getIdea)();
+    return idea.filter(function (item, index) {
+      if (num > index) {
+        return item;
+      }
+    });
+  }
+
+  (0, _react.useEffect)(function () {
+    setIdea(setTipIdea(6));
+  }, []); // Tip API
+
+  var _useState3 = (0, _react.useState)([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      tip = _useState4[0],
+      setTip = _useState4[1];
+
+  function setIdeaTip(num) {
+    var tip = (0, _Server.getTip)();
+    return tip.filter(function (item, index) {
+      if (num > index) {
+        return item;
+      }
+    });
+  }
+
+  (0, _react.useEffect)(function () {
+    setTip(setIdeaTip(4));
+  }, []);
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "p-4"
   }, /*#__PURE__*/_react.default.createElement(_Heading.default, {
@@ -80534,109 +80691,36 @@ var Ideas = function Ideas() {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "col round-main"
-  }, " ", /*#__PURE__*/_react.default.createElement("img", {
-    src: _roundOne.default,
-    className: "round-photo",
-    alt: ""
-  }), " ", /*#__PURE__*/_react.default.createElement("p", {
-    className: "round-text"
-  }, "Before the wedding"), " "), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col round-main"
-  }, " ", /*#__PURE__*/_react.default.createElement("img", {
-    src: _roundTwo.default,
-    className: "round-photo",
-    alt: ""
-  }), " ", /*#__PURE__*/_react.default.createElement("p", {
-    className: "round-text"
-  }, "The wedding ceremony"), " "), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col round-main"
-  }, " ", /*#__PURE__*/_react.default.createElement("img", {
-    src: _roundThree.default,
-    className: "round-photo",
-    alt: ""
-  }), " ", /*#__PURE__*/_react.default.createElement("p", {
-    className: "round-text"
-  }, "The wedding banquet"), " "), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col round-main"
-  }, " ", /*#__PURE__*/_react.default.createElement("img", {
-    src: _roundFour.default,
-    className: "round-photo",
-    alt: ""
-  }), " ", /*#__PURE__*/_react.default.createElement("p", {
-    className: "round-text"
-  }, "Service for your wedding"), " "), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col round-main"
-  }, " ", /*#__PURE__*/_react.default.createElement("img", {
-    src: _roundFive.default,
-    className: "round-photo",
-    alt: ""
-  }), " ", /*#__PURE__*/_react.default.createElement("p", {
-    className: "round-text"
-  }, "Wedding fashion"), " "), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col round-main"
-  }, " ", /*#__PURE__*/_react.default.createElement("img", {
-    src: _roundSix.default,
-    className: "round-photo",
-    alt: ""
-  }), " ", /*#__PURE__*/_react.default.createElement("p", {
-    className: "round-text"
-  }, "Health and beauty"), " "))), /*#__PURE__*/_react.default.createElement("div", {
+  }, idea.map(function (item) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      key: item.id,
+      className: "col round-main"
+    }, " ", /*#__PURE__*/_react.default.createElement("img", {
+      src: item.img_round,
+      className: "round-photo",
+      alt: ""
+    }), " ", /*#__PURE__*/_react.default.createElement("p", {
+      className: "round-text"
+    }, item.text_round), " ");
+  }))), /*#__PURE__*/_react.default.createElement("div", {
     className: "Next-main row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-md-3"
-  }, " ", /*#__PURE__*/_react.default.createElement("img", {
-    src: _rNone.default,
-    className: "round-Next",
-    alt: ""
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "text-next"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "text-next-category"
-  }, "planning your wedding"), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "next-link"
-  }, "The Experts' Guide to Planning an Intimate 50 people Wedding"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-md-3"
-  }, " ", /*#__PURE__*/_react.default.createElement("img", {
-    src: _rNtwo.default,
-    className: "round-Next",
-    alt: ""
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "text-next"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "text-next-category"
-  }, "the services for your wedding"), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "next-link"
-  }, "Top Catering Trends and Tips for Intimate Weddings"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-md-3"
-  }, " ", /*#__PURE__*/_react.default.createElement("img", {
-    src: _rNthree.default,
-    className: "round-Next",
-    alt: ""
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "text-next"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "text-next-category"
-  }, "wedding decoration"), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "next-link"
-  }, "The Wedding Decoration Trends You Need to Know for an Intimate Wedding"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-md-3"
-  }, " ", /*#__PURE__*/_react.default.createElement("img", {
-    src: _rNfour.default,
-    className: "round-Next",
-    alt: ""
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "text-next"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "text-next-category"
-  }, "before the wedding"), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "next-link"
-  }, "COVID-19 Weddings Advice Guide")))), /*#__PURE__*/_react.default.createElement("div", {
+  }, tip.map(function (item) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      key: item.id,
+      className: "col-md-3"
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: item.tip_img,
+      className: "round-Next",
+      alt: ""
+    }), /*#__PURE__*/_react.default.createElement("div", {
+      className: "text-next"
+    }, /*#__PURE__*/_react.default.createElement("span", {
+      className: "text-next-category"
+    }, item.tip_text), /*#__PURE__*/_react.default.createElement("a", {
+      href: "#",
+      className: "next-link"
+    }, item.tip_title)));
+  })), /*#__PURE__*/_react.default.createElement("div", {
     className: "text-center"
   }, /*#__PURE__*/_react.default.createElement("a", {
     href: "#",
@@ -80648,7 +80732,7 @@ var Ideas = function Ideas() {
 
 var _default = Ideas;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../Ideas/Ideas.css":"Components/Ideas/Ideas.css","../../assets/roundOne.jpg":"assets/roundOne.jpg","../../assets/roundTwo.jpg":"assets/roundTwo.jpg","../../assets/roundThree.jpg":"assets/roundThree.jpg","../../assets/roundFour.jpg":"assets/roundFour.jpg","../../assets/roundFive.jpg":"assets/roundFive.jpg","../../assets/roundSix.jpg":"assets/roundSix.jpg","../../assets/rNone.jpg":"assets/rNone.jpg","../../assets/rNtwo.jpg":"assets/rNtwo.jpg","../../assets/rNthree.jpg":"assets/rNthree.jpg","../../assets/rNfour.jpg":"assets/rNfour.jpg","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js","../Heading/Heading":"Components/Heading/Heading.jsx"}],"Components/Community/Community.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../Ideas/Ideas.css":"Components/Ideas/Ideas.css","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js","../Heading/Heading":"Components/Heading/Heading.jsx","../../Server/Server":"Server/Server.js"}],"Components/Community/Community.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -81437,26 +81521,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var AppRouter = function AppRouter() {
   return /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/ideas",
-    exact: true
+    path: "/ideas"
   }, " ", /*#__PURE__*/_react.default.createElement(_Ideas.default, null), " "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/grooms",
-    exact: true
+    path: "/grooms"
   }, " ", /*#__PURE__*/_react.default.createElement(_Grooms.default, null), " "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/brides",
-    exact: true
+    path: "/brides"
   }, " ", /*#__PURE__*/_react.default.createElement(_Brides.default, null), " "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/vendors",
-    exact: true
+    path: "/vendors"
   }, " ", /*#__PURE__*/_react.default.createElement(_Vendors.default, null), " "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/venues",
-    exact: true
+    path: "/venues"
   }, " ", /*#__PURE__*/_react.default.createElement(_Venues.default, null), " "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/planning",
-    exact: true
+    path: "/planning"
   }, " ", /*#__PURE__*/_react.default.createElement(_Planning.default, null), " "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/",
-    exact: true
+    path: "/"
   }, " ", /*#__PURE__*/_react.default.createElement(_Home.default, null), " "));
 };
 
@@ -81542,7 +81619,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56470" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49509" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
