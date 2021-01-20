@@ -1,0 +1,10 @@
+.list-ren {
+    display: flex;
+    width: 90%;
+    list-style-type: none;
+    color: #8c8c8c;
+}
+
+.list-sty {
+    margin: 0 10px;
+}

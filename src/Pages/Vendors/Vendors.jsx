@@ -1,11 +1,13 @@
 import React from 'react';
+import '../Vendors/Vendors.css'
+import ListBar from '../../Components/ListBar/ListBar'
+
 
 const Vendors = () => {
     return(
         <div>
-            <h1>
-                Vendors Page
-            </h1>
+            <hr />  
+      <ListBar name='Wedding vendors' />
         </div>
     );
 }

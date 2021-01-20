@@ -1,0 +1,15 @@
+.no-border {
+    border:none !important; 
+    border-radius: 0px !important;
+    padding: 15px 15px !important;
+    border-right: 1px solid #e1e1e1 !important;
+}
+
+.no-border:last-child {
+    margin-left:-1px !important;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none !important;
+    box-shadow:none !important;     
+}

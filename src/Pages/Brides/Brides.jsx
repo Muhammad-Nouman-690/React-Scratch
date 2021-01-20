@@ -1,12 +1,12 @@
-import { Divider } from '@material-ui/core';
 import React from 'react';
+import '../Brides/Brides.css';
+import ListBar from '../../Components/ListBar/ListBar'
 
 const Brides = () => {
     return(
       <div>
-          <h1>
-              Brides Pages
-          </h1>
+          <hr />
+          <ListBar name='Brides' />
       </div>  
     );
 }

@@ -219,21 +219,6 @@
     color: #fff;
 }
 
-.no-border {
-    border:none !important; 
-    border-radius: 0px !important;
-    padding: 15px 15px !important;
-    border-right: 1px solid #e1e1e1 !important;
-}
-
-.no-border:last-child {
-    margin-left:-1px !important;
-}
-
-input:focus, textarea:focus, select:focus{
-    outline: none !important;
-    box-shadow:none !important;     
-}
 
 .slider-title {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -250,6 +235,22 @@ input:focus, textarea:focus, select:focus{
     margin-bottom: 30px;
     margin-top: 0;
 }
+.no-border {
+    border:none !important; 
+    border-radius: 0px !important;
+    padding: 15px 15px !important;
+    border-right: 1px solid #e1e1e1 !important;
+}
+
+.no-border:last-child {
+    margin-left:-1px !important;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none !important;
+    box-shadow:none !important;     
+}
+
 .icon-logo {
     width: 50px;
     height: 50px;    
@@ -272,6 +273,7 @@ input:focus, textarea:focus, select:focus{
     background-color: #fb1b26;
     color: #fff;
     font-weight: 600;
+    
 }
 .feat-head {
     text-align: center;
@@ -662,14 +664,80 @@ display: -webkit-box;
     background-image: url('/PlanBanner.64d955d1.jpg');
     background-size: cover;
     padding: 80px 0; 
-       
+    opacity: 0.9;
+    text-align: center;      
+}
+
+.bg-banner-One {
+    background-image: url('/planBannerFooter.296328c8.jpg');
+    background-size: cover;
+    padding: 80px 0; 
+    opacity: 0.9;
+    text-align: center;      
+}
+
+.bann-title {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    
 }
 
 .bann-para {
     text-align: center;
     font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 auto 20px;
+    max-width: 670px;
+    color: #fff;
 }
 
+
+.wire-icon {
+    width: 65px;
+    margin-bottom: 5px;
+}
+
+.wire-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.wire-desc {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.App-img {
+    float: right;
+}
+
+.down-icon {
+    padding-top: 25px;
+    float: left;
+    margin-right: 20px;
+}
+
+
+
+
+.list-ren {
+    display: flex;
+    width: 90%;
+    list-style-type: none;
+    color: #8c8c8c;
+}
+
+.list-sty {
+    margin: 0 10px;
+}
 
 
 /*# sourceMappingURL=/App.6f196564.css.map */

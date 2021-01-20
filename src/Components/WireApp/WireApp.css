@@ -1,0 +1,29 @@
+.wire-icon {
+    width: 65px;
+    margin-bottom: 5px;
+}
+
+.wire-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.wire-desc {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.App-img {
+    float: right;
+}
+
+.down-icon {
+    padding-top: 25px;
+    float: left;
+    margin-right: 20px;
+}
+

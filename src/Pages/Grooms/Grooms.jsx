@@ -1,11 +1,12 @@
 import React from 'react';
+import '../Grooms/Grooms.css';
+import ListBar from '../../Components/ListBar/ListBar'
 
 const Grooms = () => {
     return(
       <div>
-          <h1>
-              Grooms Pages
-          </h1>
+          <hr />
+          <ListBar name = 'Grooms' />
       </div>  
     );
 }

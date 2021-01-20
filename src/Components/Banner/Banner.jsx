@@ -4,7 +4,7 @@ import BannerImg from "../../assets/BannerImg.jpg";
 import BannerImgOne from "../../assets/BannerImg1.jpg";
 import BannerImgTwo from "../../assets/BannerImg2.jpg";
 import { getBanner } from "../../Server/Server";
-
+import FindInput from '../FindInput/FindInput' 
 
 const Banner = () => {
 
@@ -46,27 +46,7 @@ const Banner = () => {
         <p className="slider-text">
           {banner.banner_text}
         </p>
-        <form>
-          <div className="form-row">
-            <div className="col m-0 p-0">
-              <input
-                type="text"
-                className="form-control  no-border"
-                placeholder="Search For"
-              />
-            </div>
-            <div className="col m-0 p-0">
-              <input
-                type="text"
-                className="form-control  no-border "
-                placeholder="Where"
-              />
-            </div>
-            <button type="button" className="btn icon-btn btn-lg m-0">
-              Find
-            </button>
-          </div>
-        </form>
+        <FindInput />
         <p className="banner-para">
           {banner.banner_para}
         </p>

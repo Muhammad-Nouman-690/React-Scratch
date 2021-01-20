@@ -4,6 +4,7 @@ import Heading from "../../Components/Heading/Heading";
 import { BsCardChecklist } from "react-icons/bs";
 import { getPlanning } from "../../Server/Server";
 import PlanBanner from '../../Components/PlanBanner/PlanBanner'
+import WireApp from '../../Components/WireApp/WireApp'
 
 const Planning = () => {
   const [planning, setPlanning] = useState([]);
@@ -24,8 +25,12 @@ const Planning = () => {
 
   return (
     <div>
-      <PlanBanner />
-      <Heading
+      <PlanBanner title='Planning your wedding just got easier' 
+      para='WeddingWire has everything you need to walk down 
+      the aisle with our free suite of online wedding planning tools.' 
+      btnText='Start planning your wedding'
+      />
+      <Heading 
         title="Tools that make wedding planning simple"
         description="Create your free WeddingWire account to start planning."
         line={false}
@@ -42,6 +47,10 @@ const Planning = () => {
           ))}
         </div>
       </div>
+      <hr/>
+      <WireApp />
+      <PlanBanner title='Start planning your wedding' para='WEDDING PLANNING HAS NEVER BEEN EASIER.' btnText = 'Sign up' />
+      
     </div>
   );
 };

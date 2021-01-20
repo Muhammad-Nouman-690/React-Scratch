@@ -57,7 +57,7 @@ const IconBar = () => {
           </p>
         </div>
       </div>
-     <Button />
+     <Button text='Start planning your wedding'/>
       <hr />
     </div>
   );
