@@ -6,16 +6,14 @@
 
 .check-icon {
     width: 100%;
-    height: 15%;
+    height: 70px;
 }
+
 
 .check-title {
     text-align: center;
     font-size: 18px;
-    line-height: 26px;
     font-weight: 600;
-    margin-bottom: 5px;
-    display: block;
     color: #202428;
     cursor: pointer;
 }
@@ -23,5 +21,4 @@
 .check-para {
     text-align: center;
     color: #6c6c6c;
-    margin: 0;
 }
