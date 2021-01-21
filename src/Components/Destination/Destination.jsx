@@ -1,63 +1,55 @@
-import React from 'react';
-import desOne from '../../assets/desOne.jpg'
-import desTwo from '../../assets/desTwo.jpg'
-import desThree from '../../assets/desThree.jpg'
-import desFour from '../../assets/desFour.jpg'
-import desFive from '../../assets/desFive.jpg'
-import destSix from '../../assets/destSix.jpg'
-import '../Destination/Destination.css'
+import React, { useState, useEffect } from "react";
+import "../Destination/Destination.css";
 import { BsChevronRight } from "react-icons/bs";
-import Heading from '../Heading/Heading';
+import Heading from "../Heading/Heading";
+import { getDestination } from "../../Server/Server";
 
 const Destination = () => {
-    return(
-<div>
-<Heading title='Plan your destination wedding' line={false} />
-      <p className='Sec-Real text-center'>
-      No matter where in the world you want to get married, WeddingWire's <br/> directory of international wedding professionals can help you celebrate.
+  const [destination, setDestination] = useState([]);
+
+  function getWeddDestination(num) {
+    const destination = getDestination();
+    return destination.filter((item, index) => {
+      if (num > index) {
+        return item;
+      }
+    });
+  }
+
+  useEffect(() => {
+    setDestination(getWeddDestination(6));
+  }, []);
+
+  return (
+    <div>
+      <Heading title="Plan your destination wedding" line={false} />
+      <p className="Sec-Real text-center">
+        No matter where in the world you want to get married, WeddingWire's{" "}
+        <br /> directory of international wedding professionals can help you
+        celebrate.
       </p>
-<div className="container">
-    <div className="row">
-    <div className="col"><img src={desOne} className='Des-img' alt=""/>
-    <div className="des-title">
-        <a href="#" className="des-content">Argentina</a>
-    </div>
-    </div>
-    <div className="col"><img src={desTwo} className='Des-img' alt=""/>
-    <div className="des-title">
-        <a href="#" className="des-content">Brazil</a>
-    </div>
-    </div>
-    <div className="col"><img src={desThree} className='Des-img' alt=""/>
-    <div className="des-title">
-        <a href="#" className="des-content">Chile</a>
-    </div>
-    </div>
-    <div className="col"><img src={desFour} className='Des-img' alt=""/>
-    <div className="des-title">
-        <a href="#" className="des-content">Colombia</a>
-    </div>
-    </div>
-    <div className="col"><img src={desFive} className='Des-img' alt=""/>
-    <div className="des-title">
-        <a href="#" className="des-content">France</a>
-    </div>
-    </div>
-    <div className="col"><img src={destSix} className='Des-img' alt=""/>
-    <div className="des-title">
-        <a href="#" className="des-content">Italy</a>
-    </div>
-    </div>
-    </div>
-</div>
+      <div className="container">
+        <div className="row">
+          {destination.map((item) => (
+            <div key={item.id} className="col">
+              <img src={item.image_url} className="Des-img" alt="" />
+              <div className="des-title">
+                <a href="#" className="des-content">
+                  {item.image_title}
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
-<div className='text-center p-4'>
-<a href="#" className='next-link-art'>SEE ALL DESTINATIONS <BsChevronRight className='icon-articles' /></a>
-</div>
-
-
-</div>
-    );
-}
+      <div className="text-center p-4">
+        <a href="#" className="next-link-art">
+          SEE ALL DESTINATIONS <BsChevronRight className="icon-articles" />
+        </a>
+      </div>
+    </div>
+  );
+};
 
 export default Destination;

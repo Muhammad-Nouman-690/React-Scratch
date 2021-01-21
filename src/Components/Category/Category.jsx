@@ -1,9 +1,5 @@
 import React from "react";
 import "../Category/Category.css";
-import catOne from "../../assets/catOne.jpg";
-import catTwo from "../../assets/catTwo.jpg";
-import catThree from "../../assets/catThree.jpg";
-import catFour from "../../assets/catFour.jpg";
 import Heading from "../Heading/Heading";
 
 const Category = () => {

@@ -5,6 +5,7 @@ import community from './JSON/community';
 import real from './JSON/real';
 import idea from './JSON/idea';
 import tip from './JSON/tip';
+import destination from './JSON/destination';
 
 export const getVendors = ()=> {
     console.log('==> Featured Data',featured); 
@@ -39,4 +40,9 @@ export const getIdea = () => {
 export const getTip = () => {
     console.log('==> Tip Data', tip);
     return tip;
+}
+
+export const getDestination = () => {
+    console.log('==> Destination Data', destination);
+    return destination;
 }

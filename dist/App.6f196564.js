@@ -80034,13 +80034,58 @@ var _default = [{
   'tip_title': 'COVID-19 Weddings Advice Guide'
 }];
 exports.default = _default;
-},{"../../assets/rNone.jpg":"assets/rNone.jpg","../../assets/rNtwo.jpg":"assets/rNtwo.jpg","../../assets/rNthree.jpg":"assets/rNthree.jpg","../../assets/rNfour.jpg":"assets/rNfour.jpg"}],"Server/Server.js":[function(require,module,exports) {
+},{"../../assets/rNone.jpg":"assets/rNone.jpg","../../assets/rNtwo.jpg":"assets/rNtwo.jpg","../../assets/rNthree.jpg":"assets/rNthree.jpg","../../assets/rNfour.jpg":"assets/rNfour.jpg"}],"assets/desOne.jpg":[function(require,module,exports) {
+module.exports = "/desOne.719ee773.jpg";
+},{}],"assets/desTwo.jpg":[function(require,module,exports) {
+module.exports = "/desTwo.45944498.jpg";
+},{}],"assets/desThree.jpg":[function(require,module,exports) {
+module.exports = "/desThree.3636bbe9.jpg";
+},{}],"assets/desFour.jpg":[function(require,module,exports) {
+module.exports = "/desFour.55c0b0b5.jpg";
+},{}],"assets/desFive.jpg":[function(require,module,exports) {
+module.exports = "/desFive.1fedd8a2.jpg";
+},{}],"assets/destSix.jpg":[function(require,module,exports) {
+module.exports = "/destSix.917d8816.jpg";
+},{}],"Server/JSON/destination.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getTip = exports.getIdea = exports.getReal = exports.getCommunity = exports.getPlanning = exports.getBanner = exports.getVendors = void 0;
+exports.default = void 0;
+var _default = [{
+  'id': '1',
+  'image_url': require('../../assets/desOne.jpg'),
+  'image_title': 'Argentina'
+}, {
+  'id': '2',
+  'image_url': require('../../assets/desTwo.jpg'),
+  'image_title': 'Brazil'
+}, {
+  'id': '3',
+  'image_url': require('../../assets/desThree.jpg'),
+  'image_title': 'Chile'
+}, {
+  'id': '4',
+  'image_url': require('../../assets/desFour.jpg'),
+  'image_title': 'Colombia'
+}, {
+  'id': '5',
+  'image_url': require('../../assets/desFive.jpg'),
+  'image_title': 'France'
+}, {
+  'id': '6',
+  'image_url': require('../../assets/destSix.jpg'),
+  'image_title': 'Italy'
+}];
+exports.default = _default;
+},{"../../assets/desOne.jpg":"assets/desOne.jpg","../../assets/desTwo.jpg":"assets/desTwo.jpg","../../assets/desThree.jpg":"assets/desThree.jpg","../../assets/desFour.jpg":"assets/desFour.jpg","../../assets/desFive.jpg":"assets/desFive.jpg","../../assets/destSix.jpg":"assets/destSix.jpg"}],"Server/Server.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getDestination = exports.getTip = exports.getIdea = exports.getReal = exports.getCommunity = exports.getPlanning = exports.getBanner = exports.getVendors = void 0;
 
 var _featured = _interopRequireDefault(require("./JSON/featured"));
 
@@ -80055,6 +80100,8 @@ var _real = _interopRequireDefault(require("./JSON/real"));
 var _idea = _interopRequireDefault(require("./JSON/idea"));
 
 var _tip = _interopRequireDefault(require("./JSON/tip"));
+
+var _destination = _interopRequireDefault(require("./JSON/destination"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -80106,7 +80153,14 @@ var getTip = function getTip() {
 };
 
 exports.getTip = getTip;
-},{"./JSON/featured":"Server/JSON/featured.js","./JSON/banner":"Server/JSON/banner.js","./JSON/planning":"Server/JSON/planning.js","./JSON/community":"Server/JSON/community.js","./JSON/real":"Server/JSON/real.js","./JSON/idea":"Server/JSON/idea.js","./JSON/tip":"Server/JSON/tip.js"}],"Components/FindInput/FindInput.css":[function(require,module,exports) {
+
+var getDestination = function getDestination() {
+  console.log('==> Destination Data', _destination.default);
+  return _destination.default;
+};
+
+exports.getDestination = getDestination;
+},{"./JSON/featured":"Server/JSON/featured.js","./JSON/banner":"Server/JSON/banner.js","./JSON/planning":"Server/JSON/planning.js","./JSON/community":"Server/JSON/community.js","./JSON/real":"Server/JSON/real.js","./JSON/idea":"Server/JSON/idea.js","./JSON/tip":"Server/JSON/tip.js","./JSON/destination":"Server/JSON/destination.js"}],"Components/FindInput/FindInput.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -80819,19 +80873,7 @@ var Community = function Community() {
 
 var _default = Community;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../Community/Community.css":"Components/Community/Community.css","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js","../../Server/Server":"Server/Server.js"}],"assets/desOne.jpg":[function(require,module,exports) {
-module.exports = "/desOne.719ee773.jpg";
-},{}],"assets/desTwo.jpg":[function(require,module,exports) {
-module.exports = "/desTwo.45944498.jpg";
-},{}],"assets/desThree.jpg":[function(require,module,exports) {
-module.exports = "/desThree.3636bbe9.jpg";
-},{}],"assets/desFour.jpg":[function(require,module,exports) {
-module.exports = "/desFour.55c0b0b5.jpg";
-},{}],"assets/desFive.jpg":[function(require,module,exports) {
-module.exports = "/desFive.1fedd8a2.jpg";
-},{}],"assets/destSix.jpg":[function(require,module,exports) {
-module.exports = "/destSix.917d8816.jpg";
-},{}],"Components/Destination/Destination.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../Community/Community.css":"Components/Community/Community.css","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js","../../Server/Server":"Server/Server.js"}],"Components/Destination/Destination.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -80844,19 +80886,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
-
-var _desOne = _interopRequireDefault(require("../../assets/desOne.jpg"));
-
-var _desTwo = _interopRequireDefault(require("../../assets/desTwo.jpg"));
-
-var _desThree = _interopRequireDefault(require("../../assets/desThree.jpg"));
-
-var _desFour = _interopRequireDefault(require("../../assets/desFour.jpg"));
-
-var _desFive = _interopRequireDefault(require("../../assets/desFive.jpg"));
-
-var _destSix = _interopRequireDefault(require("../../assets/destSix.jpg"));
+var _react = _interopRequireWildcard(require("react"));
 
 require("../Destination/Destination.css");
 
@@ -80864,85 +80894,68 @@ var _bs = require("react-icons/bs");
 
 var _Heading = _interopRequireDefault(require("../Heading/Heading"));
 
+var _Server = require("../../Server/Server");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 var Destination = function Destination() {
+  var _useState = (0, _react.useState)([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      destination = _useState2[0],
+      setDestination = _useState2[1];
+
+  function getWeddDestination(num) {
+    var destination = (0, _Server.getDestination)();
+    return destination.filter(function (item, index) {
+      if (num > index) {
+        return item;
+      }
+    });
+  }
+
+  (0, _react.useEffect)(function () {
+    setDestination(getWeddDestination(6));
+  }, []);
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Heading.default, {
     title: "Plan your destination wedding",
     line: false
   }), /*#__PURE__*/_react.default.createElement("p", {
     className: "Sec-Real text-center"
-  }, "No matter where in the world you want to get married, WeddingWire's ", /*#__PURE__*/_react.default.createElement("br", null), " directory of international wedding professionals can help you celebrate."), /*#__PURE__*/_react.default.createElement("div", {
+  }, "No matter where in the world you want to get married, WeddingWire's", " ", /*#__PURE__*/_react.default.createElement("br", null), " directory of international wedding professionals can help you celebrate."), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "col"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _desOne.default,
-    className: "Des-img",
-    alt: ""
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "des-title"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "des-content"
-  }, "Argentina"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _desTwo.default,
-    className: "Des-img",
-    alt: ""
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "des-title"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "des-content"
-  }, "Brazil"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _desThree.default,
-    className: "Des-img",
-    alt: ""
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "des-title"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "des-content"
-  }, "Chile"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _desFour.default,
-    className: "Des-img",
-    alt: ""
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "des-title"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "des-content"
-  }, "Colombia"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _desFive.default,
-    className: "Des-img",
-    alt: ""
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "des-title"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "des-content"
-  }, "France"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _destSix.default,
-    className: "Des-img",
-    alt: ""
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "des-title"
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "des-content"
-  }, "Italy"))))), /*#__PURE__*/_react.default.createElement("div", {
+  }, destination.map(function (item) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      key: item.id,
+      className: "col"
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: item.image_url,
+      className: "Des-img",
+      alt: ""
+    }), /*#__PURE__*/_react.default.createElement("div", {
+      className: "des-title"
+    }, /*#__PURE__*/_react.default.createElement("a", {
+      href: "#",
+      className: "des-content"
+    }, item.image_title)));
+  }))), /*#__PURE__*/_react.default.createElement("div", {
     className: "text-center p-4"
   }, /*#__PURE__*/_react.default.createElement("a", {
     href: "#",
@@ -80954,15 +80967,7 @@ var Destination = function Destination() {
 
 var _default = Destination;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../../assets/desOne.jpg":"assets/desOne.jpg","../../assets/desTwo.jpg":"assets/desTwo.jpg","../../assets/desThree.jpg":"assets/desThree.jpg","../../assets/desFour.jpg":"assets/desFour.jpg","../../assets/desFive.jpg":"assets/desFive.jpg","../../assets/destSix.jpg":"assets/destSix.jpg","../Destination/Destination.css":"Components/Destination/Destination.css","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js","../Heading/Heading":"Components/Heading/Heading.jsx"}],"assets/catOne.jpg":[function(require,module,exports) {
-module.exports = "/catOne.5841b243.jpg";
-},{}],"assets/catTwo.jpg":[function(require,module,exports) {
-module.exports = "/catTwo.d168cbc6.jpg";
-},{}],"assets/catThree.jpg":[function(require,module,exports) {
-module.exports = "/catThree.ca30ab81.jpg";
-},{}],"assets/catFour.jpg":[function(require,module,exports) {
-module.exports = "/catFour.9971ef37.jpg";
-},{}],"Components/Category/Category.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../Destination/Destination.css":"Components/Destination/Destination.css","react-icons/bs":"../node_modules/react-icons/bs/index.esm.js","../Heading/Heading":"Components/Heading/Heading.jsx","../../Server/Server":"Server/Server.js"}],"Components/Category/Category.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -80978,14 +80983,6 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 require("../Category/Category.css");
-
-var _catOne = _interopRequireDefault(require("../../assets/catOne.jpg"));
-
-var _catTwo = _interopRequireDefault(require("../../assets/catTwo.jpg"));
-
-var _catThree = _interopRequireDefault(require("../../assets/catThree.jpg"));
-
-var _catFour = _interopRequireDefault(require("../../assets/catFour.jpg"));
 
 var _Heading = _interopRequireDefault(require("../Heading/Heading"));
 
@@ -81052,7 +81049,7 @@ var Category = function Category() {
 
 var _default = Category;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../Category/Category.css":"Components/Category/Category.css","../../assets/catOne.jpg":"assets/catOne.jpg","../../assets/catTwo.jpg":"assets/catTwo.jpg","../../assets/catThree.jpg":"assets/catThree.jpg","../../assets/catFour.jpg":"assets/catFour.jpg","../Heading/Heading":"Components/Heading/Heading.jsx"}],"Pages/Home/Home.jsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../Category/Category.css":"Components/Category/Category.css","../Heading/Heading":"Components/Heading/Heading.jsx"}],"Pages/Home/Home.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -81619,7 +81616,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49509" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50277" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
