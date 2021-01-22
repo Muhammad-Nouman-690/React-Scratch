@@ -2,6 +2,7 @@ import React from "react";
 import "../Menus/Menus.css";
 import { BsBriefcase } from "react-icons/bs";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import logo from '../../assets/logo.png';
 
 const Menus = () => {
   return (
@@ -17,7 +18,7 @@ const Menus = () => {
         <div className="row p-1">
           <div className="col-md-1">
            <h1><Link className="nav-link" to="/">
-                  CUPID
+                  <img src={logo} className='main-logo' alt=""/>
                 </Link></h1>
           </div>
           <div className="col-md-9">
@@ -47,11 +48,11 @@ const Menus = () => {
                   GROOMS
                   </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
               <Link className="nav-link" to="/ideas">
                   IDEAS
                   </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="col-md-2">

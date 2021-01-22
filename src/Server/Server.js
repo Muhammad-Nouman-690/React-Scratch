@@ -6,6 +6,7 @@ import real from './JSON/real';
 import idea from './JSON/idea';
 import tip from './JSON/tip';
 import destination from './JSON/destination';
+import venue from './JSON/venue';
 
 export const getVendors = ()=> {
     console.log('==> Featured Data',featured); 
@@ -45,4 +46,9 @@ export const getTip = () => {
 export const getDestination = () => {
     console.log('==> Destination Data', destination);
     return destination;
+}
+
+export const getVenue = () => {
+    console.log('==> Venue Data', venue);
+    return venue;
 }

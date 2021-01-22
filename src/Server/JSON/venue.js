@@ -1,0 +1,42 @@
+export default [
+    {
+        'id': '1',
+        'venue_img': require('../../assets/card1.jpg'),
+        'venue_title': 'Club Platinum Resort ',
+        'venue_desc': 'Club Platinum Resort is located in the city of Bahadurgarh. It is a great venue that offers a variety of services and choices, for a complete festive experience. They have multiple attractions for a week-long wedding extravaganza for your family and guests. If there is a place where fun and wedding... (Reception venue)',
+        'venue_price': 'From $800',
+        'venue_guest': '50 to 500',
+    },
+    {
+        'id': '2',
+        'venue_img': require('../../assets/card2.jpg'),
+        'venue_title': 'Viraj Sarovar Portico, Jammu',
+        'venue_desc': 'Forest Hills At Tala is a wedding venue based out in the city od Mumbai, Raigad. Offering forest and mountain views, this upscale hillside resort is 25 km from the NH66 and 2 km from the ancient Kuda Buddhist Caves. Its 29 km from the town of Murud. Ranging from stylish mud huts and permanent tents... (Cheap reception venues)',
+        'venue_price': 'From $1,000',
+        'venue_guest': '100 to 200',
+    },
+    {
+        'id': '3',
+        'venue_img': require('../../assets/card3.jpg'),
+        'venue_title': 'Gaj Retreat',
+        'venue_desc': 'Viraj Sarovar Portico based in Jammu a boutique hotel is situated in the commercial hub of the city. The hotel has grand halls and rooms which are perfect for hosting each function in the grandest manner. Spread on three floors, This place is a perfect retreat for hosting private parties and... (Wedding receptions)',
+        'venue_price': 'From $1,200',
+        'venue_guest': '50 to 2000',
+    },
+    {
+        'id': '4',
+        'venue_img': require('../../assets/card4.jpeg'),
+        'venue_title': 'Joy Inn & Suites, Bhiwadi',
+        'venue_desc': 'Gaj Retreat is a wedding venue located in the city of Hoshiarpur. Weddings in India are celebrated with much fervour and grandiosity, wherein each and every detail is carefully chosen and organised to ensure that the final outcome is nothing less than a magnificent gala and a fairytale dream for the... (Cheap reception venues)',
+        'venue_price': 'From $800',
+        'venue_guest': '50 to 1000',
+    },
+    {
+        'id': '5',
+        'venue_img': require('../../assets/card5.jpg'),
+        'venue_title': 'Neemantran Farmhouse And Wedding Lawn',
+        'venue_desc': 'Neemantran Farmhouse and Wedding Lawn is a wedding lawn and farmhouse based out in the city of Haridwar. If you are looking for a wedding venue here, you need to think of Neemantran Farmhouse and Wedding Lawn. It is a well-equipped venue that can serve better than your expectations. It claims to... (Wedding venues)',
+        'venue_price': 'From $600',
+        'venue_guest': '100 to 1800',
+    },
+]

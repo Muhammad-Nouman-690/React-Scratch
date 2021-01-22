@@ -10,20 +10,6 @@
     word-break: break-all;
 }
 
-.search-btn {
-    display: inline-block;
-    vertical-align: middle;
-    color: #202428;
-    box-sizing: border-box;
-    border: 1px solid #e2e2e2;
-    border-radius: 18px;
-    padding: 4px 10px 4px 15px;
-    cursor: pointer;
-    margin: 3px 10px;
-}
 
-.venue-list {
-    margin-left: 30px;
-    color: #8c8c8c;
-    font-weight: 400;    
-}
+
+
