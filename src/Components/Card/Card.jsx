@@ -1,12 +1,8 @@
 import React from "react";
 import "../Card/Card.css";
-// import { Carousel } from 'react-responsive-carousel';
-// import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
 
 const Card = (props) => {
   return (
-/* <Carousel> */
 <div className="card ">
       <img
         className="card-img-top "
@@ -36,7 +32,7 @@ const Card = (props) => {
         </div>
       </div>
     </div>
-    // </Carousel>
+    
   );
 };
 

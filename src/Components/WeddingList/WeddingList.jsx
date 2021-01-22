@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import '../WeddingList/WeddingList.css'
 import Button from '../../Components/Button/Button'
 import { getVenue } from '../../Server/Server';
-
+import { BsPeople } from 'react-icons/bs';
+import { AiOutlineTag } from 'react-icons/ai';
 
 const WeddingList = () => {
   
@@ -45,12 +46,12 @@ const WeddingList = () => {
               
               </div>
               <div className='venue-item'>
-                Guests <br/>
+               <BsPeople  />  Guests <br/>
                 <strong> {item.venue_guest} </strong>
               </div>
               <div className='venue-item'>
                 Deals <br/>
-               <strong> 1 </strong>
+               <strong> <AiOutlineTag  /> 1 </strong>
               </div>
               <Button className='venue-btn' button text= 'Request pricing' />
             </div>
