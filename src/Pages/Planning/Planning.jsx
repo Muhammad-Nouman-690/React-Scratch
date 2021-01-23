@@ -25,6 +25,7 @@ const Planning = () => {
   return (
     <div>
       <PlanBanner
+       
         title="Planning your wedding just got easier"
         para="WeddingWire has everything you need to walk down 
       the aisle with our free suite of online wedding planning tools."
@@ -50,7 +51,8 @@ const Planning = () => {
       <hr />
       <WireApp />
       <PlanBanner
-        title="Start planning your wedding"
+     
+      title="Start planning your wedding"
         para="WEDDING PLANNING HAS NEVER BEEN EASIER."
         btnText="Sign up"
       />
