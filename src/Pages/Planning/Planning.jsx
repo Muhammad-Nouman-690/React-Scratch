@@ -30,6 +30,7 @@ const Planning = () => {
         para="WeddingWire has everything you need to walk down 
       the aisle with our free suite of online wedding planning tools."
         btnText="Start planning your wedding"
+       
       />
       <Heading
         title="Tools that make wedding planning simple"

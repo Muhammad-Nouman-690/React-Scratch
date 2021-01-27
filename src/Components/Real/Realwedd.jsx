@@ -3,6 +3,7 @@ import "./Realwedd.css";
 import Heading from "../Heading/Heading";
 import { BsChevronRight } from "react-icons/bs";
 import { getReal } from "../../Server/Server";
+import Button from '../../Components/Button/Button'
 
 const Realwedd = () => {
   const [real, setReal] = useState([]);
