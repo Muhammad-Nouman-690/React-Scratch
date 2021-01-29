@@ -3,6 +3,8 @@ import "../Menus/Menus.css";
 import { BsBriefcase } from "react-icons/bs";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import logo from '../../assets/logo.png';
+import  Modal from "../Modal/Modal";
+import ModalLogin from '../ModalLogin/ModalLogin';
 
 const Menus = () => {
 
@@ -59,14 +61,16 @@ const Menus = () => {
           <div className="col-md-2">
             <ul className="nav justify-content-end">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">
                   LogIn
                 </a>
+              <ModalLogin  />
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" data-toggle="modal" data-target="#example_Modal" href="#">
                   SignUp
                 </a>
+                <Modal   />
               </li>
             </ul>
           </div>

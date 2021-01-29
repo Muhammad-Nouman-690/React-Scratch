@@ -4,6 +4,7 @@ import Heading from "../../Components/Heading/Heading";
 import { getPlanning } from "../../Server/Server";
 import PlanBanner from "../../Components/PlanBanner/PlanBanner";
 import WireApp from "../../Components/WireApp/WireApp";
+import Modal from "../../Components/Modal/Modal";
 
 const Planning = () => {
   const [planning, setPlanning] = useState([]);
@@ -24,14 +25,15 @@ const Planning = () => {
 
   return (
     <div>
+      <span data-toggle="modal" data-target="#example_Modal">
       <PlanBanner
-       
         title="Planning your wedding just got easier"
         para="WeddingWire has everything you need to walk down 
-      the aisle with our free suite of online wedding planning tools."
+        the aisle with our free suite of online wedding planning tools."
         btnText="Start planning your wedding"
-       
       />
+      <Modal  />
+      </span>
       <Heading
         title="Tools that make wedding planning simple"
         description="Create your free WeddingWire account to start planning."
@@ -51,12 +53,14 @@ const Planning = () => {
       </div>
       <hr />
       <WireApp />
-      <PlanBanner
-     
-      title="Start planning your wedding"
-        para="WEDDING PLANNING HAS NEVER BEEN EASIER."
-        btnText="Sign up"
-      />
+      <span data-toggle="modal" data-target="#example_Modal">
+        <PlanBanner
+          title="Start planning your wedding"
+          para="WEDDING PLANNING HAS NEVER BEEN EASIER."
+          btnText="Sign up"
+        />
+        <Modal />
+      </span>
     </div>
   );
 };

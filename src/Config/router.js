@@ -8,11 +8,10 @@ import Brides from '../Pages/Brides/Brides';
 import Grooms from '../Pages/Grooms/Grooms';
 import Ideas from '../Pages/Ideas/Ideas';
 
+
 const AppRouter = () => {
-    return (
-  
-    
-        <Switch>
+    return (    
+        <Switch>         
           <Route path='/ideas' > <Ideas/> </Route>
           <Route path='/grooms' > <Grooms/> </Route>
           <Route path='/brides' > <Brides/> </Route>
@@ -20,9 +19,7 @@ const AppRouter = () => {
           <Route path='/venues' > <Venues/> </Route>
           <Route path='/planning' > <Planning/> </Route>               
           <Route path='/' > <Home/> </Route>    
-        </Switch>
-    
-   
+        </Switch>   
   );
 }
 

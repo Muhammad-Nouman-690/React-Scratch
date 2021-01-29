@@ -6,14 +6,11 @@ const Button = ({ text, button = false }) => {
     <div>
       <button
         type="button"
-        className="btn btn-lg icon-btn"        
+        className="btn btn-lg icon-btn"
         style={button === true ? { display: "btn" } : { display: "none" }}
-        
       >
         {text}
       </button>
-
-     
     </div>
   );
 };

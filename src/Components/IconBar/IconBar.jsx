@@ -2,7 +2,8 @@ import React from "react";
 import "../IconBar/IconBar.css";
 import { BsSearch, BsFillPeopleFill, BsCodeSlash } from "react-icons/bs";
 import { FaCalculator, FaComments, FaMoneyCheck } from "react-icons/fa";
-import Button from '../Button/Button'
+//import Button from '../Button/Button'
+//import Modal from "../Modal/Modal";
 
 const IconBar = () => {
   return (
@@ -57,7 +58,10 @@ const IconBar = () => {
           </p>
         </div>
       </div>
-     <Button text='Start planning your wedding'/>
+  {/* <span data-toggle="modal" data-target="#example_Modal">   
+  <Button button text='Start planning your wedding'/>
+  <Modal  />
+  </span> */}
       <hr />
     </div>
   );
