@@ -6,6 +6,10 @@
 }
 
 .venue-item {
-    margin-right: 55px;
+    margin-right: 30px;
 }
 
+.side-bar-title {
+    font-size: 18px;
+    line-height: 26px;
+}

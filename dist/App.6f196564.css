@@ -761,9 +761,13 @@ display: -webkit-box;
 }
 
 .venue-item {
-    margin-right: 55px;
+    margin-right: 30px;
 }
 
+.side-bar-title {
+    font-size: 18px;
+    line-height: 26px;
+}
 
 .search-btn {
     display: inline-block;
