@@ -1,15 +1,17 @@
 import React from "react";
 import "../RequestPricing/Pricing.css";
+import PricingLogin from "../PricingLogin/PricingLogin";
 
 const Pricing = () => {
   return (
     <div>
       <div
         className="modal fade"
-        id="example__Modal"
+        id="pricing_modal"
         aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
       >
-        <div className="modal-dialog" >
+        <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLabel">
@@ -25,44 +27,10 @@ const Pricing = () => {
               </button>
             </div>
             <div className="modal-body">
-            <form>
-  <div className="form-group">
-    <label >First Name and Last Name</label>
-    <input type="name" className="form-control" placeholder="Enter Name" />
-  </div>
-  
-  <div className="form-row">
-    <div className="form-group col-md-6">
-      <label >Email</label>
-      <input type="email" className="form-control" placeholder="Email" />
-    </div>
-    <div className="form-group col-md-6">
-      <label >Number</label>
-      <input type="number" className="form-control" placeholder="Phone Number" />
-    </div>
-  </div>
-
-  <div className="form-row">
-    <div className="form-group col-md-6">
-      <label >Event Date</label>
-      <input type="date" className="form-control" placeholder="Event Date" />
-    </div>
-    <div className="form-group col-md-6">
-      <label >Number of Guests</label>
-      <input type="number" className="form-control" placeholder="Number of Guests" />
-    </div>
-  </div>
-
-  <div className="form-group">
-    <label >Your Message</label>
-    <input type="text" className="form-control" placeholder="Write Your Message" />
-  </div>
-
-</form>
-
+              <PricingLogin />
             </div>
-            <div className="modal-footer">              
-              <button type="button" className="btn btn-danger ">
+            <div className="modal-footer">
+              <button type="submit" className="btn btn-danger ">
                 Get Quote
               </button>
             </div>

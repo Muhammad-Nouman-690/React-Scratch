@@ -4,7 +4,11 @@ import Button from "../../Components/Button/Button";
 import { getVenue } from "../../Server/Server";
 import { BsPeople } from "react-icons/bs";
 import { AiOutlineTag } from "react-icons/ai";
-import Pricing from '../RequestPricing/Pricing';
+import Pricing from "../RequestPricing/Pricing";
+import PricingModal from "../PricingLogin/PricingLogin";
+import Login from "../LoginFields/Login";
+import ModalLogin from "../ModalLogin/ModalLogin";
+import Modal from "../Modal/Modal";
 
 const WeddingList = () => {
   const [venue, setVenue] = useState([]);
@@ -30,9 +34,7 @@ const WeddingList = () => {
           <div key={item.id} className="row p-2">
             <div className="col-md-3">
               <div className="form-group">
-                <label className='side-bar-title'>
-                  {item.side_bar}
-                </label>
+                <label className="side-bar-title">{item.side_bar}</label>
                 <select
                   multiple
                   className="form-control"
@@ -70,10 +72,10 @@ const WeddingList = () => {
                     <AiOutlineTag /> 1
                   </strong>
                 </div>
-                <span data-toggle="modal" data-target="#example__Modal">
-                <Button className="venue-btn" button text="Request pricing" />
+                <a data-toggle="modal" data-target="#pricing_modal">
+                  <Button button text="Request pricing" />
+                </a>
                 <Pricing />
-                </span>        
               </div>
             </div>
           </div>

@@ -1,12 +1,11 @@
 import React from "react";
-import Login from '../LoginFields/Login'
+import Login from "../LoginFields/Login";
 
 const Modal = () => {
   return (
     <div
       className="modal fade"
       id="example_Modal"
-     
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
@@ -26,19 +25,7 @@ const Modal = () => {
             </button>
           </div>
           <div className="modal-body">
-
-          <Login Btn_name='Signup' Email other name />
-          
-          </div>
-          <div className="modal-footer">
-            {/* <button
-              type="button"
-              className="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button> */}
-           
+            <Login Btn_name="Signup" Email other name />
           </div>
         </div>
       </div>
