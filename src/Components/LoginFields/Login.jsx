@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import signup from "../../assets/signup.jpg";
 import "../LoginFields/Login.css";
+import firebase from "../Database/firebase";
 
 const Login = ({
   Email = false,
@@ -9,24 +10,26 @@ const Login = ({
   Btn_name,
   img = false,
 }) => {
-  
-const [firstName, setfirstName] = useState('')
-const [lastName, setlastName] = useState('')
-const [email, setemail] = useState('')
-const [password, setpassword] = useState('')
+  const [firstName, setfirstName] = useState("");
+  const [lastName, setlastName] = useState("");
+  const [email, setemail] = useState("");
+  const [password, setpassword] = useState("");
 
-
-  const addData = (evt) => {
-    evt.preventDefault();
-    console.log(firstName)
-    console.log(lastName)
-    console.log(email)
-    console.log(password)  
+  const handleForm = (e) => {
+    e.preventDefault();
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        var user = userCredential.user;
+        console.log('Successfully Login',user);
+        alert('Successfully Login');
+      })
+      .catch((error) => {
+        var errorMessage = error.message;
+        console.log(errorMessage);
+      });
   };
-
-  useEffect(() => {
-console.log('================')
-  }, [firstName, lastName])
 
   return (
     <div className="row">
@@ -41,14 +44,13 @@ console.log('================')
               : { display: require("../../assets/signupOne.jpg") }
           }
         />
-{firstName} <br/>
-{lastName} <br/>
-{email} <br/>
-{password} <br/>
-
+        {firstName} <br />
+        {lastName} <br />
+        {email} <br />
+        {password} <br />
       </div>
       <div className="col-md-6">
-        <form onSubmit={addData}>
+        <form>
           <div
             className="form-row"
             style={name === true ? { display: "div" } : { display: "none" }}
@@ -60,7 +62,7 @@ console.log('================')
                 className="form-control"
                 placeholder="First Name"
                 value={firstName}
-                onChange = {e => setfirstName(e.target.value)}  
+                onChange={(e) => setfirstName(e.target.value)}
               />
             </div>
             <div className="form-group col-md-6">
@@ -70,8 +72,8 @@ console.log('================')
                 className="form-control"
                 placeholder="Last Name"
                 value={lastName}
-                onChange = {e => setlastName(e.target.value)}
-             />
+                onChange={(e) => setlastName(e.target.value)}
+              />
             </div>
           </div>
           <div
@@ -82,10 +84,10 @@ console.log('================')
             <input
               type="email"
               className="form-control"
-              id="email"
+              id="login-email"
               placeholder="Email"
               value={email}
-                onChange = {e => setemail(e.target.value)}
+              onChange={(e) => setemail(e.target.value)}
             />
           </div>
           <div className="form-group">
@@ -93,10 +95,10 @@ console.log('================')
             <input
               type="password"
               className="form-control"
-              id="password"
+              id="login-password"
               placeholder="Password"
               value={password}
-                onChange = {e => setpassword(e.target.value)}
+              onChange={(e) => setpassword(e.target.value)}
             />
           </div>
           <div
@@ -126,7 +128,12 @@ console.log('================')
               <input type="number" className="form-control" />
             </div>
           </div>
-          <button type="submit" value='submit' className="btn btn-danger">
+          <button
+            type="submit"
+            value="submit"
+            onClick={handleForm}
+            className="btn btn-danger"
+          >
             {Btn_name}
           </button>
         </form>
