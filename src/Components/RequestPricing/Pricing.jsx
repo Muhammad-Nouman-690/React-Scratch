@@ -29,11 +29,7 @@ const Pricing = () => {
             <div className="modal-body">
               <PricingLogin />
             </div>
-            <div className="modal-footer">
-              <button type="submit" className="btn btn-danger ">
-                Get Quote
-              </button>
-            </div>
+          
           </div>
         </div>
       </div>
