@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./PricingLogin.css";
 import firebase from "../Database/firebase";
 
@@ -12,10 +12,11 @@ const PricingLogin = () => {
 
   const addData = (e) => {
     e.preventDefault();
+
     firebase
       .database()
       .ref("/")
-      .child("cupid")
+      .child("Request Pricing Details")
       .push([name, email, number, date, guest, msg]);
 
     console.log(name);
@@ -24,6 +25,8 @@ const PricingLogin = () => {
     console.log(date);
     console.log(guest);
     console.log(msg);
+
+    alert("Your Request Pricing form has been submitted.");
   };
 
   return (

@@ -5,10 +5,6 @@ import { getVenue } from "../../Server/Server";
 import { BsPeople } from "react-icons/bs";
 import { AiOutlineTag } from "react-icons/ai";
 import Pricing from "../RequestPricing/Pricing";
-import PricingModal from "../PricingLogin/PricingLogin";
-import Login from "../LoginFields/Login";
-import ModalLogin from "../ModalLogin/ModalLogin";
-import Modal from "../Modal/Modal";
 
 const WeddingList = () => {
   const [venue, setVenue] = useState([]);

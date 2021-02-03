@@ -10,10 +10,14 @@ const Login = ({
   Btn_name,
   img = false,
 }) => {
-  const [firstName, setfirstName] = useState("");
-  const [lastName, setlastName] = useState("");
-  const [email, setemail] = useState("");
-  const [password, setpassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [live, setLive] = useState("");
+  const [city, setCity] = useState("");
+  const [date, setDate] = useState("");
+  const [number, setNumber] = useState("");
 
   const handleForm = (e) => {
     e.preventDefault();
@@ -22,13 +26,19 @@ const Login = ({
       .createUserWithEmailAndPassword(email, password)
       .then((userCredential) => {
         var user = userCredential.user;
-        console.log('Successfully Login',user);
-        alert('Successfully Login');
+        console.log("Successfully Login", user);
+        alert("Successfully Login");
       })
       .catch((error) => {
         var errorMessage = error.message;
         console.log(errorMessage);
       });
+
+    firebase
+      .database()
+      .ref("/")
+      .child("Signup Details")
+      .push([firstName, lastName, email, password, live, city, date, number ]);
   };
 
   return (
@@ -48,6 +58,7 @@ const Login = ({
         {lastName} <br />
         {email} <br />
         {password} <br />
+        {live} <br />
       </div>
       <div className="col-md-6">
         <form>
@@ -62,7 +73,8 @@ const Login = ({
                 className="form-control"
                 placeholder="First Name"
                 value={firstName}
-                onChange={(e) => setfirstName(e.target.value)}
+                onChange={(e) => setFirstName(e.target.value)}
+                required
               />
             </div>
             <div className="form-group col-md-6">
@@ -72,7 +84,8 @@ const Login = ({
                 className="form-control"
                 placeholder="Last Name"
                 value={lastName}
-                onChange={(e) => setlastName(e.target.value)}
+                onChange={(e) => setLastName(e.target.value)}
+                required
               />
             </div>
           </div>
@@ -87,7 +100,8 @@ const Login = ({
               id="login-email"
               placeholder="Email"
               value={email}
-              onChange={(e) => setemail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
           <div className="form-group">
@@ -98,7 +112,8 @@ const Login = ({
               id="login-password"
               placeholder="Password"
               value={password}
-              onChange={(e) => setpassword(e.target.value)}
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </div>
           <div
@@ -107,11 +122,22 @@ const Login = ({
           >
             <div className="form-group col-md-6">
               <label>You Live in...</label>
-              <input type="text" className="form-control" />
+              <input
+                type="text"
+                className="form-control"
+                value={live}
+                onChange={(e) => setLive(e.target.value)}
+                required
+              />
             </div>
             <div className="form-group col-md-6">
               <label>City</label>
-              <select className="form-control">
+              <select
+                className="form-control"
+                value={city}
+                onChange={(e) => setCity(e.target.value)}
+                required
+              >
                 <option>Choose</option>
                 <option>Karachi</option>
                 <option>Lahore</option>
@@ -121,11 +147,23 @@ const Login = ({
 
             <div className="form-group col-md-6">
               <label>Event Date</label>
-              <input type="date" className="form-control" />
+              <input
+                type="date"
+                className="form-control"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+                required
+              />
             </div>
             <div className="form-group col-md-6">
               <label>Number</label>
-              <input type="number" className="form-control" />
+              <input
+                type="number"
+                className="form-control"
+                value={number}
+                onChange={(e) => setNumber(e.target.value)}
+                required
+              />
             </div>
           </div>
           <button
