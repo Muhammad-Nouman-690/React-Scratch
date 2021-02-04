@@ -26,7 +26,7 @@ const ModalLogin = () => {
             </button>
           </div>
           <div className="modal-body">
-            <Login Btn_name="Login" Email />
+            <Login Btn_name="Login" Email fb_login />
           </div>
         </div>
       </div>

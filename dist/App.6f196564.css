@@ -52,7 +52,21 @@
 }
 .signup-img {
     width: 100%;
-    }
+}
+
+.fb-login {
+    border: 1px solid silver;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.text-login {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 26px;
+}
 .footer-nav {
     background-color: #f8f8f8;
     display: block;

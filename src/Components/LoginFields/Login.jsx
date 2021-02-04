@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import signup from "../../assets/signup.jpg";
 import "../LoginFields/Login.css";
 import firebase from "../Database/firebase";
+import { FaFacebookF } from "react-icons/fa";
+import Firebase from 'firebase';
 
 const Login = ({
   Email = false,
@@ -9,6 +11,7 @@ const Login = ({
   other = false,
   Btn_name,
   img = false,
+  fb_login = false,
 }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -34,12 +37,48 @@ const Login = ({
         console.log(errorMessage);
       });
 
-    firebase
+      firebase
       .database()
       .ref("/")
       .child("Signup Details")
-      .push([firstName, lastName, email, password, live, city, date, number ]);
+      .push([firstName, lastName, email, password, live, city, date, number]);
   };
+
+  const login_FB = () => {
+    var provider = new Firebase.auth.FacebookAuthProvider();
+  
+    firebase
+  .auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    var credential = result.credential;
+    var user = result.user;
+    
+    let create_user = {
+      name: user.displayName,
+      email: user.email,
+      profile: user.photoURL,
+      uId: user.uid
+    }
+
+    console.log('User==>',create_user);
+    
+    firebase
+    .database()
+    .ref("/")
+    .child(`FB Login Details/${user.uid}`)
+    .set(create_user)
+
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log(errorMessage);
+  });
+
+  
+
+  }
 
   return (
     <div className="row">
@@ -60,8 +99,29 @@ const Login = ({
         {password} <br />
         {live} <br />
       </div>
+
       <div className="col-md-6">
+        <p
+          className="text-login"
+          style={fb_login === true ? { display: "div" } : { display: "none" }}
+        >
+          Log in to your account
+        </p>
+        <button
+          className="fb-login"
+          type='button'
+          onClick={login_FB}
+          style={fb_login === true ? { display: "div" } : { display: "none" }}
+        >
+          <FaFacebookF color="#3B5998" /> Sign in with Facebook
+        </button>
         <form>
+          <p
+            className="text-login"
+            style={fb_login === true ? { display: "div" } : { display: "none" }}
+          >
+            Or log in with your email
+          </p>
           <div
             className="form-row"
             style={name === true ? { display: "div" } : { display: "none" }}
