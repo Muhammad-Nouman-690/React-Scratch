@@ -3,6 +3,7 @@ import signup from "../../assets/signup.jpg";
 import "../LoginFields/Login.css";
 import firebase from "../Database/firebase";
 import { FaFacebookF } from "react-icons/fa";
+import { FcGoogle } from 'react-icons/fc'
 import Firebase from 'firebase';
 
 const Login = ({
@@ -54,20 +55,20 @@ const Login = ({
     var credential = result.credential;
     var user = result.user;
     
-    let create_user = {
+    let facebook_user = {
       name: user.displayName,
       email: user.email,
       profile: user.photoURL,
       uId: user.uid
     }
 
-    console.log('User==>',create_user);
+    console.log('User==>',facebook_user);
     
     firebase
     .database()
     .ref("/")
     .child(`FB Login Details/${user.uid}`)
-    .set(create_user)
+    .set(facebook_user)
 
   })
   .catch((error) => {
@@ -75,9 +76,36 @@ const Login = ({
     var errorMessage = error.message;
     console.log(errorMessage);
   });
+  }
 
-  
+  const login_Gg = () => {
+    var provider = new Firebase.auth.GoogleAuthProvider();
+    firebase.auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    var credential = result.credential;
+    var user = result.user;
+    let google_user = {
+      name: user.displayName,
+      email: user.email,
+      profile: user.photoURL,
+      uId: user.uid
+    }
 
+    console.log("Google User",google_user)
+    
+    firebase
+    .database()
+    .ref("/")
+    .child(`Google Login Details/${user.uid}`)
+    .set(google_user)
+
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log(errorMessage);
+  });
   }
 
   return (
@@ -114,6 +142,15 @@ const Login = ({
           style={fb_login === true ? { display: "div" } : { display: "none" }}
         >
           <FaFacebookF color="#3B5998" /> Sign in with Facebook
+        </button>
+       
+        <button
+          className="google-login "
+          type='button'
+          onClick={login_Gg}
+          style={fb_login === true ? { display: "div" } : { display: "none" }}
+        >
+          <FcGoogle  /> Sign in with Google
         </button>
         <form>
           <p

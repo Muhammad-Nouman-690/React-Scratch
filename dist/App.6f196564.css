@@ -58,6 +58,7 @@
     border: 1px solid silver;
     padding: 10px 15px;
     cursor: pointer;
+    background: none;
 }
 
 .text-login {
@@ -66,6 +67,15 @@
     font-size: 17px;
     font-weight: 600;
     line-height: 26px;
+}
+
+.google-login {
+    border: 1px solid silver;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: none;
+    padding-right: 30px;
 }
 .footer-nav {
     background-color: #f8f8f8;
