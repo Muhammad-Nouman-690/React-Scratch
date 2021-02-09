@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import "./App.css";
 import Main from "./Pages/Main/Main";
 import { BrowserRouter as Router } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from './store';
 
 
 const App = ({ pageName = "default" }) => {
@@ -15,4 +17,9 @@ const App = ({ pageName = "default" }) => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+    <Provider store={store} >
+    <App />
+    </Provider>
+    , 
+    document.getElementById("root"));
