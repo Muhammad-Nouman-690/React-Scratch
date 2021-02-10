@@ -1,8 +1,12 @@
 const INITIAL_STATE = {
     users: [
         {
-            name: 'Muhammad Noman',
-            email: 'nomi690@hotmail.com'
+            name: 'Muhammad Noman Aqeel.',
+            email: 'nomi690@hotmail.com.'
+        },
+        {
+            name: 'Rajput',
+            email: 'rajput420@gmail.com'
         }
     ]
 }
