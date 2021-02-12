@@ -1,16 +1,8 @@
-const INITIAL_STATE = {
-    users: [
-        {
-            name: 'Muhammad Noman Aqeel.',
-            email: 'nomi690@hotmail.com.'
-        },
-        {
-            name: 'Rajput',
-            email: 'rajput420@gmail.com'
-        }
-    ]
-}
+import { combineReducers } from 'redux';
+import authReducer from './auth_reducer';
+import appReducer from './app_reducer';
 
-export default (state = INITIAL_STATE, action ) => {
-    return state;
-}
+export default combineReducers({
+    auth: authReducer,
+    app: appReducer
+})

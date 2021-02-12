@@ -2,11 +2,12 @@ import firebase from "../../Components/Database/firebase";
 import Firebase from 'firebase';
 
 const set_data = () => {
-    alert("Hassan Running...")
+  return(dispatch) => {  
+    dispatch({type: "setDATA", data: data})
 }
-
+}
 const addData = () => {
-    alert("Ahmed Running...")
+    console.log("Ahmed Running...")
 }
 
 const login_FB = () => {
@@ -15,7 +16,7 @@ const login_FB = () => {
     firebase
   .auth()
   .signInWithPopup(provider)
-  .then((result) => {
+  .then((result) => {    
     var credential = result.credential;
     var user = result.user;
     
